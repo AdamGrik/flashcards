@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+
+.fc-toolbar {
+  display: flex;
+
+  background-color: $accent-color;
+
+  padding: 8px 16px;
+  border-bottom: 1px solid $border-color;
+  justify-content: space-between;
+  .fc-toolbar-left {
+    color: $background-color;
+    font-size: xx-large;
+  }
+  .fc-toolbar-right {
+    display: flex;
+    .fc-button:first-of-type {
+      margin-right: 4px;
+    }
+  }
+}

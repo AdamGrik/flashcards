@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+.fc-button {
+  border-radius: 10px;
+  border: none;
+  background-color: $background-color;
+  padding: 12px;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+  color: $accent-color;
+
+  &:hover {
+    background-color: $secondary-color;
+    cursor: pointer;
+  }
+}

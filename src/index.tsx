@@ -1,8 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+import Toolbar from "./molecules/Tooblar/Toolbar";
+import "./index.scss";
 
 const App: React.FC = () => {
-  return <h1>Hello, TypeScript React App!</h1>;
+  return (
+    <div className="fc">
+      <Toolbar />
+    </div>
+  );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = createRoot(container!);
+root.render(<App />);
