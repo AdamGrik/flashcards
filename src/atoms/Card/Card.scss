@@ -1,0 +1,38 @@
+@import "../../variables.scss";
+.fc-card {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px;
+  border: $border-color 2px solid;
+  padding: 12px;
+  border-radius: 10px;
+  height: 128px;
+
+  &:hover {
+    background-color: $secondary-color;
+    cursor: pointer;
+  }
+  .fc-card-footer {
+    display: flex;
+    color: $secondary-text-color;
+    justify-content: space-between;
+    .fc-card-footer-author {
+      color: $primary-color;
+    }
+  }
+  .fc-card-title {
+    font-size: x-large;
+    margin-bottom: 8px;
+  }
+  .fc-card-desc {
+    color: $secondary-text-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .fc-card {
+    flex-basis: 100%;
+  }
+}
