@@ -8,6 +8,7 @@ import Exam from "./oragnisms/Exam/Exam";
 import { matQuestions } from "./utils/Questions/Matematika";
 import { sjlQuestions } from "./utils/Questions/Slovencina";
 import { elkQuestions } from "./utils/Questions/Elektrotechnika";
+import { sieQuestions } from "./utils/Questions/Sietove technologie";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/matematika" element={<Exam data={matQuestions} />} />
         <Route path="/slovencina" element={<Exam data={sjlQuestions} />} />
         <Route path="/elektrotechnika" element={<Exam data={elkQuestions} />} />
+        <Route path="/sietovetechnologie" element={<Exam data={sieQuestions} />} />
       </Routes>
     </HashRouter>
   );
