@@ -4,46 +4,34 @@ import Cards from "./Cards";
 const CardsContainer = () => {
   const dummyCollectionData = [
     {
-      id: 1,
+      link: "matematika",
       name: "Matematika",
       description: "Otazky na test z matematiky 12.3.2023",
-      author: "Adam Grik",
-      dateCreated: new Date(),
     },
     {
-      id: 2,
+      link: "slovencina",
       name: "Slovenčina",
       description: "Otazky na test z Slovencina 12.3.2023",
-      author: "Adam Grik",
-      dateCreated: new Date(),
     },
     {
-      id: 3,
+      link: "matematika",
       name: "Elektrotechnika",
       description: "Otazky na test z elektrotechniky 12.3.2023",
-      author: "Adam Grik",
-      dateCreated: new Date(),
     },
     {
-      id: 4,
+      link: "matematika",
       name: "Sieťové technológie",
       description: "Otazky na test z sieťových technológii 12.3.2023",
-      author: "Adam Grik",
-      dateCreated: new Date(),
     },
     {
-      id: 5,
+      link: "matematika",
       name: "Komunikačné technológie",
       description: "Otazky na test z komunikačných technológii 12.3.2023",
-      author: "Adam Grik",
-      dateCreated: new Date(),
     },
     {
-      id: 6,
+      link: "matematika",
       name: "Elektronika",
       description: "Otazky na test z elektroniky 12.3.2023",
-      author: "Adam Grik",
-      dateCreated: new Date(),
     },
   ];
   return <Cards data={dummyCollectionData} />;

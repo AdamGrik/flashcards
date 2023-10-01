@@ -6,11 +6,9 @@ type CardProps = {
 };
 
 type CardsData = {
-  id: number;
   name: string;
   description: string;
-  author: string;
-  dateCreated: Date;
+  link: string;
 };
 
 const Cards = (props: CardProps) => {
@@ -24,8 +22,7 @@ const Cards = (props: CardProps) => {
           key={i}
           title={card.name}
           description={card.description}
-          author={card.author}
-          dateCreated={card.dateCreated}
+          link={card.link}
         />
       ))}
     </div>
