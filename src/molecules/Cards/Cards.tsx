@@ -13,7 +13,6 @@ type CardsData = {
 
 const Cards = (props: CardProps) => {
   const { data } = props;
-  console.log(data);
 
   return (
     <div className="fc-cards">

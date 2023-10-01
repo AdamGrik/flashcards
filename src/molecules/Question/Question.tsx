@@ -5,9 +5,10 @@ import Button from "../../atoms/Button/Button";
 
 type QuestionProps = {
   data: ExamQuestionProps;
+  onNext: (selectedOption: string, answer: string) => void;
 };
 const Question = (props: QuestionProps) => {
-  const { data } = props;
+  const { data, onNext } = props;
   const [selectedOption, setSelectedOption] = useState<string>("");
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -30,7 +31,10 @@ const Question = (props: QuestionProps) => {
             </div>
           ))}
 
-          <Button title={"Next"} onClick={() => console.log("click")} />
+          <Button
+            title={"Next"}
+            onClick={() => onNext(selectedOption, data.answer)}
+          />
         </div>
       </div>
     </div>

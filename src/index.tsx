@@ -2,19 +2,20 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import Toolbar from "./molecules/Tooblar/Toolbar";
 import "./index.scss";
-import Body from "./oragnisms/Body/Body";
+import Subjects from "./oragnisms/Subjects/Subjects";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Exam from "./oragnisms/Exam/Exam";
 import { matQuestions } from "./utils/Questions/Matematika";
+import { sjlQuestions } from "./utils/Questions/Slovencina";
 
 const App: React.FC = () => {
   return (
     <HashRouter>
       <Toolbar />
       <Routes>
-        <Route path="/" element={<Body />} />
+        <Route path="/" element={<Subjects />} />
         <Route path="/matematika" element={<Exam data={matQuestions} />} />
-        <Route path="/slovencina" element={<div></div>} />
+        <Route path="/slovencina" element={<Exam data={sjlQuestions} />} />
       </Routes>
     </HashRouter>
   );

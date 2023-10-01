@@ -18,7 +18,6 @@ const Card = (props: CardProps) => {
           <div className="fc-card-title">{title}</div>
           <div className="fc-card-desc">{description}</div>
         </div>
-        <div className="fc-card-footer"></div>
       </div>
     </Link>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Exam.scss";
 import Question from "../../molecules/Question/Question";
 
@@ -11,9 +11,33 @@ export type ExamQuestionProps = {
 type ExamProps = {
   data: ExamQuestionProps[];
 };
+
 const Exam = (props: ExamProps) => {
   const { data } = props;
-  return <Question data={data[0]} />;
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [isEndOfExam, setIsEndOfExam] = useState(false);
+
+  const handleNext = (selectedOption: string, answer: string) => {
+    if (selectedOption === answer) {
+      setScore(score + 1);
+    }
+    if (currentQuestion !== data.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      setIsEndOfExam(true);
+    }
+  };
+
+  return (
+    <div>
+      {isEndOfExam ? (
+        <div>END : {score}</div>
+      ) : (
+        <Question data={data[currentQuestion]} onNext={handleNext} />
+      )}
+    </div>
+  );
 };
 
 export default Exam;

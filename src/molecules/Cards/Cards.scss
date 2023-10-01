@@ -1,6 +1,14 @@
+@import "../../variables.scss";
+
 .fc-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 15%;
+  margin: 0% 15%;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    width: 33%;
+  }
 }

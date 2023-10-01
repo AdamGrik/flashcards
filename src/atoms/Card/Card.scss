@@ -14,14 +14,6 @@
     background-color: $secondary-color;
     cursor: pointer;
   }
-  .fc-card-footer {
-    display: flex;
-    color: $secondary-text-color;
-    justify-content: space-between;
-    .fc-card-footer-author {
-      color: $primary-color;
-    }
-  }
   .fc-card-title {
     font-size: x-large;
     margin-bottom: 8px;
