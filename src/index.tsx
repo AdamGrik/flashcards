@@ -7,6 +7,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Exam from "./oragnisms/Exam/Exam";
 import { matQuestions } from "./utils/Questions/Matematika";
 import { sjlQuestions } from "./utils/Questions/Slovencina";
+import { elkQuestions } from "./utils/Questions/Elektrotechnika";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Subjects />} />
         <Route path="/matematika" element={<Exam data={matQuestions} />} />
         <Route path="/slovencina" element={<Exam data={sjlQuestions} />} />
+        <Route path="/elektrotechnika" element={<Exam data={elkQuestions} />} />
       </Routes>
     </HashRouter>
   );

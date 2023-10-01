@@ -10,7 +10,7 @@ export const SubjectsData = [
     description: "Otazky na test z Slovencina 12.3.2023",
   },
   {
-    link: "matematika",
+    link: "elektrotechnika",
     name: "Elektrotechnika",
     description: "Otazky na test z elektrotechniky 12.3.2023",
   },
