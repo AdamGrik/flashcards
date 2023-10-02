@@ -15,17 +15,17 @@ export const SubjectsData = [
     description: "Otazky na test z elektrotechniky 12.3.2023",
   },
   {
-    link: "sietovetechnologie",
+    link: "SietoveTechnologie",
     name: "Sieťové technológie",
     description: "Otazky na test zo sieťových technológii 12.3.2023",
   },
   {
-    link: "matematika",
+    link: "KomunikacneTechnologie",
     name: "Komunikačné technológie",
     description: "Otazky na test z komunikačných technológii 12.3.2023",
   },
   {
-    link: "matematika",
+    link: "elektronika",
     name: "Elektronika",
     description: "Otazky na test z elektroniky 12.3.2023",
   },
