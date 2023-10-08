@@ -32,7 +32,9 @@ const Exam = (props: ExamProps) => {
   return (
     <div>
       {isEndOfExam ? (
-        <div>END : {score}</div>
+        <div>
+          Score : {score} / {currentQuestion + 1}
+        </div>
       ) : (
         <Question data={data[currentQuestion]} onNext={handleNext} />
       )}

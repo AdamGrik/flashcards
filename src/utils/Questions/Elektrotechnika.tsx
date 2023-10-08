@@ -1,3 +1,3 @@
 export const elkQuestions = [
-  { question: "odpor", options: ["U", "I", "Q", "R"], answer: "R" },
+  { question: "Odpor", options: ["U", "I", "Q", "R"], answer: "R" },
 ];

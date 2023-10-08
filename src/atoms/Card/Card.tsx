@@ -13,7 +13,7 @@ const Card = (props: CardProps) => {
 
   return (
     <Link to={link}>
-      <div className="fc-card">
+      <div className={"fc-card"}>
         <div>
           <div className="fc-card-title">{title}</div>
           <div className="fc-card-desc">{description}</div>

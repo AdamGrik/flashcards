@@ -1,3 +1,3 @@
 export const ktoQuestions = [
-  { question: "spravne je c", options: ["a", "b", "c", "d"], answer: "c" },
+  { question: "Spravne je c", options: ["a", "b", "c", "d"], answer: "c" },
 ];

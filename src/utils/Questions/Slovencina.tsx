@@ -1,3 +1,3 @@
 export const sjlQuestions = [
-  { question: "spravne je b", options: ["a", "b", "c", "d"], answer: "b" },
+  { question: "Spravne je b", options: ["a", "b", "c", "d"], answer: "b" },
 ];
