@@ -11,7 +11,7 @@ const Toolbar = () => {
   return (
     <div className="fc-toolbar">
       <div className="fc-toolbar-left" onClick={handleClick}>
-        Maturitné otázky
+        Maturitné testy
       </div>
       <div className="fc-toolbar-right">
         <Button title="Settings"></Button>
