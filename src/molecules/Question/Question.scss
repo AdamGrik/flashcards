@@ -1,6 +1,7 @@
 @import "../../variables.scss";
 .fc-question {
   font-size: xx-large;
+  color: $text-color;
   margin-left: 18px;
   .fc-question-radio {
     width: 20px;
@@ -9,6 +10,13 @@
     margin-bottom: 16px;
     &:hover {
       cursor: pointer;
+      font-size: xx-small;
     }
   }
+}
+.buttons {
+  display: flex;
+}
+.prev-button {
+  margin-right: 4px;
 }

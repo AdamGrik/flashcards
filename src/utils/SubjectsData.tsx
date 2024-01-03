@@ -10,24 +10,9 @@ export const SubjectsData = [
     description: "Otázky na test zo slovenského jazyka a literatúry",
   },
   {
-    link: "elektrotechnika",
-    name: "Elektrotechnika",
-    description: "Otázky na test z elektrotechniky ",
-  },
-  {
-    link: "SietoveTechnologie",
-    name: "Sieťové technológie",
-    description: "Otázky na test zo sieťových technológii ",
-  },
-  {
-    link: "KomunikacneTechnologie",
-    name: "Komunikačné technológie",
-    description: "Otázky na test z komunikačných technológii ",
-  },
-  {
-    link: "elektronika",
-    name: "Elektronika",
-    description: "Otázky na test z elektroniky ",
+    link: "TCOZ",
+    name: "Teoretická časť odbornej zložky",
+    description: "Otázky na test z TČOZ",
   },
   {
     link: "AnglickyJazyk ",
