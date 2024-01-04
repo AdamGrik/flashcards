@@ -1,5 +1,6 @@
 @import "../../variables.scss";
 .fc-question {
+  display: flex;
   justify-content: center;
   font-size: xx-large;
   color: $text-color;

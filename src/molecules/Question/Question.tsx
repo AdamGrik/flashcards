@@ -21,9 +21,7 @@ const Question = (props: QuestionProps) => {
   return (
     <div className="fc-question">
       <div>
-        <div className="fc-question-top"> </div>
         {data.question}
-        </div>
         <div>
           {data.options.map((option, index) => (
             <div key={index}>
@@ -49,6 +47,7 @@ const Question = (props: QuestionProps) => {
             </div>
           </div>
         </div>
+      </div>
       </div>
   );
 };
