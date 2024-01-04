@@ -1,24 +1,27 @@
 @import "../../variables.scss";
 .fc-question {
   display: flex;
-  justify-content: center;
   font-size: xx-large;
   color: $text-color;
-  margin-left: 18px;
-  .fc-question-radio {
-    width: 20px;
-    height: 20px;
-    margin: 8px;
-    margin-bottom: 16px;
-    &:hover {
-      cursor: pointer;
-      font-size: xx-small;
-    }
+  margin-top: 15%;
+  margin-left: 42%;
+  margin-right: 30%;
+  
+ }
+.fc-question-radio {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  margin-bottom: 30px;
+  &:hover {
+    cursor: pointer;
+    font-size: xx-small;
   }
 }
 .buttons {
   display: flex;
+
 }
 .prev-button {
-  margin-right: 4px;
+  margin-right: 250px;
 }
