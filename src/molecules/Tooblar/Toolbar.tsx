@@ -18,7 +18,7 @@ const Toolbar = () => {
         Maturitné testy
       </div>
       <div className="fc-toolbar-right">
-        <Button title="Database" onClick={databaseClick}></Button>
+        <Button title="Database" onClick={databaseClick} />
       </div>
     </div>
   );

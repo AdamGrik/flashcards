@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Question.scss";
 import { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 import Button from "../../atoms/Button/Button";
 
 type QuestionProps = {
   data: ExamQuestionProps;
-  onNext: (selectedOption: string, answer: string) => void;
+  onNext: (selectedOption: string, questionNumber: number) => void;
   onPrevious: () => void;
 };
 
@@ -14,14 +14,22 @@ const Question = (props: QuestionProps) => {
 
   const [selectedOption, setSelectedOption] = useState<string>("");
 
+  useEffect(() => {
+    if (data && data.selected) {
+      setSelectedOption(data.selected);
+    } else {
+      setSelectedOption("");
+    }
+  }, [data]);
+
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);
   };
 
-  return (
+  return data && data.questionNumber !== undefined ? (
     <div className="fc-question">
       <div>
-        {data.question}
+        {data.questionNumber + 1}. {data.question}
         <div>
           {data.options.map((option, index) => (
             <div key={index}>
@@ -42,14 +50,14 @@ const Question = (props: QuestionProps) => {
             <div className="next-button">
               <Button
                 title="Next"
-                onClick={() => onNext(selectedOption, data.answer)}
+                onClick={() => onNext(selectedOption, data.questionNumber ?? 0)}
               />
             </div>
           </div>
         </div>
       </div>
-      </div>
-  );
+    </div>
+  ) : null;
 };
 
 export default Question;

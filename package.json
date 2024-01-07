@@ -1,16 +1,16 @@
 {
-  "name": "flashcards",
+  "name": "otestujsapredmaturitou-webstranka",
   "version": "1.0.0",
-  "description": "Simple web app for learning using flashcards",
+  "description": "webová stránka slúžiaca pre študentov našej školy, kde si môžu formou a,b,c,d testov overiť svoje vedomosti z jednotl. maturitných predmetov",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
   "keywords": [
-    "flashcard"
+    "abcd tests"
   ],
-  "author": "Adam Grík",
+  "author": "Adam Grík, Adam Petrík",
   "license": "MIT",
   "dependencies": {
     "css-loader": "^6.8.1",

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Exam.scss";
 import Question from "../../../molecules/Question/Question";
+import EndOfExam from "../../EndOfExam/EndOfExam";
 
 export type ExamQuestionProps = {
   question: string;
   options: string[];
   answer: string;
   selected?: string;
+  questionNumber?: number;
 };
 
 type ExamProps = {
@@ -15,25 +17,39 @@ type ExamProps = {
 
 const Exam = (props: ExamProps) => {
   const { data } = props;
-
+  const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [answers, setAnswers] = useState<string[]>([]);
+  const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
 
-  const [isEndOfExam, setIsEndOfExam] = useState(false);
+  useEffect(() => {
+    const newData = data.map((question, index) => {
+      return { ...question, selected: "", questionNumber: index };
+    });
+    setQuestionsData(newData);
+  }, [data]);
 
-  const handleNext = (selectedOption: string, answer: string) => {
-    const currentAnswers = [...answers, answer];
+  const calculateFinalScore = (questions: ExamQuestionProps[]) => {
+    const correctAnswers = questions.filter(
+      (question) => question.answer === question.selected
+    );
+    return correctAnswers.length;
+  };
 
-    setAnswers(currentAnswers);
+  const handleNext = (selectedOption: string, questionNumber: number) => {
+    const newQuestionsData = questionsData.map((question) => {
+      if (question.questionNumber === questionNumber) {
+        return { ...question, selected: selectedOption };
+      }
+      return question;
+    });
 
-    if (selectedOption === answer) {
-      setScore(score + 1);
-    }
+    setQuestionsData(newQuestionsData);
+
     if (currentQuestion !== data.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      setIsEndOfExam(true);
+      const finalScore = calculateFinalScore(newQuestionsData);
+      setEndOfExam({ finished: true, score: finalScore });
     }
   };
 
@@ -45,13 +61,13 @@ const Exam = (props: ExamProps) => {
 
   return (
     <div>
-      {isEndOfExam ? (
-        <div className="end-of-exam">
-          Score: {score} / {currentQuestion + 1}
-        </div>
+      {endOfExam.finished ? (
+        <EndOfExam
+          questions={questionsData}
+          score={endOfExam.score}></EndOfExam>
       ) : (
         <Question
-          data={data[currentQuestion]}
+          data={questionsData[currentQuestion]}
           onNext={handleNext}
           onPrevious={handlePrevious}
         />
