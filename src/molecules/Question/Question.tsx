@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Question.scss";
-import { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
+import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 import Button from "../../atoms/Button/Button";
 
 type QuestionProps = {
@@ -28,11 +28,13 @@ const Question = (props: QuestionProps) => {
 
   return data && data.questionNumber !== undefined ? (
     <div className="fc-question">
-      <div>
-        {data.questionNumber + 1}. {data.question}
+      <div className="fc-question-border">
+        <div className="fc-question-top">
+          {data.questionNumber + 1}. / 20 {data.question}
+        </div>
         <div>
           {data.options.map((option, index) => (
-            <div key={index}>
+            <div key={index} className="fc-question-bottom">
               <input
                 className="fc-question-radio"
                 type="radio"
