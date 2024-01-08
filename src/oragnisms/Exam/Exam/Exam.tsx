@@ -22,7 +22,8 @@ const Exam = (props: ExamProps) => {
   const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
 
   useEffect(() => {
-    const newData = data.map((question, index) => {
+    const shuffledData = shuffleArray(data);
+    const newData = shuffledData.map((question, index) => {
       return { ...question, selected: "", questionNumber: index };
     });
     setQuestionsData(newData);
@@ -34,7 +35,17 @@ const Exam = (props: ExamProps) => {
     );
     return correctAnswers.length;
   };
-
+  const shuffleArray = (array: any[]) => {
+    const shuffledArray = array.slice();
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [
+        shuffledArray[j],
+        shuffledArray[i],
+      ];
+    }
+    return shuffledArray;
+  };
   const handleNext = (selectedOption: string, questionNumber: number) => {
     const newQuestionsData = questionsData.map((question) => {
       if (question.questionNumber === questionNumber) {
