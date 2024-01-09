@@ -10,13 +10,13 @@ export const SubjectsData = [
     description: "Otázky na test zo slovenského jazyka a literatúry",
   },
   {
-    link: "TCOZ",
-    name: "Teoretická časť odbornej zložky",
-    description: "Otázky na test z TČOZ",
-  },
-  {
     link: "AnglickyJazyk ",
     name: "Anglický Jazyk",
     description: "Otázky na test z anglického jazyka ",
+  },
+  {
+    link: "TCOZ",
+    name: "Teoretická časť odbornej zložky",
+    description: "Otázky na test z TČOZ",
   },
 ];
