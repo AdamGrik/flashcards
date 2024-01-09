@@ -25,13 +25,14 @@ const Question = (props: QuestionProps) => {
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);
   };
-  const isFinalQuestion = data && data.questionNumber === 14;
+  const isFinalQuestion =
+    data && data.questionNumber === (data.totalQuestions ?? 0) - 1;
 
   return data && data.questionNumber !== undefined ? (
     <div className="fc-question">
       <div className="fc-question-border">
         <div className="fc-question-top">
-          {data.questionNumber + 1}. / 15 {data.question}
+          {data.questionNumber + 1}. / {data.totalQuestions} {data.question}
         </div>
         <div>
           {data.options.map((option, index) => (

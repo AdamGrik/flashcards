@@ -9,6 +9,7 @@ export type ExamQuestionProps = {
   answer: string;
   selected?: string;
   questionNumber?: number;
+  totalQuestions?: number;
 };
 
 type ExamProps = {
@@ -17,6 +18,7 @@ type ExamProps = {
 
 const Exam = (props: ExamProps) => {
   const { data } = props;
+  const totalQuestions = data.length;
   const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
@@ -78,7 +80,10 @@ const Exam = (props: ExamProps) => {
           score={endOfExam.score}></EndOfExam>
       ) : (
         <Question
-          data={questionsData[currentQuestion]}
+          data={{
+            ...questionsData[currentQuestion],
+            totalQuestions: totalQuestions,
+          }}
           onNext={handleNext}
           onPrevious={handlePrevious}
         />
