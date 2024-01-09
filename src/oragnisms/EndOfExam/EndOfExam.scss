@@ -8,16 +8,18 @@
     color: $text-color;
   }
   .fc-end-of-exam-questions {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0% 15%;
+    margin: 0% 30%;
     .fc-end-of-exam-question {
       border: 1px solid black;
       padding: 28px;
       border-radius: 10px;
       margin: 8px;
-
+      .fc-end-of-exam-question-question {
+        font-weight: bold;
+      }
       &.fc-end-of-exam-question-incorrect {
         border: 1px solid red;
       }

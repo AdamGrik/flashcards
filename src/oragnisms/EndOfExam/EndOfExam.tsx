@@ -13,7 +13,7 @@ const endOfExam = (props: ExamProps) => {
   return (
     <div className="fc-end-of-exam">
       <div className="fc-end-of-exam-score">
-        Score: {score} / {questions.length}
+        Skóre: {score} / {questions.length}
       </div>
       <div className="fc-end-of-exam-questions">
         {questions.map((question) => {
@@ -23,7 +23,9 @@ const endOfExam = (props: ExamProps) => {
               : "fc-end-of-exam-question-incorrect";
           return (
             <div className={"fc-end-of-exam-question " + answerClass}>
-              <div>{question.question}</div>
+              <div className="fc-end-of-exam-question-question">
+                {question.question}
+              </div>
               <div>Vaša odpoveď: {question.selected}</div>
               <div>Správna odpoveď: {question.answer}</div>
             </div>

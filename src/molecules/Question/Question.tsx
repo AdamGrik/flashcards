@@ -25,12 +25,13 @@ const Question = (props: QuestionProps) => {
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);
   };
+  const isFinalQuestion = data && data.questionNumber === 14;
 
   return data && data.questionNumber !== undefined ? (
     <div className="fc-question">
       <div className="fc-question-border">
         <div className="fc-question-top">
-          {data.questionNumber + 1}. / 20 {data.question}
+          {data.questionNumber + 1}. / 15 {data.question}
         </div>
         <div>
           {data.options.map((option, index) => (
@@ -47,13 +48,24 @@ const Question = (props: QuestionProps) => {
           ))}
           <div className="buttons">
             <div className="prev-button">
-              <Button title="Previous" onClick={onPrevious} />
+              <Button title="Späť" onClick={onPrevious} />
             </div>
             <div className="next-button">
-              <Button
-                title="Next"
-                onClick={() => onNext(selectedOption, data.questionNumber ?? 0)}
-              />
+              {isFinalQuestion ? (
+                <Button
+                  title="Koniec testu"
+                  onClick={() =>
+                    onNext(selectedOption, data.questionNumber ?? 0)
+                  }
+                />
+              ) : (
+                <Button
+                  title="Ďalej"
+                  onClick={() =>
+                    onNext(selectedOption, data.questionNumber ?? 0)
+                  }
+                />
+              )}
             </div>
           </div>
         </div>
