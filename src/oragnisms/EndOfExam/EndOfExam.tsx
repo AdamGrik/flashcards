@@ -24,6 +24,9 @@ const endOfExam = (props: ExamProps) => {
         Skóre: {score} / {questions.length}
       </div>
       <div className="fc-percentage">{Math.round(percentage)} %</div>
+      <div className="fc-main-page-button">
+        <Button title="Späť na hlavnú stránku" onClick={handleClick} />
+      </div>
       <div className="fc-end-of-exam-questions">
         {questions.map((question) => {
           const answerClass =
@@ -40,9 +43,6 @@ const endOfExam = (props: ExamProps) => {
             </div>
           );
         })}
-      </div>
-      <div className="fc-main-page-button">
-        <Button title="Späť na hlavnú stránku" onClick={handleClick} />
       </div>
     </div>
   );
