@@ -11,6 +11,7 @@
 
   .fc-toolbar-left {
     color: $background-color;
+    display: flex;
     font-size: xx-large;
     &:hover {
       cursor: pointer;
@@ -22,5 +23,12 @@
     .fc-button:first-of-type {
       margin-right: 4px;
     }
+  }
+  .fc-toolbar-logo {
+    height: 34px;
+    width: 34px;
+    background-image: url("../../images/logo.jpg");
+    background-size: cover;
+    margin-right: 12px;
   }
 }

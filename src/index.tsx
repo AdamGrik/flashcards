@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import Toolbar from "./molecules/Tooblar/Toolbar";
 import "./index.scss";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Database from "./oragnisms/Exam/Database/Database";
+
 import Exam from "./oragnisms/Exam/Exam/Exam";
 import { matQuestions } from "./utils/Questions/Matematika";
 import { sjlQuestions } from "./utils/Questions/Slovencina";
@@ -19,7 +19,6 @@ const App = () => {
       <Toolbar />
       <Routes>
         <Route path="/" element={<Cards data={SubjectsData}></Cards>} />
-        <Route path="/database" element={<Database />} />
         <Route path="/matematika" element={<Exam data={matQuestions} />} />
         <Route path="/slovencina" element={<Exam data={sjlQuestions} />} />
         <Route path="/TCOZ" element={<Exam data={tcozQuestions} />} />

@@ -8,18 +8,14 @@ const Toolbar = () => {
   const handleClick = () => {
     navigate("");
   };
-  const databaseClick = () => {
-    navigate("database");
-  };
 
   return (
     <div className="fc-toolbar">
       <div className="fc-toolbar-left" onClick={handleClick}>
-        Maturitné testy
+        <div className="fc-toolbar-logo"></div>
+        Otestuj sa pred maturitou
       </div>
-      <div className="fc-toolbar-right">
-        <Button title="Databáza" onClick={databaseClick} />
-      </div>
+      <div className="fc-toolbar-right"></div>
     </div>
   );
 };
