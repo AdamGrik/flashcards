@@ -2,6 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import Toolbar from "./molecules/Tooblar/Toolbar";
 import "./index.scss";
+import "./images/images.scss";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 import Exam from "./oragnisms/Exam/Exam/Exam";
