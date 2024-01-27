@@ -6,9 +6,24 @@
   padding: 12px;
   font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
   color: $accent-color;
-
   &:hover {
     background-color: $secondary-color;
     cursor: pointer;
+  }
+
+  &.fc-button-Ďalej {
+    &:hover {
+      background-color: green;
+    }
+  }
+  &.fc-button-Späť {
+    &:hover {
+      background-color: blue;
+    }
+  }
+  &.fc-button-Koniec {
+    &:hover {
+      background-color: red;
+    }
   }
 }

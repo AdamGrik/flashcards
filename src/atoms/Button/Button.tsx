@@ -10,7 +10,7 @@ const Button = (props: ButtonProps) => {
   const { title, onClick } = props;
 
   return (
-    <button className={"fc-button "} onClick={onClick}>
+    <button className={`fc-button fc-button-${title}`} onClick={onClick}>
       {title}
     </button>
   );

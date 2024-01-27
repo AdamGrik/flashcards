@@ -34,6 +34,7 @@ const Question = (props: QuestionProps) => {
         <div className="fc-question-top">
           {data.questionNumber + 1}. / {data.totalQuestions} {data.question}
         </div>
+        <div className="fc-question-img">{data.image}</div>
         <div>
           {data.options.map((option, index) => (
             <div key={index} className="fc-question-bottom">
@@ -54,7 +55,7 @@ const Question = (props: QuestionProps) => {
             <div className="next-button">
               {isFinalQuestion ? (
                 <Button
-                  title="Koniec testu"
+                  title="Koniec"
                   onClick={() =>
                     onNext(selectedOption, data.questionNumber ?? 0)
                   }
