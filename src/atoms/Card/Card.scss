@@ -8,7 +8,7 @@
   border: $border-color 2px solid;
   padding: 12px;
   border-radius: 10px;
-  height: 128px;
+  height: 140px;
 
   &:hover {
     background-color: $secondary-color;
@@ -22,7 +22,7 @@
     color: $secondary-text-color;
   }
   &.fc-card-matematika {
-    background-image: url("../../images/mat.jpg");
+    background-image: url("../../images/matika.jpg");
   }
   &.fc-card-slovencina {
     background-image: url("../../images/sjl.jpg");
