@@ -7,7 +7,7 @@ export type ExamQuestionProps = {
   question: string;
   options: string[];
   answer: string;
-  image?: any;
+  image?: string;
   selected?: string;
   questionNumber?: number;
   totalQuestions?: number;

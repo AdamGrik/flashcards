@@ -34,7 +34,9 @@ const Question = (props: QuestionProps) => {
         <div className="fc-question-top">
           {data.questionNumber + 1}. / {data.totalQuestions} {data.question}
         </div>
-        <div className="fc-question-img">{data.image}</div>
+        {data.image !== undefined ? (
+          <div className={`fc-question-img fc-image-${data.image}`} />
+        ) : null}
         <div>
           {data.options.map((option, index) => (
             <div key={index} className="fc-question-bottom">
