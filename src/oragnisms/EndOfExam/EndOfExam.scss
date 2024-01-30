@@ -27,6 +27,12 @@
         font-weight: bold;
         font-size: large;
       }
+      .fc-question-img {
+        width: 500px;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
       &.fc-end-of-exam-question-incorrect {
         border: 1px solid red;
       }
@@ -40,5 +46,12 @@
     justify-content: center;
     margin-top: 4px;
     margin-bottom: 12px;
+  }
+  .fc-end-of-exam-question-options {
+    margin-top: 6px;
+    margin-bottom: 14px;
+  }
+  .fc-end-of-exam-question-option {
+    margin-bottom: 4px;
   }
 }

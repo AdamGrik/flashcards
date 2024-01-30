@@ -52,12 +52,13 @@ const Question = (props: QuestionProps) => {
           ))}
           <div className="buttons">
             <div className="prev-button">
-              <Button title="Späť" onClick={onPrevious} />
+              <Button title="Späť" onClick={onPrevious} id="back" />
             </div>
             <div className="next-button">
               {isFinalQuestion ? (
                 <Button
                   title="Koniec"
+                  id="end"
                   onClick={() =>
                     onNext(selectedOption, data.questionNumber ?? 0)
                   }
@@ -65,6 +66,7 @@ const Question = (props: QuestionProps) => {
               ) : (
                 <Button
                   title="Ďalej"
+                  id="next"
                   onClick={() =>
                     onNext(selectedOption, data.questionNumber ?? 0)
                   }

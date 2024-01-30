@@ -23,14 +23,26 @@
   }
   &.fc-card-matematika {
     background-image: url("../../images/matika.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   &.fc-card-slovencina {
     background-image: url("../../images/sjl.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   &.fc-card-AnglickyJazyk {
     background-image: url("../../images/anj.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   &.fc-card-TCOZ {
     background-image: url("../../images/elk.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

@@ -38,6 +38,20 @@ const endOfExam = (props: ExamProps) => {
               <div className="fc-end-of-exam-question-question">
                 {question.question}
               </div>
+              {question.image !== undefined ? (
+                <div
+                  className={`fc-question-img fc-image-${question.image}`}></div>
+              ) : null}
+              <div className="fc-end-of-exam-question-options">
+                {question.options.map((option, index) => (
+                  <div key={index} className="fc-end-of-exam-question-option">
+                    <span className="option-label">
+                      {String.fromCharCode(97 + index)}.){" "}
+                    </span>
+                    {option}
+                  </div>
+                ))}
+              </div>
               <div>Vaša odpoveď: {question.selected}</div>
               <div>Správna odpoveď: {question.answer}</div>
             </div>

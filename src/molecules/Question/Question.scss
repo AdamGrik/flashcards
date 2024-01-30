@@ -17,13 +17,16 @@
     margin-bottom: 20px;
     font-weight: bold;
   }
+
   .fc-question-img {
-    height: 250px;
-    width: 100%;
+    width: 500px;
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .fc-question-bottom {
     display: flex;
-
     font-size: x-large;
     color: $text-color;
     margin-bottom: 8px;
