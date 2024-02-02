@@ -37,9 +37,16 @@ const endOfExam = (props: ExamProps) => {
 
           return question && question.questionNumber !== undefined ? (
             <div className={"fc-end-of-exam-question " + answerClass}>
-              <div className="fc-end-of-exam-question-question">
-                {question.questionNumber + 1}. {question.question}
-              </div>
+              {question.textQuestion !== undefined ? (
+                <div className="fc-end-of-exam-question-question">
+                  {" "}
+                  {question.questionNumber + 1}. {question.textQuestion}
+                </div>
+              ) : (
+                <div className="fc-end-of-exam-question-question">
+                  {question.questionNumber + 1}. {question.question}
+                </div>
+              )}
               {question.image !== undefined ? (
                 <div
                   className={`fc-question-img fc-image-${question.image}`}></div>

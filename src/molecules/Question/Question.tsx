@@ -34,6 +34,8 @@ const Question = (props: QuestionProps) => {
         <div className="fc-question-top">
           {data.questionNumber + 1}. / {data.totalQuestions} {data.question}
         </div>
+        <div>{data.text}</div>
+        <div className="fc-text-question"> {data.textQuestion}</div>
         {data.image !== undefined ? (
           <div className={`fc-question-img fc-image-${data.image}`} />
         ) : null}
@@ -57,7 +59,7 @@ const Question = (props: QuestionProps) => {
             <div className="next-button">
               {isFinalQuestion ? (
                 <Button
-                  title="Koniec"
+                  title="Koniec testu"
                   id="end"
                   onClick={() =>
                     onNext(selectedOption, data.questionNumber ?? 0)

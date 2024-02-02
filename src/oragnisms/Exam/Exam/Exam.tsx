@@ -11,6 +11,8 @@ export type ExamQuestionProps = {
   selected?: string;
   questionNumber?: number;
   totalQuestions?: number;
+  text?: string;
+  textQuestion?: string;
 };
 
 type ExamProps = {
