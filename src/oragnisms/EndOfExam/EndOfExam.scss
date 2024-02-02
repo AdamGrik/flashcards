@@ -49,9 +49,22 @@
   }
   .fc-end-of-exam-question-options {
     margin-top: 6px;
-    margin-bottom: 14px;
   }
   .fc-end-of-exam-question-option {
     margin-bottom: 4px;
+  }
+  .fc-end-of-exam-question-correct-answer {
+    border: lawngreen 1px solid;
+    margin-bottom: 4px;
+    .correct-answer {
+      float: right;
+    }
+  }
+  .fc-end-of-exam-question-selected-answer {
+    border: red 1px solid;
+    margin-bottom: 4px;
+    .your-answer {
+      float: right;
+    }
   }
 }
