@@ -49,6 +49,7 @@ const Question = (props: QuestionProps) => {
                 checked={selectedOption === option}
                 onChange={handleOptionChange}
               />
+              <span className="abcd">{String.fromCharCode(97 + index)}.) </span>{" "}
               {option}
             </div>
           ))}
