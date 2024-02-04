@@ -108,7 +108,7 @@ export const tcozQuestions = [
     answer: "Transportná",
   },
   {
-    question: "9.	Ktoré vrstvy OSI modelu patria do aplikačného TCP/IP modelu ?",
+    question: "Ktoré vrstvy OSI modelu patria do aplikačného TCP/IP modelu ?",
     options: [
       "Aplikačná, prezentačná a relačná",
       "Fyzická, linková a sieťová",
@@ -120,7 +120,7 @@ export const tcozQuestions = [
   {
     question: "Aká je funkcia linkovej vrstvy OSI modelu ?",
     options: [
-      "Preniesť rámec po jednom sieťovom segmente ",
+      "Preniesť rámec po jednom sieťovom segmente",
       "Dopraviť packet do cieľovej siete",
       "Kódovanie, kompresia, kryptovanie",
       "Preniesť bity po médiu",
@@ -142,6 +142,54 @@ export const tcozQuestions = [
       "UDP je rýchlejší, ale menej spoľahlivý než TCP",
     ],
     answer: "UDP je rýchlejší, ale menej spoľahlivý než TCP",
+  },
+  {
+    question: "Ktorá z nasledujúcich IP adries patrí medzi súkromné adresy ?",
+    options: ["168.182.4.2", "192.168.2.4", "80.12.2.4", "126.80.4.2"],
+    answer: "192.168.2.4",
+  },
+  {
+    question: "Na čo slúži DHCP ?",
+    options: [
+      "Na preklad textových adries na IP adresy",
+      "Na automatické prideľovanie konfigurácii zariadeniam v sieti",
+      "Na automatické prideľovanie MAC adries",
+      "Na určenie príslušnosti rámca k určitej VLAN",
+    ],
+    answer: "Na automatické prideľovanie konfigurácii zariadeniam v sieti",
+  },
+  {
+    question: "Ktorá komunikácia posiela správu najviac jednému zariadeniu ?",
+    options: ["Anycast", "Unicast a broadcast", "Anycast a unicast", "Unicast"],
+    answer: "Anycast a unicast",
+  },
+  {
+    question:
+      "Pri ktorej komunikácii odpovedá prvé zariadenie, ktoré pozná odpoveď ?",
+    options: ["Unicast", "Multicast", "Broadcast", "Anycast"],
+    answer: "Anycast",
+  },
+  {
+    question: "Aký je význam adresovania ?",
+    options: [
+      "Identifikuje odosielateľa a požadovaného príjemcu správy pomocou definovanej adresnej schémy",
+    ],
+    answer:
+      "Identifikuje odosielateľa a požadovaného príjemcu správy pomocou definovanej adresnej schémy",
+  },
+  {
+    question: "Prečo sa použiva segmentácia na transportnej vrstve ?",
+    options: ["a", "b", "Lebo sa tak správa ľahšie prenáša"],
+    answer: "Lebo sa tak správa ľahšie prenáša",
+  },
+  {
+    question: "Čo robí segmentácia ako funkcia transportnej vrstvy ?",
+    options: [
+      "a",
+      "Rozdelenie správy na menšie časti, pri chybe v prenose prepošleme lenpoškodený paket",
+    ],
+    answer:
+      "Rozdelenie správy na menšie časti, pri chybe v prenose prepošleme lenpoškodený paket",
   },
 ];
 /*

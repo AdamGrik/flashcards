@@ -34,7 +34,7 @@ const Pagination = (props: PaginationProps) => {
         <Button
           title={pageNumber.toString()}
           key={pageNumber}
-          id={pageNumber === selected + 1 ? "next" : undefined}
+          id={pageNumber === selected + 1 ? "pagination" : undefined}
           onClick={() => handlePageSelect(pageNumber - 1)}></Button>
       ))}
       {isFinalQuestion ? (

@@ -1,5 +1,7 @@
+@import "/src/variables.scss";
 .fc-pagination {
   display: flex;
+  justify-content: center;
   .fc-button {
     margin-right: 4px;
   }
