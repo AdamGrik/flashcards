@@ -13,6 +13,7 @@ export type ExamQuestionProps = {
   totalQuestions?: number;
   text?: string;
   textQuestion?: string;
+  subQuestionId?: number;
 };
 
 type ExamProps = {
@@ -40,18 +41,35 @@ const Exam = (props: ExamProps) => {
     );
     return correctAnswers.length;
   };
-  const shuffleArray = (array: any[]) => {
-    const shuffledArray = array.slice();
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [
-        shuffledArray[j],
-        shuffledArray[i],
-      ];
-    }
-    return shuffledArray;
+  const shuffleArray = (questions: ExamQuestionProps[]) => {
+    const shuffledArray = questions.sort(() => Math.random() - 0.5);
+
+    const groupedArray = shuffledArray.reduce(
+      (acc: ExamQuestionProps[][], obj) => {
+        const subQuestionId = obj.subQuestionId;
+        const existingGroup = acc.find(
+          (group: any) => group[0].subQuestionId === subQuestionId
+        );
+        if (existingGroup) {
+          existingGroup.push(obj);
+        } else {
+          acc.push([obj]);
+        }
+
+        return acc;
+      },
+      []
+    );
+
+    const finalArray = groupedArray.flat();
+
+    return finalArray;
   };
-  const handleNext = (selectedOption: string, questionNumber: number) => {
+  const handleQuestionChange = (
+    selectedOption: string,
+    questionNumber: number,
+    nextQuestion: number
+  ) => {
     const newQuestionsData = questionsData.map((question) => {
       if (question.questionNumber === questionNumber) {
         return { ...question, selected: selectedOption };
@@ -61,22 +79,16 @@ const Exam = (props: ExamProps) => {
 
     setQuestionsData(newQuestionsData);
 
-    if (currentQuestion !== data.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
+    if (nextQuestion <= data.length - 1) {
+      setCurrentQuestion(nextQuestion ?? currentQuestion + 1);
     } else {
       const finalScore = calculateFinalScore(newQuestionsData);
       setEndOfExam({ finished: true, score: finalScore });
     }
   };
 
-  const handlePrevious = () => {
-    if (currentQuestion !== 0) {
-      setCurrentQuestion(currentQuestion - 1);
-    }
-  };
-
   return (
-    <div>
+    <>
       {endOfExam.finished ? (
         <EndOfExam
           questions={questionsData}
@@ -87,11 +99,10 @@ const Exam = (props: ExamProps) => {
             ...questionsData[currentQuestion],
             totalQuestions: totalQuestions,
           }}
-          onNext={handleNext}
-          onPrevious={handlePrevious}
+          onQuestionChange={handleQuestionChange}
         />
       )}
-    </div>
+    </>
   );
 };
 

@@ -2,15 +2,19 @@ import React, { useEffect, useState } from "react";
 import "./Question.scss";
 import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 import Button from "../../atoms/Button/Button";
+import Pagination from "../Pagination/Pagination";
 
 type QuestionProps = {
   data: ExamQuestionProps;
-  onNext: (selectedOption: string, questionNumber: number) => void;
-  onPrevious: () => void;
+  onQuestionChange: (
+    selectedOption: string,
+    questionNumber: number,
+    nextQuestion: number
+  ) => void;
 };
 
 const Question = (props: QuestionProps) => {
-  const { data, onNext, onPrevious } = props;
+  const { data, onQuestionChange } = props;
 
   const [selectedOption, setSelectedOption] = useState<string>("");
 
@@ -53,30 +57,17 @@ const Question = (props: QuestionProps) => {
               {option}
             </div>
           ))}
-          <div className="buttons">
-            <div className="prev-button">
-              <Button title="Späť" onClick={onPrevious} id="back" />
-            </div>
-            <div className="next-button">
-              {isFinalQuestion ? (
-                <Button
-                  title="Koniec testu"
-                  id="end"
-                  onClick={() =>
-                    onNext(selectedOption, data.questionNumber ?? 0)
-                  }
-                />
-              ) : (
-                <Button
-                  title="Ďalej"
-                  id="next"
-                  onClick={() =>
-                    onNext(selectedOption, data.questionNumber ?? 0)
-                  }
-                />
-              )}
-            </div>
-          </div>
+          <Pagination
+            totalPages={data.totalQuestions ?? 0}
+            selected={data.questionNumber}
+            isFinalQuestion={isFinalQuestion}
+            onPageSelect={(selectedPage) =>
+              onQuestionChange(
+                selectedOption,
+                data.questionNumber ?? 0,
+                selectedPage
+              )
+            }></Pagination>
         </div>
       </div>
     </div>

@@ -107,6 +107,42 @@ export const tcozQuestions = [
     options: ["Fyzická", "Transportná", "Prezentačná", "Data-link"],
     answer: "Transportná",
   },
+  {
+    question: "9.	Ktoré vrstvy OSI modelu patria do aplikačného TCP/IP modelu ?",
+    options: [
+      "Aplikačná, prezentačná a relačná",
+      "Fyzická, linková a sieťová",
+      "Relačná, transportná a sieťová",
+      "Prezentačná a transportná",
+    ],
+    answer: "Aplikačná, prezentačná a relačná",
+  },
+  {
+    question: "Aká je funkcia linkovej vrstvy OSI modelu ?",
+    options: [
+      "Preniesť rámec po jednom sieťovom segmente ",
+      "Dopraviť packet do cieľovej siete",
+      "Kódovanie, kompresia, kryptovanie",
+      "Preniesť bity po médiu",
+    ],
+    answer: "Preniesť rámec po jednom sieťovom segmente",
+  },
+  {
+    question: "Na ktorej vrstve OSI modelu sa vytvorí Packet ?",
+    options: ["Transportnej", "Aplikačnej", "Sieťovej", "Relačnej"],
+    answer: "Sieťovej",
+  },
+  {
+    question:
+      "Vyber správne tvrdenie, ktoré platí pre sieťové protokoly TCP a UDP.",
+    options: [
+      "TCP je rýchlejší a spoľahlivejší ako UDP",
+      "TCP je rýchlejší, ale menej spoľahlivý než UTP protokol",
+      "UDP je rýchlejší a spoľahlivejší ako TCP",
+      "UDP je rýchlejší, ale menej spoľahlivý než TCP",
+    ],
+    answer: "UDP je rýchlejší, ale menej spoľahlivý než TCP",
+  },
 ];
 /*
 {
