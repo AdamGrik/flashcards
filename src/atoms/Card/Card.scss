@@ -9,17 +9,20 @@
   padding: 12px;
   border-radius: 10px;
   height: 140px;
+  filter: brightness(100%);  
+  transition: filter 0.4s ease;
 
   &:hover {
     background-color: $secondary-color;
     cursor: pointer;
+    filter: brightness(65%);
   }
   .fc-card-title {
     font-size: x-large;
-    margin-bottom: 8px;
+    color: rgb(247, 252, 0);
   }
   .fc-card-desc {
-    color: $secondary-text-color;
+    color: white;
   }
   &.fc-card-matematika {
     background-image: url("../../images/matika.jpg");
@@ -40,7 +43,7 @@
     background-repeat: no-repeat;
   }
   &.fc-card-TCOZ {
-    background-image: url("../../images/elk.jpg");
+    background-image: url("../../images/elektrotechnika.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

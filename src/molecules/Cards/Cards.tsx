@@ -15,15 +15,18 @@ const Cards = (props: CardProps) => {
   const { data } = props;
 
   return (
-    <div className="fc-cards">
-      {data.map((card, i) => (
-        <Card
-          key={i}
-          title={card.name}
-          description={card.description}
-          link={card.link}
-        />
-      ))}
+    <div>
+      <div className="fc-cards">
+        {data.map((card, i) => (
+          <Card
+            key={i}
+            title={card.name}
+            description={card.description}
+            link={card.link}
+          />
+        ))}
+      </div>
+      <div className="skola"></div>
     </div>
   );
 };
