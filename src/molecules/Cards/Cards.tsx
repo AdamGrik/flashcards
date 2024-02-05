@@ -7,7 +7,6 @@ type CardProps = {
 
 type CardsData = {
   name: string;
-  description: string;
   link: string;
 };
 
@@ -18,12 +17,7 @@ const Cards = (props: CardProps) => {
     <div>
       <div className="fc-cards">
         {data.map((card, i) => (
-          <Card
-            key={i}
-            title={card.name}
-            description={card.description}
-            link={card.link}
-          />
+          <Card key={i} title={card.name} link={card.link} />
         ))}
       </div>
       <div className="skola"></div>

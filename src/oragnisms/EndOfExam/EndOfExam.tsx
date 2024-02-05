@@ -9,11 +9,16 @@ type ExamProps = {
   questions: ExamQuestionProps[];
   score: number;
   percentage?: number;
+  percentageColor?:boolean;
 };
 
 const endOfExam = (props: ExamProps) => {
   const { questions, score } = props;
   const percentage = (score / questions.length) * 100;
+  const percentageColor = percentage > 33
+  ? "fc-percentage-color-pass"
+  : "fc-percentage-color-fail";
+
   const navigate = useNavigate();
   const handleClick = () => {
     navigate("/");
@@ -24,7 +29,7 @@ const endOfExam = (props: ExamProps) => {
       <div className="fc-end-of-exam-score">
         Skóre: {score} / {questions.length}
       </div>
-      <div className="fc-percentage">{Math.round(percentage)} %</div>
+      <div className={"fc-percentage " + percentageColor}>{Math.round(percentage)} %</div>
       <div className="fc-main-page-button">
         <Button title="Späť na hlavnú stránku" onClick={handleClick} />
       </div>

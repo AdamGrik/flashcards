@@ -15,7 +15,7 @@ const Toolbar = () => {
         <div className="fc-toolbar-logo"></div>
         Otestuj sa pred maturitou
       </div>
-      <div className="fc-toolbar-right"></div>
+
     </div>
   );
 };

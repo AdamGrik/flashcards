@@ -17,13 +17,6 @@
       cursor: pointer;
     }
   }
-
-  .fc-toolbar-right {
-    display: flex;
-    .fc-button:first-of-type {
-      margin-right: 4px;
-    }
-  }
   .fc-toolbar-logo {
     height: 60px;
     width: 75px;
@@ -32,4 +25,17 @@
     background-repeat: no-repeat;
     margin-right: 20px;
   }
+
+  @media (max-width: 768px){
+    .fc-toolbar{
+
+    }
+  .fc-toolbar-left{
+    font-size: x-large;
+  }
+  .fc-toolbar-logo{
+    height: 30px;
+    margin-right: 2px;
+  }
+}
 }

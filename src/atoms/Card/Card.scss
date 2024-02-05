@@ -9,20 +9,22 @@
   padding: 12px;
   border-radius: 10px;
   height: 140px;
+  box-shadow: 0 0 15px $border-color;
   filter: brightness(100%);
   transition: filter 0.4s ease;
 
   &:hover {
-    background-color: $secondary-color;
     cursor: pointer;
     filter: brightness(65%);
   }
   .fc-card-title {
-    font-size: x-large;
-    color: rgb(247, 252, 0);
-  }
-  .fc-card-desc {
-    color: white;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.31);
   }
   &.fc-card-matematika {
     background-image: url("../../images/matika.jpg");
@@ -47,5 +49,19 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  &.fc-card-ETS{
+    background-image: url("/src/images/ets.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (max-width: 768px) {
+    .fc-card-title{
+
+  
+  }
+  .fc-card{
+  }
   }
 }
