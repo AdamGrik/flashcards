@@ -22,7 +22,7 @@ type ExamProps = {
 
 const Exam = (props: ExamProps) => {
   const { data } = props;
-  const totalQuestions = data.length;
+  let totalQuestions = data.length;
   const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
@@ -79,20 +79,23 @@ const Exam = (props: ExamProps) => {
 
     setQuestionsData(newQuestionsData);
 
-    if (nextQuestion <= data.length - 1) {
+    if (nextQuestion <= totalQuestions - 1) {
       setCurrentQuestion(nextQuestion ?? currentQuestion + 1);
     } else {
       const finalScore = calculateFinalScore(newQuestionsData);
       setEndOfExam({ finished: true, score: finalScore });
     }
   };
-
+  if (data.length > 21) {
+    totalQuestions = 20;
+  }
   return (
     <>
       {endOfExam.finished ? (
         <EndOfExam
           questions={questionsData}
-          score={endOfExam.score}></EndOfExam>
+          score={endOfExam.score}
+          totalQuestions={totalQuestions}></EndOfExam>
       ) : (
         <Question
           data={{

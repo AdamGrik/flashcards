@@ -10,23 +10,22 @@
   .fc-percentage {
     display: flex;
     justify-content: center;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bolder;
     margin-top: 12px;
-      &.fc-percentage-color-pass{
-        color: green;
-      }
-      &.fc-percentage-color-fail{
-        color:red;
-      }
+    &.fc-percentage-color-pass {
+      color: green;
+    }
+    &.fc-percentage-color-fail {
+      color: red;
+    }
   }
-    
-  
+
   .fc-end-of-exam-questions {
     display: block;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0% 10%;
+    margin: 0% 15%;
     .fc-end-of-exam-question {
       border: 1px solid black;
       padding: 28px;
@@ -61,8 +60,10 @@
   }
   .fc-end-of-exam-question-option {
     margin-bottom: 4px;
-    padding: 4px;
-
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
   }
   .fc-end-of-exam-question-correct-answer {
     border: green 1px solid;
@@ -70,8 +71,9 @@
     margin-bottom: 4px;
     padding: 4px;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
     .correct-answer {
-      float: right;
       font-weight: bold;
     }
   }
@@ -81,8 +83,9 @@
     margin-bottom: 4px;
     padding: 4px;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
     .your-answer {
-      float: right;
       font-weight: bold;
     }
   }
