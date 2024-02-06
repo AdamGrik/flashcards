@@ -20,7 +20,9 @@ const Cards = (props: CardProps) => {
           <Card key={i} title={card.name} link={card.link} />
         ))}
       </div>
-      <div className="skola"></div>
+      <div className="skola">
+      <div className="skola-popis">Nejaky privitaci text pre uzivatelov, ktorý bude dlhší, čiže musím sem napísať niečo aby sme videli ako to vyzerá, keď tu je dlhší text</div>
+      </div>
     </div>
   );
 };
