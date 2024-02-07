@@ -30,13 +30,15 @@ const Pagination = (props: PaginationProps) => {
         disabled={selected === 0}
         id="back"
       />
-      {pageNumbers.map((pageNumber) => (
-        <Button
-          title={pageNumber.toString()}
-          key={pageNumber}
-          id={pageNumber === selected + 1 ? "pagination" : undefined}
-          onClick={() => handlePageSelect(pageNumber - 1)}></Button>
-      ))}
+      <div className="fc-navigation-buttons">
+        {pageNumbers.map((pageNumber) => (
+          <Button
+            title={pageNumber.toString()}
+            key={pageNumber}
+            id={pageNumber === selected + 1 ? "pagination" : undefined}
+            onClick={() => handlePageSelect(pageNumber - 1)}></Button>
+        ))}
+      </div>
       {isFinalQuestion ? (
         <Button
           title="Koniec testu"

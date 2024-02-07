@@ -2,17 +2,17 @@
 
 .fc-end-of-exam {
   .fc-end-of-exam-score {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 12px;
     font-size: xx-large;
-    color: $text-color;
   }
   .fc-percentage {
     display: flex;
     justify-content: center;
     font-size: xx-large;
     font-weight: bolder;
-    margin-top: 12px;
+    margin-top: 2px;
     &.fc-percentage-color-pass {
       color: green;
     }
@@ -20,7 +20,21 @@
       color: red;
     }
   }
-
+  .fc-grade {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin-top: 2px;
+    margin-bottom: 12px;
+  }
+  .fc-main-page-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    &:hover {
+      scale: unset;
+    }
+  }
   .fc-end-of-exam-questions {
     display: block;
     flex-wrap: wrap;
@@ -49,12 +63,7 @@
       }
     }
   }
-  .fc-main-page-button {
-    display: flex;
-    justify-content: center;
-    margin-top: 4px;
-    margin-bottom: 12px;
-  }
+
   .fc-end-of-exam-question-options {
     margin-top: 6px;
   }

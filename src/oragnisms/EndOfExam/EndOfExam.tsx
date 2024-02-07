@@ -9,15 +9,31 @@ type ExamProps = {
   questions: ExamQuestionProps[];
   score: number;
   totalQuestions: number;
-  percentage?: number;
-  percentageColor?: boolean;
 };
 
 const endOfExam = (props: ExamProps) => {
   const { questions, score, totalQuestions } = props;
-  const percentage = (score / totalQuestions) * 100;
+
+  const percentage: number = (score / totalQuestions) * 100;
   const percentageColor =
     percentage > 33 ? "fc-percentage-color-pass" : "fc-percentage-color-fail";
+  let grade: number;
+  switch (true) {
+    case percentage > 90:
+      grade = 1;
+      break;
+    case percentage > 75:
+      grade = 2;
+      break;
+    case percentage > 50:
+      grade = 3;
+      break;
+    case percentage > 25:
+      grade = 4;
+      break;
+    default:
+      grade = 5;
+  }
 
   const navigate = useNavigate();
   const handleClick = () => {
@@ -32,6 +48,7 @@ const endOfExam = (props: ExamProps) => {
       <div className={"fc-percentage " + percentageColor}>
         {Math.round(percentage)} %
       </div>
+      <div className="fc-grade">Známka: {grade}</div>
       <div className="fc-main-page-button">
         <Button title="Späť na hlavnú stránku" onClick={handleClick} />
       </div>

@@ -26,16 +26,14 @@
     margin-right: 20px;
   }
 
-  @media (max-width: 768px){
-    .fc-toolbar{
-
+  @media (max-width: 768px) {
+    .fc-toolbar-left {
+      font-size: x-large;
     }
-  .fc-toolbar-left{
-    font-size: x-large;
+    .fc-toolbar-logo {
+      height: 30px;
+      width: 40px;
+      margin-right: 10px;
+    }
   }
-  .fc-toolbar-logo{
-    height: 30px;
-    margin-right: 2px;
-  }
-}
 }

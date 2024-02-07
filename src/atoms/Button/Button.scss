@@ -9,6 +9,8 @@
   &:hover {
     background-color: $secondary-color;
     cursor: pointer;
+    scale: 1.05;
+    transition: scale 0.1s ease;
   }
   &.fc-button-next {
     background-color: rgb(0, 100, 0);
@@ -38,10 +40,12 @@
     background-color: grey;
     &:hover {
       cursor: not-allowed;
+      scale: unset;
       background-color: grey;
     }
   }
   &.fc-button-pagination {
     background-color: $secondary-color;
+    scale: 1.05;
   }
 }

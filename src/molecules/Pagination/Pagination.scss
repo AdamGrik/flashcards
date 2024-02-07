@@ -2,7 +2,13 @@
 .fc-pagination {
   display: flex;
   justify-content: center;
-  .fc-button {
-    margin-right: 4px;
+  .fc-navigation-buttons {
+    margin: 4px;
+    display: block;
+    justify-content: center;
+    .fc-button {
+      margin: 2px;
+      width: 40px;
+    }
   }
 }
