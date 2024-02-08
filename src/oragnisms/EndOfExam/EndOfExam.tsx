@@ -28,7 +28,7 @@ const endOfExam = (props: ExamProps) => {
     case percentage > 50:
       grade = 3;
       break;
-    case percentage > 25:
+    case percentage > 33:
       grade = 4;
       break;
     default:
