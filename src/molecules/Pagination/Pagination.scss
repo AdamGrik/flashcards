@@ -5,10 +5,16 @@
   .fc-navigation-buttons {
     margin: 4px;
     display: block;
-    justify-content: center;
     .fc-button {
       margin: 2px;
       width: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .fc-navigation-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 }

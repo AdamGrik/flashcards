@@ -1,3 +1,5 @@
+// TODO : REFACTOR
+
 import React from "react";
 import "./EndOfExam.scss";
 import { ExamQuestionProps } from "../Exam/Exam/Exam";
@@ -48,7 +50,10 @@ const endOfExam = (props: ExamProps) => {
       <div className={"fc-percentage " + percentageColor}>
         {Math.round(percentage)} %
       </div>
-      <div className="fc-grade">Známka: {grade}</div>
+      <div className="fc-grade-and-number">
+        <div className="fc-grade">Známka: </div>
+        <div className="fc-grade-number">{grade}</div>
+      </div>
       <div className="fc-main-page-button">
         <Button title="Späť na hlavnú stránku" onClick={handleClick} />
       </div>

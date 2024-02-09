@@ -11,7 +11,7 @@
     width: 20%;
   }
 }
-.skola {
+.fc-school-photo {
   background-image: url("/src/images/Dopravna-TT-1.png");
   height: 690px;
   width: 100%;
@@ -21,24 +21,11 @@
   display: flex;
   justify-content: center;
 }
-.skola-popis {
-  font-size: large;
-  display: flex;
-  justify-content: center;
-  color: $background-color;
-  margin-top: 10%;
-  margin-bottom: 12%;
-  margin-right: 65%;
-  padding: 50px;
-  background-color: rgba(0, 0, 0, 0.31);
-}
+
 @media (max-width: 768px) {
   .fc-cards {
     display: block;
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .skola {
-    height: 150px;
   }
 }

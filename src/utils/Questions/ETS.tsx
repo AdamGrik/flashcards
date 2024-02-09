@@ -8,7 +8,7 @@ export const etsQuestions = [
   },
   {
     question: "Na obrázku je",
-    options: ["Jednopólový dotyk", "Dvojpólový dotyk."],
+    options: ["Jednopólový dotyk", "Dvojpólový dotyk"],
     image: "obr4202",
     answer: "Dvojpólový dotyk",
   },
@@ -186,9 +186,14 @@ export const etsQuestions = [
   },
   {
     question: "Na obrázku sú",
-    options: ["Pracovné pomôcky", "Ochranné pomôcky"],
+    options: [
+      "Podstata ochrany samočinným odpojením napájania v sieti TN-S",
+      "Podstata ochrany neuzemneným pospájaním",
+      "Podstata ochrany elektrickým oddelením",
+      "Podstata ochrany samočinným odpojením napájania v sieti TT",
+    ],
     image: "obr4213",
-    answer: "Ochranné pomôcky",
+    answer: "Podstata ochrany elektrickým oddelením",
   },
   {
     question: "Na obrázku sú",
@@ -197,13 +202,8 @@ export const etsQuestions = [
     answer: "Pracovné pomôcky",
   },
   {
-    question: "Na obrázku je doplnková ochrana :",
-    options: [
-      "malým napätím SELV",
-      "prúdovým chráničom",
-      "napäťovým chráničom",
-      "malým napätím PELV",
-    ],
+    question: "Na obrázku sú",
+    options: ["Pracovné pomôcky", "Ochranné pomôcky"],
     image: "obr4215",
     answer: "Pracovné pomôcky",
   },
@@ -253,7 +253,7 @@ export const etsQuestions = [
   {
     question:
       "Vymedzený priestor na prácu na elektrickej inštalácií alebo jej v blízkosti?",
-    options: ["Dielňa", "Pracovisko", "Prevádzka", "Pracovisko"],
+    options: ["Dielňa", "Pracovisko", "Prevádzka"],
     answer: "Pracovisko",
   },
   {
@@ -305,7 +305,6 @@ export const etsQuestions = [
       "Pri informatívnych skúškach výrobkov",
       "Kedykoľvek, ale len s dohľadom alebo pod dozorom",
       "Nesmú merať skúšobným zariadením",
-      "Pri informatívnych skúškach výrobkov",
     ],
     answer: "Pri informatívnych skúškach výrobkov",
   },
@@ -638,7 +637,7 @@ export const etsQuestions = [
     question:
       "Najmenší dovolený prierez vodičov v el. inštaláciách v zásuvkových obvodoch pre Cu vodiče je:",
     options: ["4,5 mm2", "3,5 mm2", "2,5 mm2", "1,5 mm2"],
-    answer: "c2,5 mm2",
+    answer: "2,5 mm2",
   },
   {
     question:
@@ -693,7 +692,7 @@ export const etsQuestions = [
       "nebezpečné zóny",
       "inštalačné zóny",
     ],
-    answer: "dinštalačné zóny",
+    answer: "inštalačné zóny",
     image: "obr4402",
   },
   {
@@ -785,7 +784,7 @@ export const etsQuestions = [
       "L1,L2,L3,N,N",
       "W1,W2,PEN,N",
     ],
-    answer: "L1,L2,L3,N,PE",
+    answer: "L1,L2,L3,N,N",
     image: "obr4412",
   },
   {
@@ -801,7 +800,7 @@ export const etsQuestions = [
   },
   {
     question: "Urči zapojenie vývodov zásuvky v sieti TN-C v poradí 1,2,3:",
-    options: ["L1, N, N", "L1,PEN, N", "L1,PEN,PEN", "L1,N,PEN"],
+    options: ["L1,N,N", "L1,PEN,N", "L1,PEN,PEN", "L1,N,PEN"],
     answer: "L1,PEN,N",
     image: "obr4414",
   },

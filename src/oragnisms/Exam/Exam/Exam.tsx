@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Exam.scss";
 import Question from "../../../molecules/Question/Question";
 import EndOfExam from "../../EndOfExam/EndOfExam";
+import { shuffleArray } from "../../../utils/common/shuffleArray";
+import { calculateFinalScore } from "../../../utils/common/calculateFinalScore";
 
 export type ExamQuestionProps = {
   question: string;
@@ -39,36 +41,6 @@ const Exam = (props: ExamProps) => {
     setQuestionsData(newData);
   }, [data]);
 
-  const calculateFinalScore = (questions: ExamQuestionProps[]) => {
-    const correctAnswers = questions.filter(
-      (question) => question.answer === question.selected
-    );
-    return correctAnswers.length;
-  };
-  const shuffleArray = (questions: ExamQuestionProps[]) => {
-    const shuffledArray = questions.sort(() => Math.random() - 0.5);
-
-    const groupedArray = shuffledArray.reduce(
-      (acc: ExamQuestionProps[][], obj) => {
-        const subQuestionId = obj.subQuestionId;
-        const existingGroup = acc.find(
-          (group: any) => group[0].subQuestionId === subQuestionId
-        );
-        if (existingGroup) {
-          existingGroup.push(obj);
-        } else {
-          acc.push([obj]);
-        }
-
-        return acc;
-      },
-      []
-    );
-
-    const finalArray = groupedArray.flat();
-
-    return finalArray;
-  };
   const handleQuestionChange = (
     selectedOption: string,
     questionNumber: number,

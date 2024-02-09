@@ -14,18 +14,24 @@
     font-weight: bolder;
     margin-top: 2px;
     &.fc-percentage-color-pass {
-      color: green;
+      color: rgb(31, 160, 31);
     }
     &.fc-percentage-color-fail {
-      color: red;
+      color: rgb(235, 49, 49);
     }
   }
-  .fc-grade {
+  .fc-grade-and-number {
     display: flex;
     justify-content: center;
     font-size: xx-large;
-    margin-top: 2px;
     margin-bottom: 12px;
+    gap: 10px;
+    .fc-grade {
+      padding-top: 6px;
+    }
+    .fc-grade-number {
+      font-size: xxx-large;
+    }
   }
   .fc-main-page-button {
     display: flex;
@@ -69,10 +75,7 @@
   }
   .fc-end-of-exam-question-option {
     margin-bottom: 4px;
-    padding-top: 4px;
-    padding-right: 4px;
-    padding-bottom: 4px;
-    padding-left: 5px;
+    padding: 4px 4px 4px 5px;
   }
   .fc-end-of-exam-question-correct-answer {
     border: green 1px solid;

@@ -9,8 +9,10 @@
   padding: 12px;
   border-radius: 10px;
   height: 140px;
-  filter: brightness(100%);
   transition: filter 0.4s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &:hover {
     cursor: pointer;
@@ -21,39 +23,31 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    height: 50%;
-
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.31);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  .fc-card-author {
+    float: right;
+    margin-top: 75px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 6px;
+    border-radius: 10px;
+    font-size: small;
   }
   &.fc-card-matematika {
     background-image: url("../../images/matika.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   &.fc-card-slovencina {
     background-image: url("../../images/sjl.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   &.fc-card-AnglickyJazyk {
     background-image: url("../../images/anj.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   &.fc-card-TCOZ {
     background-image: url("../../images/elektrotechnika.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   &.fc-card-ETS {
     background-image: url("/src/images/ets.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
