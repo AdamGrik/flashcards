@@ -1,5 +1,6 @@
 export const etsQuestions = [
   //ochranne opatrenia
+
   {
     question: "Na obrázku je",
     options: ["Jednopólový dotyk", "Dvojpólový dotyk."],
@@ -930,5 +931,588 @@ export const etsQuestions = [
   },
   //blezkoyvody
 
+  {
+    question: "Na obrázku je:",
+    options: [
+      "zvod",
+      "náhodný uzemňovač",
+      "ochrana pospájaním",
+      "základový uzemňovač",
+    ],
+    answer: "základový uzemňovač",
+    image: "obr4301",
+  },
+  {
+    question: "Na obrázku HUS je:",
+    options: [
+      "hlavný uzáver spojenia",
+      "Hlavná upevňovacia svorka",
+      "Hlavná uzemňovacia svorka",
+      "hĺbkový uzáver spoja",
+    ],
+    answer: "Hlavná uzemňovacia svorka",
+    image: "obr4302",
+  },
+  {
+    question: "Na obrázku doplň názov pod otáznikom:",
+    options: [
+      "skúšobná svorka",
+      "pripojovacie miesto",
+      "predĺženie uzemnenia",
+      "zvod",
+    ],
+    answer: "skúšobná svorka",
+    image: "obr4303",
+  },
+  {
+    question: "LPL (lightning protection level) je:",
+    options: [
+      "systém ochrany pred bleskom",
+      "Úroveň ochrany pred bleskom",
+      "bleskový výboj",
+      "vrcholový prúd pri blesku",
+    ],
+    answer: "Úroveň ochrany pred bleskom",
+  },
+  {
+    question: "LPS (lightning protection system) je:",
+    options: [
+      "systém ochrany pred bleskom",
+      "Úroveň ochrany pred bleskom",
+      "bleskový výboj",
+      "vrcholový prúd pri blesku",
+    ],
+    answer: "systém ochrany pred bleskom",
+  },
+  {
+    question: "LPL (lightning protection level) má počet úrovní:",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+  },
+  {
+    question: "Na obrázku pod číslom 1 je:",
+    options: ["skúšobná svorka", "zvod", "zberacie zariadenie", "uzemňovač"],
+    answer: "zberacie zariadenie",
+    image: "obr4304",
+  },
+  {
+    question: "Na obrázku pod číslom 2 je:",
+    options: ["skúšobná svorka", "zvod", "zberacie zariadenie", "uzemňovač"],
+    answer: "zvod",
+    image: "obr4304",
+  },
+  {
+    question: "Na obrázku pod číslom 3 je:",
+    options: ["skúšobná svorka", "zvod", "zberacie zariadenie", "uzemňovač"],
+    answer: "skúšobná svorka",
+    image: "obr4304",
+  },
+  {
+    question: "Na obrázku pod číslom 4 je:",
+    options: ["skúšobná svorka", "zvod", "zberacie zariadenie", "uzemňovač"],
+    answer: "uzemňovač",
+    image: "obr4304",
+  },
+  {
+    question: "Aký typ zberacieho zariadenia je na obrázku?",
+    options: ["hrebeňové", "tyčové", "mrežové", "univerzálne"],
+    answer: "univerzálne",
+    image: "obr4305",
+  },
+  {
+    question: "Aký typ zberacieho zariadenia je na obrázku?",
+    options: ["hrebeňové", "tyčové", "mrežové", "univerzálne"],
+    answer: "tyčové",
+    image: "obr4306",
+  },
+  {
+    question: "Aký typ zberacieho zariadenia je na obrázku?",
+    options: ["hrebeňové", "tyčové", "mrežové", "univerzálne"],
+    answer: "mrežové",
+    image: "obr4307",
+  },
+  {
+    question: "Aký typ bleskozvodu je na obrázku?",
+    options: ["stožiarový", "lanový", "oddialený", "dvojitý"],
+    answer: "oddialený",
+    image: "obr4308",
+  },
+  {
+    question: "Aký typ bleskozvodu je na obrázku?",
+    options: ["neoddialený", "strešný", "oddialený", "jednoduchý"],
+    answer: "neoddialený",
+    image: "obr4304",
+  },
+  {
+    question: "Na obr. je znázornený návrh zachytávacej sústavy LPS metódou:",
+    options: [
+      "ochranného uhla",
+      "valivej gule",
+      "mrežovej sústavy",
+      "kombinovanou",
+    ],
+    answer: "valivej gule",
+    image: "obr4309",
+  },
+  {
+    question: "Na obr. je znázornený návrh zachytávacej sústavy LPS metódou:",
+    options: [
+      "ochranného uhla",
+      "valivej gule",
+      "mrežovej sústavy",
+      "kombinovanou",
+    ],
+    answer: "ochranného uhla",
+    image: "obr4310",
+  },
+  {
+    question: "Na obr. je znázornený návrh zachytávacej sústavy LPS metódou:",
+    options: [
+      "ochranného uhla",
+      "valivej gule",
+      "mrežovej sústavy",
+      "kombinovanou",
+    ],
+    answer: "mrežovej sústavy",
+    image: "obr4311",
+  },
+  {
+    question: "Aký typ bleskozvodu je na obrázku?",
+    options: ["aktívny", "strešný", "oddialený", "pasívny"],
+    answer: "aktívny",
+    image: "obr4312",
+  },
+  {
+    question: "EMC je:",
+    options: [
+      "elektromechanická ochrana",
+      "elektromechanická kapacita",
+      "elektromagnetická ochrana",
+      "elektromagnetická kompatibilita",
+    ],
+    answer: "elektromagnetická kompatibilita",
+  },
+  {
+    question: "Väzby, ktorými vnikajú bleskové prúdy a napätia do objektu sú:",
+    options: [
+      "galvanická, induktívna, kapacitná",
+      "vzduchom, zemou",
+      "kvalitným galvanickým spojením zvodu a zemniča",
+      "kvalitným odizolovaním zvodu a zemniča",
+    ],
+    answer: "galvanická, induktívna, kapacitná",
+  },
+  {
+    question: "Systém ochrany pred bleskom sa delí na:",
+    options: [
+      "blízky a vzdialený",
+      "vnútorný a vonkajší",
+      "rýchly a pomalý",
+      "normálny a zvýšený",
+    ],
+    answer: "vnútorný a vonkajší",
+  },
+  {
+    question: "Na obrázku je:",
+    options: [
+      "ochrana ističmi",
+      "ochrana poistkami",
+      "pospájanie na rovnaký potenciál",
+      "uzemnenie",
+    ],
+    answer: "pospájanie na rovnaký potenciál",
+    image: "obr4313",
+  },
+  {
+    question: "Na obrázku je:",
+    options: [
+      "realizácia vnútornej ochrany pred vysokofrekvenčným rušením",
+      "realizácia vonkajšej ochrany pred vysokofrekvenčným rušením",
+      "realizácia vonkajšej ochrany pred prepätím",
+      "realizácia vnútornej ochrany pred prepätím",
+    ],
+    answer: "realizácia vnútornej ochrany pred prepätím",
+    image: "obr4314",
+  },
+  {
+    question: "Na obrázku pod číslom 1 je súčiastka:",
+    options: ["varistor", "bleskoistka", "zenerova dióda", "tlmivka"],
+    answer: "bleskoistka",
+    image: "obr4315",
+  },
+  {
+    question: "Na obrázku pod číslom 2 je súčiastka:",
+    options: ["varistor", "bleskoistka", "zenerova dióda", "tlmivka"],
+    answer: "zenerova dióda",
+    image: "obr4315",
+  },
+  {
+    question: "Celkový odpor uzemnenia nemá byť vyšší ako:",
+    options: ["1 Ω", "25 Ω", "10 Ω", "15 Ω"],
+    answer: "10 Ω",
+  },
+  {
+    question:
+      "Ktorá z nasledujúcich oblastí je prioritná pre umiestnenie bleskozvodu v budove?",
+    options: ["Záhrada", "Fasáda", "Interiér", "Strecha"],
+    answer: "Strecha",
+  },
+  {
+    question:
+      "Aký je hlavný materiál, z ktorého sú vyrábané vodiče bleskozvodov?",
+    options: ["Hliník", "Bronz", "Oceľ", "Meď"],
+    answer: "Meď",
+  },
+  {
+    question:
+      "Ktorý z nasledujúcich faktorov ovplyvňuje výber a inštaláciu bleskozvodu?",
+    options: [
+      "Geografická poloha a klimatické podmienky",
+      "Farba fasády budovy",
+      "Dĺžka strechy budovy",
+      "Počet okien v budove",
+    ],
+    answer: "Geografická poloha a klimatické podmienky",
+  },
+  {
+    question: "Aký je hlavný účel bleskozvodov v elektrických inštaláciách?",
+    options: [
+      "Zabezpečiť spoľahlivé uzemnenie",
+      "Minimalizovať spotrebu energie",
+      "Ochrániť budovu a elektrické zariadenia pred poškodením",
+      "Zabezpečiť stabilné napätie",
+    ],
+    answer: "Ochrániť budovu a elektrické zariadenia pred poškodením",
+  },
+  {
+    question:
+      "Ktorý typ bleskozvodu je navrhnutý tak, aby zachytil bleskový výboj a odviedol ho do zeme?",
+    options: [
+      "Aktívny bleskozvod",
+      "Pasívny bleskozvod",
+      "Vnútorný bleskozvod",
+      "Vonkajší bleskozvod",
+    ],
+    answer: "Vonkajší bleskozvod",
+  },
+  {
+    question:
+      "Aký je hlavný dôvod, prečo sa bleskozvody musia pravidelne kontrolovať?",
+    options: [
+      "Zabezpečiť estetický vzhľad budovy",
+      "Udržiavať účinnosť bleskozvodov",
+      "Minimalizovať emisie elektromagnetického žiarenia",
+      "Zvýšiť energetickú účinnosť",
+    ],
+    answer: "Udržiavať účinnosť bleskozvodov",
+  },
   //zakony vyhlasky
+  {
+    question: "Vyhláška 508/2009 Z.z. z 9. júla 2009 rieši:",
+    options: [
+      "Zabezpečenie elektrických zariadení.",
+      "Je to zákonník práce.",
+      "Je to zákon o zhode.",
+      "Zaistenie bezpečnosti a ochrany zdravia pri práci.",
+    ],
+    answer: "Zaistenie bezpečnosti a ochrany zdravia pri práci.",
+  },
+  {
+    question: "§ 20 - Poučená osoba je:",
+    options: [
+      "Fyzická osoba bez elektrotechnického vzdelania, ktorá môže obsluhovať technické zariadenie elektrické alebo vykonávať na ňom prácu v súlade s bezpečnostnotechnickými požiadavkami, ak bola v rozsahu vykonávanej činnosti preukázateľne oboznámená o činnosti na tomto technickom zariadení elektrickom a o postupe pri zabezpečovaní prvej pomoci pri úraze elektrickým prúdom.",
+      "Fyzická osoba s elektrotechnickým vzdelaním, ktorá môže obsluhovať technické zariadenie elektrické alebo vykonávať na ňom prácu v súlade s bezpečnostnotechnickými požiadavkami, ak bola v rozsahu vykonávanej činnosti preukázateľne oboznámená o činnosti na tomto technickom zariadení elektrickom a o postupe pri zabezpečovaní prvej pomoci pri úraze elektrickým prúdom.",
+    ],
+    answer:
+      "Fyzická osoba s elektrotechnickým vzdelaním, ktorá môže obsluhovať technické zariadenie elektrické alebo vykonávať na ňom prácu v súlade s bezpečnostnotechnickými požiadavkami, ak bola v rozsahu vykonávanej činnosti preukázateľne oboznámená o činnosti na tomto technickom zariadení elektrickom a o postupe pri zabezpečovaní prvej pomoci pri úraze elektrickým prúdom.",
+  },
+  {
+    question: "§ 21 - Elektrotechnik je:",
+    options: [
+      "Právnická osoba, ktorá má ukončené stredoškolské elektrotechnické vzdelanie alebo vysokoškolské elektrotechnické vzdelanie.",
+      "Fyzická osoba, ktorá má ukončené stredoškolské elektrotechnické vzdelanie alebo vysokoškolské elektrotechnické vzdelanie.",
+      "Fyzická osoba, ktorá nemá ukončené stredoškolské elektrotechnické vzdelanie alebo vysokoškolské elektrotechnické vzdelanie, ale je poučená.",
+      "Fyzická osoba, ktorá je dôsledne poučená.",
+    ],
+    answer:
+      "Fyzická osoba, ktorá má ukončené stredoškolské elektrotechnické vzdelanie alebo vysokoškolské elektrotechnické vzdelanie.",
+  },
+  {
+    question: "§ 22 - Samostatný elektrotechnik je:",
+    options: [
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax min. 7 rokov",
+      "Právnická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax min. 5 rokov.",
+    ],
+    answer:
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+  },
+  {
+    question:
+      "§ 23 - Elektrotechnik na riadenie činnosti alebo na riadenie prevádzky je:",
+    options: [
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax min. 7 rokov",
+      "Právnická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax min. 5 rokov.",
+    ],
+    answer:
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+  },
+  {
+    question:
+      "Elektrotechnik na riadenie činnosti alebo na riadenie prevádzky môže:",
+    options: [
+      "Riadiť činnosť poučených osôb, elektrotechnikov, bez obmedzenia ich počtu",
+      "Riadiť činnosť, elektrotechnikov na riadenie činnosti alebo na riadenie prevádzky bez obmedzenia ich počtu",
+      "Riadiť činnosť poučených osôb, bez obmedzenia ich počtu",
+      "Riadiť činnosť poučených osôb, elektrotechnikov, samostatných elektrotechnikov a elektrotechnikov na riadenie činnosti alebo na riadenie prevádzky bez obmedzenia ich počtu",
+    ],
+    answer:
+      "Riadiť činnosť poučených osôb, elektrotechnikov, samostatných elektrotechnikov a elektrotechnikov na riadenie činnosti alebo na riadenie prevádzky bez obmedzenia ich počtu",
+  },
+  {
+    question: "Zákon 124/2006 z 2. februára 2006 pojednáva o :",
+    options: [
+      "Zabezpečení elektrických zariadení.",
+      "Je to zákonník práce.",
+      "Bezpečnosti a ochrane zdravia pri práci",
+      "Je to zákon o zhode",
+    ],
+    answer: "Bezpečnosti a ochrane zdravia pri práci",
+  },
+  {
+    question:
+      "§ 24 - Revízny technik vyhradeného technického zariadenia elektrického je:",
+    options: [
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax min. 7 rokov",
+      "Právnická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax min. 5 rokov.",
+    ],
+    answer:
+      "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+  },
+  {
+    question:
+      "Akú dobu platí osvedčenie - §21, §22, §23, §24 u elektrotechnikov?",
+    options: [
+      "Osvedčenie sa vydáva na neurčitý čas.",
+      "Osvedčenie sa vydáva na dobu 5 rokov.",
+      "Osvedčenie sa vydáva na dobu 3 rokov.",
+      "Osvedčenie sa vydáva na dobu 2 rokov.",
+    ],
+    answer: "Osvedčenie sa vydáva na neurčitý čas.",
+  },
+  {
+    question:
+      "Pred uplynutím 5 rokov od vydania osvedčenia - §21, §22, §23, §24 u elektrotechnikov, musí jeho držiteľ:",
+    options: [
+      "Absolvovať nové školenie",
+      "Absolvovať aktualizačné školenie a u lekára prehliadku vo vzťahu k práci",
+      "Absolvovať školenie na vyššiu kvalifikáciu",
+      "Nemusí absolvovať nijaké školenie",
+    ],
+    answer:
+      "Absolvovať aktualizačné školenie a u lekára prehliadku vo vzťahu k práci",
+  },
+  {
+    question:
+      "Aktualizačná odborná príprava revíznych technikov vyhradených technických zariadení elektrických sa vykonáva v rozsahu:",
+    options: ["5 hodín", "6 hodín", "7 hodín", "8 hodín"],
+    answer: "8 hodín",
+  },
+  {
+    question:
+      "Spôsob záverečného overovania vedomostí podľa Zákona 356/2007 pre vydanie Osvedčenia na § 21,22,23 je:",
+    options: [
+      "Písomná skúška s minimálnym počtom 30 otázok, ústna skúška s minimálnym počtom piatich otázok.",
+      "Písomná skúška s minimálnym počtom 30 otázok, ústna skúška s minimálnym počtom desiatich otázok.",
+      "Písomná skúška s minimálnym počtom 20 otázok, ústna skúška s minimálnym počtom troch otázok.",
+      "Písomná skúška s minimálnym počtom 20 otázok, ústna skúška s minimálnym počtom piatich otázok.",
+    ],
+    answer:
+      "Písomná skúška s minimálnym počtom 30 otázok, ústna skúška s minimálnym počtom piatich otázok.",
+  },
+  {
+    question: "Fázové vodiče označujeme písmenami:",
+    options: [
+      "U1, V1, W1...",
+      "F1, F2, F3...",
+      "U1, U2, U3...",
+      "L1, L2, L3...",
+    ],
+    answer: "L1, L2, L3...",
+  },
+  {
+    question: "Fázové vodiče označujeme farbami:",
+    options: [
+      "Čierna, modrá, žltozelená",
+      "Čierna, hnedá, šedá",
+      "Čierna, červená, žltozelená",
+      "Čierna, hnedá, žltozelená",
+    ],
+    answer: "Čierna, hnedá, šedá",
+  },
+  {
+    question: "Neutrálny vodič označujeme písmenami:",
+    options: ["NV", "N", "NE", "Ne"],
+    answer: "N",
+  },
+  {
+    question: "Neutrálny vodič označujeme farbou:",
+    options: ["Šedá", "Zelenožltá", "Hnedá", "Modrá"],
+    answer: "Modrá",
+  },
+  {
+    question: "Ochranný vodič označujeme písmenami:",
+    options: ["OV", "VO", "NE", "PE"],
+    answer: "PE",
+  },
+  {
+    question: "Ochranný vodič označujeme farbou:",
+    options: ["Šedá", "Zelenožltá", "Hnedá", "Modrá"],
+    answer: "Zelenožltá",
+  },
+  {
+    question: "Kombinovaný vodič označujeme písmenami:",
+    options: ["PEN", "KV", "PE", "PE"],
+    answer: "PEN",
+  },
+  {
+    question: "Kombinovaný vodič označujeme farbami:",
+    options: [
+      "Žltozelený + na koncoch svetlomodrý",
+      "Hnedý + na koncoch svetlomodrý",
+      "Modrý + na koncoch žltozelený",
+      "Červený + na koncoch žltozelený",
+    ],
+    answer: "Hnedý + na koncoch svetlomodrý",
+  },
+  {
+    question: "Označenie svoriek elektrických spotrebičov:",
+    options: ["U, V, W", "F1, F2, F3", "U1, U2, U3", "L1, L2, L3"],
+    answer: "U, V, W",
+  },
+  {
+    question: "Na obrázku je spotrebič triedy ochrany:",
+    options: ["0", "I.", "II.", "III."],
+    answer: "0",
+    image: "obr4101",
+  },
+  {
+    question: "Na obrázku je spotrebič triedy ochrany:",
+    options: ["0", "I.", "II.", "III."],
+    answer: "I.",
+    image: "obr4102",
+  },
+  {
+    question: "Na obrázku je spotrebič triedy ochrany:",
+    options: ["0", "I.", "II.", "III."],
+    answer: "II.",
+    image: "obr4103",
+  },
+  {
+    question: "Na obrázku je spotrebič triedy ochrany:",
+    options: ["0", "I.", "II.", "III."],
+    answer: "III.",
+    image: "obr4104",
+  },
+  {
+    question: "Na obrázku je sieť:",
+    options: ["TT", "IT", "TN-C", "TN-S"],
+    answer: "IT",
+    image: "obr4105",
+  },
+  {
+    question: "Na obrázku je sieť:",
+    options: ["TT", "IT", "TN-C", "TN-S"],
+    answer: "TT",
+    image: "obr4106",
+  },
+  {
+    question: "Na obrázku je sieť:",
+    options: ["TT", "IT", "TN-C", "TN-S"],
+    answer: "TN-C",
+    image: "obr4107",
+  },
+  {
+    question: "Na obrázku je sieť:",
+    options: ["TT", "IT", "TN-C", "TN-S"],
+    answer: "TN-S",
+    image: "obr4108",
+  },
+  {
+    question: "Na obrázku je sieť:",
+    options: ["TT", "TN-C-S", "TN-C", "TN-S"],
+    answer: "TN-C-S",
+    image: "obr4109",
+  },
+  {
+    question: "Na obrázku je značka:",
+    options: [
+      "Miesto prvej pomoci",
+      "Úniková cesta",
+      "Vchod do skladu",
+      "Smer k oknu",
+    ],
+    answer: "Úniková cesta",
+    image: "obr4110",
+  },
+  {
+    question:
+      "Do akej doby musí zamestnávateľ (od kedy sa o registrovanom pracovnom úraze dozvedel) poslať záznam o tomto úraze na inšpektorát práce (podľa zákona c. 124/2006 Z.z.)?",
+    options: [
+      "Do 14 dní",
+      "Do 10 dní",
+      "Do 8 dní",
+      "Záznam nemusí nikde posielať",
+    ],
+    answer: "Do 8 dní",
+  },
+  {
+    question:
+      "Komu musi zamestnávateľ bezodkladne hlásiť vznik alebo hrozbu vzniku závažnej priemyselnej havárie, chorobu z povolania a ohrozenie chorobou z povolania (podl'a zákona c. 124/2006 Z.z.)?",
+    options: [
+      "Polícií",
+      "Štátnemu zdravotnému ústavu",
+      "Inšpektorátu práce",
+      "Pracovnej zdravotnej službe",
+    ],
+    answer: "Inšpektorátu práce",
+  },
+  {
+    question:
+      "Ako sa nazýva pracovný úraz (podľa Zákona c, 124/2006 Z.z.) následkom ktorého nastala smrť zamestnanca alebo ťažká ujma na zdravý alebo predpokladaná dĺžka liečby je najmenej 42 dní?",
+    options: [
+      "Ťažký úraz",
+      "Závažný pracovný úraz",
+      "Hromadný úraz",
+      "Bežný pracovný úraz",
+    ],
+    answer: "Závažný pracovný úraz",
+  },
+  {
+    question:
+      "Musí zamestnávateľ viesť aj evidenciu pracovných úrazov, ktoré nie sú registrovanými pracovnými úrazmi (podľa zákona c. 124/2006 Z.z.)?",
+    options: [
+      "Áno - musí evidovať údaje ako o registrovanom úraze",
+      "Nie",
+      "Záleží to na rozhodnutí zamestnávateľa",
+      "Záleží to na rozhodnutí IBP",
+    ],
+    answer: "Áno - musí evidovať údaje ako o registrovanom úraze",
+  },
+  {
+    question:
+      "Ktorý zákon uvádza, že starostlivosť o bezpečnosť a ochranu zdravia pri práci je súčasťou plánovania a plnenia úloh?",
+    options: [
+      "Vyhláška c-7 4196 Z.z.",
+      "Najmä zákon c. 124/2006 Z.z.",
+      "STN 33 2000-4-41",
+      "Európsky dohovor o ľudských právach",
+    ],
+    answer: "Najmä zákon c. 124/2006 Z.z.",
+  },
 ];
