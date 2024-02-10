@@ -25,9 +25,6 @@ type ExamProps = {
 const Exam = (props: ExamProps) => {
   const { data } = props;
   let totalQuestions = data.length;
-  if (data.length > 20) {
-    totalQuestions = 20;
-  }
 
   const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);

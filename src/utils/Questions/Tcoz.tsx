@@ -320,7 +320,6 @@ export const tcozQuestions = [
   {
     question: "Čo je trunk ?",
     options: [
-      "pole záhlavia rámca prenášaného na trunku, ktorý slúži na určenie príslušnosti rámca k určitej VLAN",
       "siet pomocou ktorej môžeme fyzický switch rozdeliť na viacero logických switchov, ktoré sú logicky oddelené",
       "prepojenie najčastejšie medzi switchmi chopné prenášať komunikáciu viacerých VLAN",
       "Uzol, ktorý detekuje kolíziu",
@@ -392,6 +391,166 @@ export const tcozQuestions = [
     ],
     image: "obr7",
     answer: "Záložná statická cesta",
+  },
+  {
+    question: "DHCP discover",
+    options: [
+      "Klient potvrdzuje svoj výber DHCP servera zo zoznamu dostupných serverov",
+      "Server potvrdzuje, že adresa bola úspešne pridelená klientovi",
+      "Klienti vysielajú túto správu na hľadanie DHCP servera v sieti",
+      "Server odpovedá klientovi s ponukou adries a ďalších nastavení",
+    ],
+    answer: "Klienti vysielajú túto správu na hľadanie DHCP servera v sieti",
+  },
+  {
+    question: "DHCP offer",
+    options: [
+      "Klient potvrdzuje svoj výber DHCP servera zo zoznamu dostupných serverov",
+      "Server potvrdzuje, že adresa bola úspešne pridelená klientovi",
+      "Klienti vysielajú túto správu na hľadanie DHCP servera v sieti",
+      "Server odpovedá klientovi s ponukou adries a ďalších nastavení",
+    ],
+    answer: "Server odpovedá klientovi s ponukou adries a ďalších nastavení",
+  },
+  {
+    question: "DHCP request",
+    options: [
+      "Klient potvrdzuje svoj výber DHCP servera zo zoznamu dostupných serverov",
+      "Server potvrdzuje, že adresa bola úspešne pridelená klientovi",
+      "Klienti vysielajú túto správu na hľadanie DHCP servera v sieti",
+      "Server odpovedá klientovi s ponukou adries a ďalších nastavení",
+    ],
+    answer:
+      "Klient potvrdzuje svoj výber DHCP servera zo zoznamu dostupných serverov",
+  },
+  {
+    question: "DHCP acknowledgment",
+    options: [
+      "Klient potvrdzuje svoj výber DHCP servera zo zoznamu dostupných serverov",
+      "Server potvrdzuje, že adresa bola úspešne pridelená klientovi",
+      "Klienti vysielajú túto správu na hľadanie DHCP servera v sieti",
+      "Server odpovedá klientovi s ponukou adries a ďalších nastavení",
+    ],
+    answer: "Server potvrdzuje, že adresa bola úspešne pridelená klientovi",
+  },
+  {
+    question: "Na obrázku je:",
+    options: ["Stateful DHCPv6", "Stateless DHCPv6", "iba SLAAC"],
+    image: "obr8",
+    answer: "iba SLAAC",
+  },
+  {
+    question: "Na obrázku je:",
+    options: ["Stateful DHCPv6", "Stateless DHCPv6", "iba SLAAC"],
+    image: "obr9",
+    answer: "Stateless DHCPv6",
+  },
+  {
+    question: "Na obrázku je:",
+    options: ["Stateful DHCPv6", "Stateless DHCPv6", "iba SLAAC"],
+    image: "obr10",
+    answer: "Stateful DHCPv6",
+  },
+  {
+    question: "Aké sú výhody Dynamického smerovania ?",
+    options: [
+      "Nezaťažuje zdroje, vyššia bezpečnosť, jednoduchosť konfigurácie",
+      "Vyššia bezpečnosť, nie je nutná znalosť topológie, jednoduchosť konfigurácie ",
+      "Automaticky reaguje na zmeny v topológii, nie je nutná znalosť topológie, nižší vplyv ľudského faktoru",
+      "Nižší vplyv ľudského faktoru, nezaťažuje zdroje, automaticky reaguje na zmeny v topológii",
+    ],
+    answer:
+      "Automaticky reaguje na zmeny v topológii, nie je nutná znalosť topológie, nižší vplyv ľudského faktoru",
+  },
+  {
+    question: "Aké sú výhody Dynamického smerovania ?",
+    options: [
+      "Nezaťažuje zdroje, vyššia bezpečnosť, jednoduchosť konfigurácie",
+      "Vyššia bezpečnosť, nie je nutná znalosť topológie, jednoduchosť konfigurácie ",
+      "Automaticky reaguje na zmeny v topológii, nie je nutná znalosť topológie, nižší vplyv ľudského faktoru",
+      "Nižší vplyv ľudského faktoru, nezaťažuje zdroje, automaticky reaguje na zmeny v topológii",
+    ],
+    answer: "Nezaťažuje zdroje, vyššia bezpečnosť, jednoduchosť konfigurácie",
+  },
+  {
+    question:
+      "Čo je cieľom Network Address Translation (NAT) v súvislosti s adresným priestorom?",
+    options: [
+      "Zvýšenie počtu verejných adries",
+      "Šetrenie adresného priestoru súkromných adries",
+      "Eliminácia verejných adries",
+      "Statické priradenie verejných adries zariadeniam",
+    ],
+    answer: "Šetrenie adresného priestoru súkromných adries",
+  },
+  {
+    question: "Aký typ adries je typicky prekladaný pomocou NAT?",
+    options: [
+      "Verejné adresy",
+      "Globálne adresy",
+      "Súkromné adresy",
+      "Lokálne adresy",
+    ],
+    answer: "Súkromné adresy",
+  },
+  {
+    question:
+      "Ktorá adresa označuje súkromnú adresu zariadenia v vnútornej sieti?",
+    options: [
+      "Inside-Global address",
+      "Outside-Local address",
+      "Inside-Local address",
+      "Outside-Global address",
+    ],
+    answer: "Inside-Local address",
+  },
+  {
+    question: "Ktorá adresa býva totožná s Outside-Global address?",
+    options: [
+      "Inside-Global address",
+      "Outside-Local address",
+      "Inside-Local address",
+    ],
+    answer: "Inside-Global address",
+  },
+  {
+    question:
+      "Ktorý typ NAT vyžaduje trvalé priradenie jednej súkromnej IP adresy k jednej verejnej adrese?",
+    options: ["Dynamic NAT", "PAT", "Statické NAT"],
+    answer: "Statické NAT",
+  },
+  {
+    question:
+      "Ako funguje Dynamic NAT v prípade viacerých súkromných adries a obmedzeného počtu verejných adries?",
+    options: [
+      "Prvý príde, prvý berie",
+      "Jedna k jednej",
+      "Port Address Translation",
+      "Adresný priestor nie je limitovaný",
+    ],
+    answer: "Prvý príde, prvý berie",
+  },
+  {
+    question: "Čo je charakteristické pre PAT ?",
+    options: [
+      "Dynamické priradenie verejných adries",
+      "Možnosť prekladať väčšie množstvo súkromných adries na jednu verejnú",
+      "Statické priradenie adries",
+      "Jednotlivé komunikácie bez portov",
+    ],
+    answer:
+      "Možnosť prekladať väčšie množstvo súkromných adries na jednu verejnú",
+  },
+  {
+    question:
+      "Ktorá z nevýhod NAT môže spôsobiť problémy s niektorými aplikáciami?",
+    options: [
+      "Zníženie priestupnosti",
+      "Strata adresovania koniec-koniec",
+      "Problém s vytvorením spojenia do súkromnej siete",
+      "Vyššia bezpečnosť",
+    ],
+    answer: "Strata adresovania koniec-koniec",
   },
 ];
 /*

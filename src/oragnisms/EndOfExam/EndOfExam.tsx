@@ -18,19 +18,19 @@ const endOfExam = (props: ExamProps) => {
 
   const percentage: number = (score / totalQuestions) * 100;
   const percentageColor =
-    percentage > 33 ? "fc-percentage-color-pass" : "fc-percentage-color-fail";
+    percentage > 32 ? "fc-percentage-color-pass" : "fc-percentage-color-fail";
   let grade: number;
   switch (true) {
-    case percentage > 90:
+    case percentage > 89:
       grade = 1;
       break;
-    case percentage > 75:
+    case percentage > 74:
       grade = 2;
       break;
-    case percentage > 50:
+    case percentage > 49:
       grade = 3;
       break;
-    case percentage > 33:
+    case percentage > 32:
       grade = 4;
       break;
     default:
