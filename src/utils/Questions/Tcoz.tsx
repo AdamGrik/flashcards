@@ -350,13 +350,13 @@ export const tcozQuestions = [
   },
   {
     question: "Aký typ útoku je na obrázku ?",
-    options: ["DOS", "Man in the middle"],
+    options: ["DOS", "Man in the middle", "Rogue access points"],
     image: "obr3",
     answer: "DOS",
   },
   {
     question: "Aký typ útoku je na obrázku ?",
-    options: ["DOS", "Man in the middle"],
+    options: ["DOS", "Man in the middle", "Rogue access points"],
     image: "obr4",
     answer: "Man in the middle",
   },

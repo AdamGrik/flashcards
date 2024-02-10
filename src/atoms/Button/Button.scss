@@ -51,4 +51,19 @@
     background-color: $secondary-color;
     scale: 1.05;
   }
+  @media (max-width: 768px) {
+    height: fit-content;
+    &.fc-button-back {
+      padding: 16px;
+      margin-top: 4px;
+    }
+    &.fc-button-next {
+      padding: 16px;
+      margin-top: 4px;
+    }
+    &.fc-button-end {
+      padding: 16px;
+      margin-top: 4px;
+    }
+  }
 }
