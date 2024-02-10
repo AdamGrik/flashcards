@@ -30,7 +30,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  .abcd {
+  .fc-option-abcd {
     margin-right: 12px;
     padding-top: 4px;
     font-size: large;
@@ -63,6 +63,10 @@
     }
     .fc-question-bottom {
       font-size: large;
+    }
+    .fc-option-abcd {
+      padding-top: 2px;
+      font-size: medium;
     }
   }
 }

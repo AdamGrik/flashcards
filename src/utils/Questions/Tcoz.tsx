@@ -173,23 +173,225 @@ export const tcozQuestions = [
     question: "Aký je význam adresovania ?",
     options: [
       "Identifikuje odosielateľa a požadovaného príjemcu správy pomocou definovanej adresnej schémy",
+      "Na automatické prideľovanie konfigurácii zariadeniam v sieti",
+      "Rozdelenie správy na menšie časti, pri chybe v prenose prepošleme lenpoškodený paket",
     ],
     answer:
       "Identifikuje odosielateľa a požadovaného príjemcu správy pomocou definovanej adresnej schémy",
   },
   {
     question: "Prečo sa použiva segmentácia na transportnej vrstve ?",
-    options: ["a", "b", "Lebo sa tak správa ľahšie prenáša"],
+    options: [
+      "aby mohli súčasne komunikovať cez sieť viacero aplikácii",
+      "Kvôli bezpečnosti",
+      "Lebo sa tak správa ľahšie prenáša",
+      "Lebo identifikuje zdrojové aplikácie pomocou čísla portu",
+    ],
     answer: "Lebo sa tak správa ľahšie prenáša",
   },
+
   {
-    question: "Čo robí segmentácia ako funkcia transportnej vrstvy ?",
+    question: "Na obrázku je protokol transportnej vrstvy:",
+    options: ["UDP", "TCP"],
+    image: "obr2",
+    answer: "TCP",
+  },
+  {
+    question: "Na obrázku je protokol transportnej vrstvy:",
+    options: ["UDP", "TCP"],
+    image: "obr1",
+    answer: "UDP",
+  },
+  {
+    question: "Spoľahlivosť a flow control sú:",
     options: [
-      "a",
-      "Rozdelenie správy na menšie časti, pri chybe v prenose prepošleme lenpoškodený paket",
+      "Hlavné funkcie transportnej vrstvy",
+      "Voliteľné funkcie transportnej vrstvy",
+    ],
+    answer: "Voliteľné funkcie transportnej vrstvy",
+  },
+  {
+    question: "Segmentácia a Multitasking sú:",
+    options: [
+      "Hlavné funkcie transportnej vrstvy",
+      "Voliteľné funkcie transportnej vrstvy",
+    ],
+    answer: "Hlavné funkcie transportnej vrstvy",
+  },
+  {
+    question: "Na čo slúži chrbticová vrstva LAN modelu ?",
+    options: [
+      "pripája koncové zariadenia, riadi kto môže komunikovať cez sieť",
+      "agreguje dáta z prístupovej vrstvy, definuje subsiete a smerovanie medzi nimi, riadi tok dát, definuje Broadcast L2 domény",
+      "zabezpečuje pripojenie do internetu cez ISP a agreguje dáta od distribučných prepínačov",
     ],
     answer:
-      "Rozdelenie správy na menšie časti, pri chybe v prenose prepošleme lenpoškodený paket",
+      "zabezpečuje pripojenie do internetu cez ISP a agreguje dáta od distribučných prepínačov",
+  },
+  {
+    question: "Na čo slúži distribučná vrstva LAN modelu ?",
+    options: [
+      "pripája koncové zariadenia, riadi kto môže komunikovať cez sieť",
+      "agreguje dáta z prístupovej vrstvy, definuje subsiete a smerovanie medzi nimi, riadi tok dát, definuje Broadcast L2 domény",
+      "zabezpečuje pripojenie do internetu cez ISP a agreguje dáta od distribučných prepínačov",
+    ],
+    answer:
+      "agreguje dáta z prístupovej vrstvy, definuje subsiete a smerovanie medzi nimi, riadi tok dát, definuje Broadcast L2 domény",
+  },
+  {
+    question: "Na čo slúži prístupová vrstva LAN modelu ?",
+    options: [
+      "pripája koncové zariadenia, riadi kto môže komunikovať cez sieť",
+      "agreguje dáta z prístupovej vrstvy, definuje subsiete a smerovanie medzi nimi, riadi tok dát, definuje Broadcast L2 domény",
+      "zabezpečuje pripojenie do internetu cez ISP a agreguje dáta od distribučných prepínačov",
+    ],
+    answer: "pripája koncové zariadenia, riadi kto môže komunikovať cez sieť",
+  },
+
+  {
+    question: "Pri spoľahlivých sieťach, odolnosť voči chybám znamená že:",
+    options: [
+      "keď pridáme väčšie množstvo koncových zariadení, neovplivní to výkonosť siete",
+      "je odolná voči bezpečnostným chybám",
+      "pri výpadku switcha, sieť funguje ďalej",
+      "dokáže preniesť dáta rôznych služieb",
+    ],
+    answer: "pri výpadku switcha, sieť funguje ďalej",
+  },
+  {
+    question: "Pri spoľahlivých sieťach, rozšíriteľnosť znamená že:",
+    options: [
+      "keď pridáme väčšie množstvo koncových zariadení, neovplivní to výkonosť siete",
+      "je odolná voči bezpečnostným chybám",
+      "pri výpadku switcha, sieť funguje ďalej",
+      "dokáže preniesť dáta rôznych služieb",
+    ],
+    answer:
+      "keď pridáme väčšie množstvo koncových zariadení, neovplivní to výkonosť siete",
+  },
+  {
+    question:
+      "Pri spoľahlivých sieťach, ak je sieť konvergovaná znamená to že:",
+    options: [
+      "keď pridáme väčšie množstvo koncových zariadení, neovplivní to výkonosť siete",
+      "je odolná voči bezpečnostným chybám",
+      "pri výpadku switcha, sieť funguje ďalej",
+      "dokáže preniesť dáta rôznych služieb",
+    ],
+    answer: "dokáže preniesť dáta rôznych služieb",
+  },
+  {
+    question: "Pri spoľahlivých sieťach, bezpečnosť znamená že:",
+    options: [
+      "keď pridáme väčšie množstvo koncových zariadení, neovplivní to výkonosť siete",
+      "je odolná voči bezpečnostným chybám",
+      "pri výpadku switcha, sieť funguje ďalej",
+      "dokáže preniesť dáta rôznych služieb",
+    ],
+    answer: "je odolná voči bezpečnostným chybám",
+  },
+  {
+    question: "Aká je riadená metóda prístupu k médiu ?",
+    options: [
+      "keď uzol potrebuje, pokúsi sa vyslať informácie",
+      "uzol pred vysielaním zasníma, či je médium voľné",
+      "každý má pridelený čas na vysielanie",
+    ],
+    answer: "každý má pridelený čas na vysielanie",
+  },
+  {
+    question: "Metóda prístupu k médiu založená na obsahu je:",
+    options: [
+      "keď uzol potrebuje, pokúsi sa vyslať informácie",
+      "uzol pred vysielaním zasníma, či je médium voľné",
+      "každý má pridelený čas na vysielanie",
+    ],
+    answer: "keď uzol potrebuje, pokúsi sa vyslať informácie",
+  },
+  {
+    question: "Aká je CSMA/CD metóda prístupu k médiu ?",
+    options: [
+      "keď uzol potrebuje, pokúsi sa vyslať informácie",
+      "uzol pred vysielaním zasníma, či je médium voľné",
+      "každý má pridelený čas na vysielanie",
+    ],
+    answer: "uzol pred vysielaním zasníma, či je médium voľné",
+  },
+  {
+    question: "Čo je trunk ?",
+    options: [
+      "pole záhlavia rámca prenášaného na trunku, ktorý slúži na určenie príslušnosti rámca k určitej VLAN",
+      "siet pomocou ktorej môžeme fyzický switch rozdeliť na viacero logických switchov, ktoré sú logicky oddelené",
+      "prepojenie najčastejšie medzi switchmi chopné prenášať komunikáciu viacerých VLAN",
+      "Uzol, ktorý detekuje kolíziu",
+    ],
+    answer:
+      "prepojenie najčastejšie medzi switchmi chopné prenášať komunikáciu viacerých VLAN",
+  },
+  {
+    question: "Na čo slúži VTP ?",
+    options: [
+      "na automatickú konfiguráciu VLAN databáz v sieti cez trunky",
+      "na určenie príslušnosti rámca k určitej VLAN",
+      "na zníženie Broadcastu",
+      "na automatické vytvortenie trunku medzi switchmi",
+    ],
+    answer: "na automatickú konfiguráciu VLAN databáz v sieti cez trunky",
+  },
+  {
+    question: "Na čo slúži DTP ?",
+    options: [
+      "na automatickú konfiguráciu VLAN databáz v sieti cez trunky",
+      "na určenie príslušnosti rámca k určitej VLAN",
+      "na zníženie Broadcastu",
+      "na automatické vytvortenie trunku medzi switchmi",
+    ],
+    answer: "na automatické vytvortenie trunku medzi switchmi",
+  },
+  {
+    question: "Aký typ útoku je na obrázku ?",
+    options: ["DOS", "Man in the middle"],
+    image: "obr3",
+    answer: "DOS",
+  },
+  {
+    question: "Aký typ útoku je na obrázku ?",
+    options: ["DOS", "Man in the middle"],
+    image: "obr4",
+    answer: "Man in the middle",
+  },
+  {
+    question: "Aký typ statickej cesty je na obrázku ?",
+    options: [
+      "Štandartná statická cesta",
+      "Základná statická cesta",
+      "Sumerizačná statická cesta",
+      "Záložná statická cesta",
+    ],
+    image: "obr5",
+    answer: "Základná statická cesta",
+  },
+  {
+    question: "Aký typ statickej cesty je na obrázku ?",
+    options: [
+      "Štandartná statická cesta",
+      "Základná statická cesta",
+      "Sumerizačná statická cesta",
+      "Záložná statická cesta",
+    ],
+    image: "obr6",
+    answer: "Sumerizačná statická cesta",
+  },
+  {
+    question: "Aký typ statickej cesty je na obrázku ?",
+    options: [
+      "Štandartná statická cesta",
+      "Základná statická cesta",
+      "Sumerizačná statická cesta",
+      "Záložná statická cesta",
+    ],
+    image: "obr7",
+    answer: "Záložná statická cesta",
   },
 ];
 /*

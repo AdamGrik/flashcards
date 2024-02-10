@@ -43,7 +43,14 @@ const Pagination = (props: PaginationProps) => {
         <Button
           title="Koniec testu"
           id="end"
-          onClick={() => handlePageSelect(selected + 1)}
+          onClick={() => {
+            const userConfirmed: boolean = window.confirm(
+              "Ste si istý, že chcete ukončiť test ?"
+            );
+            if (userConfirmed) {
+              handlePageSelect(selected + 1);
+            }
+          }}
         />
       ) : (
         <Button
