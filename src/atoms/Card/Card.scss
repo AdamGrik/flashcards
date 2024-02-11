@@ -1,5 +1,6 @@
 @import "../../variables.scss";
 .fc-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,16 +22,19 @@
     font-size: large;
     text-align: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: $border-background-color;
     border-radius: 10px;
   }
+
   .fc-card-author {
-    float: right;
-    margin-top: 75px;
-    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    background-color: $border-background-color;
     padding: 6px;
     border-radius: 10px;
     font-size: small;
+    bottom: 0;
+    right: 0;
+    margin: 12px;
   }
   &.fc-card-matematika {
     background-image: url("../../images/matika.jpg");

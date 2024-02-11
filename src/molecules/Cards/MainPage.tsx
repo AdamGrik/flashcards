@@ -1,6 +1,7 @@
 import React from "react";
-import "./Cards.scss";
+import "./MainPage.scss";
 import Card from "../../atoms/Card/Card";
+import Footer from "../Footer/Footer";
 type CardProps = {
   data: CardsData[];
 };
@@ -11,11 +12,11 @@ type CardsData = {
   author: string;
 };
 
-const Cards = (props: CardProps) => {
+const MainPage = (props: CardProps) => {
   const { data } = props;
 
   return (
-    <div>
+    <div className="fc-main-page">
       <div className="fc-cards">
         {data.map((card, i) => (
           <Card
@@ -27,8 +28,9 @@ const Cards = (props: CardProps) => {
         ))}
       </div>
       <div className="fc-school-photo"></div>
+      <Footer />
     </div>
   );
 };
 
-export default Cards;
+export default MainPage;

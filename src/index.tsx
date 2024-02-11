@@ -10,22 +10,22 @@ import { matQuestions } from "./utils/Questions/Matematika";
 import { sjlQuestions } from "./utils/Questions/Slovencina";
 
 import { anjQuestions } from "./utils/Questions/Anglina";
-import Cards from "./molecules/Cards/Cards";
 import { SubjectsData } from "./utils/SubjectsData";
 import { tcozQuestions } from "./utils/Questions/Tcoz";
 import { etsQuestions } from "./utils/Questions/ETS";
+import MainPage from "./molecules/Cards/MainPage";
 
 const App = () => {
   return (
     <HashRouter>
       <Toolbar />
       <Routes>
-        <Route path="/" element={<Cards data={SubjectsData}></Cards>} />
+        <Route path="/" element={<MainPage data={SubjectsData}></MainPage>} />
         <Route path="/matematika" element={<Exam data={matQuestions} />} />
         <Route path="/slovencina" element={<Exam data={sjlQuestions} />} />
         <Route path="/TCOZ" element={<Exam data={tcozQuestions} />} />
         <Route path="/AnglickyJazyk" element={<Exam data={anjQuestions} />} />
-        <Route path="/ETS" element={<Exam data={etsQuestions}/>}/>
+        <Route path="/ETS" element={<Exam data={etsQuestions} />} />
       </Routes>
     </HashRouter>
   );
