@@ -7,7 +7,7 @@ const Cards = () => {
       <div className="fc-footer-left">
         <div>
           <div>Autori: Adam Grík, Adam Petrík</div>
-          <div>Kozultantka: Mgr. Kamila Švecová</div>
+          <div>Konzultantka: Mgr. Kamila Švecová</div>
         </div>
         <div>
           <div>Školský rok: 2023/2024</div>

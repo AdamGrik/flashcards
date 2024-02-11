@@ -16,5 +16,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .fc-navigation-buttons {
+      .fc-button {
+        font-size: x-small;
+        height: 34px;
+        width: 34px;
+        padding: unset;
+      }
+    }
   }
 }

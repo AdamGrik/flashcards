@@ -1,9 +1,6 @@
 @import "../../variables.scss";
 .fc-card {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin: 8px;
   border: $border-color 2px solid;
   padding: 12px;
