@@ -26,9 +26,6 @@ const Question = (props: QuestionProps) => {
     }
   }, [data]);
 
-  const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedOption(event.target.value);
-  };
   const isFinalQuestion =
     data && data.questionNumber === (data.totalQuestions ?? 0) - 1;
 
@@ -51,7 +48,9 @@ const Question = (props: QuestionProps) => {
                 type="radio"
                 value={option}
                 checked={selectedOption === option}
-                onChange={handleOptionChange}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                  setSelectedOption(e.target.value);
+                }}
               />
               <span className="fc-option-abcd">
                 {String.fromCharCode(97 + index)}.){" "}
