@@ -31,6 +31,6 @@ const App = () => {
   );
 };
 
-const container = document.getElementById("root"); // ziskanie elementu root
-const root = createRoot(container!); //inicializacia objektu root
-root.render(<App />); //rendrovanie aplikacie v roote
+const container = document.getElementById("root");
+const root = createRoot(container!);
+root.render(<App />);
