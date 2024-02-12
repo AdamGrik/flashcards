@@ -73,7 +73,7 @@ export const anjQuestions = [
   {
     question: text1Question,
     text: text1,
-    subQuestionId: 0,
+    subQuestionId: 1,
     textQuestion:
       "The public’s attention to doping was greatly raised at the end of the 1980s.",
     options: ["true", "false"],
@@ -82,7 +82,7 @@ export const anjQuestions = [
   {
     question: text1Question,
     text: text1,
-    subQuestionId: 0,
+    subQuestionId: 1,
     textQuestion:
       "Doping tests in a football World Championship started after the IOC created its list of forbidden substances",
     options: ["true", "false"],
@@ -91,7 +91,7 @@ export const anjQuestions = [
   {
     question: text1Question,
     text: text1,
-    subQuestionId: 0,
+    subQuestionId: 1,
     textQuestion:
       "The need to ban doping was emphasised after the invention of synthetic hormones",
     options: ["true", "false"],
@@ -100,7 +100,7 @@ export const anjQuestions = [
   {
     question: text1Question,
     text: text1,
-    subQuestionId: 0,
+    subQuestionId: 1,
     textQuestion:
       "The winner of the marathon at the beginning of the last century was doped before the run.",
     options: ["true", "false"],
@@ -109,7 +109,7 @@ export const anjQuestions = [
   {
     question: text1Question,
     text: text1,
-    subQuestionId: 0,
+    subQuestionId: 1,
     textQuestion:
       "Tests for anabolic steroids were a later addition to the Olympic drug-testing programme.",
     options: ["true", "false"],
@@ -118,7 +118,7 @@ export const anjQuestions = [
   {
     question: text1Question,
     text: text1,
-    subQuestionId: 0,
+    subQuestionId: 1,
     textQuestion:
       "Prohibited substances were first listed for a Tour de France competition.",
     options: ["true", "false"],
