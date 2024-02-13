@@ -962,4 +962,639 @@ export const sjlQuestions = [
     ],
     answer: "reklama, oznámenie, debata",
   },
+  {
+    question: "Aké znaky má administratívny jazykový štýl?",
+    options: [
+      "súkromnosť, objektívnosť, informatívnosť, ústnosť",
+      "objektívnosť, verejnosť, ústnosť, expresívnosť",
+      "neutrálnosť, subjektívnosť, knižnosť, súkromnosť",
+      "knižnosť, adresnosť, stručnosť, písomnosť",
+    ],
+    answer: "knižnosť, adresnosť, stručnosť, písomnosť",
+  },
+  {
+    question: "Medzi dokumentárne útvary administratívneho štýlu nepatrí:",
+    options: ["zápisnica", "protokol", "poštová poukážka", "potvrdenka"],
+    answer: "poštová poukážka",
+  },
+  {
+    question: "Ktoré slohové postupy sú využívané v administratívnom štýle?",
+    options: [
+      "Najviac informačný a výkladový, najmenej opisný a rozprávací.",
+      "Najviac informačný, opisný a najmenej výkladový a rozprávací.",
+      "Najviac opisný, informačný a výkladový a rozprávací vôbec.",
+      "Prevažne informačný, rozprávací a opisný, výkladový najmenej.",
+    ],
+    answer: "Najviac opisný, informačný a výkladový a rozprávací vôbec.",
+  },
+  {
+    question:
+      "Ktorý z nasledujúcich jazykových prostriedkov nie je príznačný pre administratívny jazykový štýl?",
+    options: [
+      "univerbizácia",
+      "enumeratívnosť",
+      "stereotypnosť",
+      "nocionálne slová",
+    ],
+    answer: "univerbizácia",
+  },
+
+  {
+    question:
+      "Ktorý z nasledujúcich jazykových prostriedkov nie je príznačný pre administratívny jazykový štýl?",
+    options: ["heslovitosť", "normatívnosť", "argot", "zložené súvetia"],
+    answer: "argot",
+  },
+  {
+    question:
+      "Ktoré z nasledujúcich útvarov administratívneho štýlu majú kolektívneho adresáta?",
+    options: [
+      "splnomocnenie, upomienka, smernica",
+      "zákon, smernica, vyhláška",
+      "upomienka, vyhláška, oznámenie",
+      "vyhláška, zákon, upomienka",
+    ],
+    answer: "zákon, smernica, vyhláška",
+  },
+  {
+    question:
+      "Ktoré slovo je ako jediné vhodné na použitie v administratívnom jazykovom štýle?",
+    options: ["fabrika", "škôlka", "minerálka", "učilište"],
+    answer: "učilište",
+  },
+  {
+    question: "Aké znaky má publicistický jazykový štýl?",
+    options: [
+      "písomnosť, informatívnosť, monologickosť",
+      "objektívnosť, dialogickosť, ústnosť",
+      "verejnosť, objektívnosť, stručnosť",
+      "súkromnosť, informatívnosť, objektívnosť",
+    ],
+    answer: "písomnosť, informatívnosť, monologickosť",
+  },
+  {
+    question: "Ktoré dva slohové postupy využíva publicistický štýl najviac?",
+    options: [
+      "výkladový a opisný",
+      "informačný a rozprávací",
+      "informačný a výkladový",
+      "opisný a rozprávací",
+    ],
+    answer: "informačný a výkladový",
+  },
+  {
+    question:
+      "Ktorý jazykový útvar nepatrí medzi beletristické útvary publicistického štýlu?",
+    options: ["editoriál", "fejtón", "stĺpček", "reportáž"],
+    answer: "editoriál",
+  },
+  {
+    question:
+      "Ako sa nazýva jednoduchá a krátka správa, zväčša bez udania tlačovej agentúry?",
+    options: ["noticka", "glosa", "komentár", "stĺpček"],
+    answer: "noticka",
+  },
+  {
+    question: "Editoriál využíva predovšetkým",
+    options: [
+      "informačný slohový postup, pričom je zachovaná subjektívnosť",
+      "výkladový slohový postup, pričom je zachovaná objektívnosť",
+      "informačný slohový postup, pričom je zachovaná objektívnosť",
+      "výkladový slohový postup, pričom je zachovaná subjektívnosť",
+    ],
+    answer: "výkladový slohový postup, pričom je zachovaná subjektívnosť",
+  },
+  {
+    question:
+      "Pre ktorý útvar publicistického štýlu platí aktuálnosť, využívanie satiry a prevláda v ňom rozprávací slohový postup?",
+    options: ["anekdota", "fíčer", "fejtón", "noticka"],
+    answer: "fejtón",
+  },
+  {
+    question: "Aké znaky má náučný jazykový štýl?",
+    options: [
+      "verejnosť, monologickosť, ústnosť, odbornosť",
+      "dialogickosť, informačnosť, objektívnosť, stručnosť",
+      "monologickosť, verejnosť, pojmovosť, písomnosť",
+      "písomnosť, objektívnosť, stručnosť, expresívnosť",
+    ],
+    answer: "monologickosť, verejnosť, pojmovosť, písomnosť",
+  },
+  {
+    question:
+      "Ktorý slohový postup je najviac využívaný v náučnom jazykovom štýle?",
+    options: [
+      "informačný slohový postup",
+      "rozprávací slohový postup",
+      "opisný slohový postup",
+      "výkladový slohový postup",
+    ],
+    answer: "výkladový slohový postup",
+  },
+  {
+    question:
+      "Ktoré jazykové prostriedky sú najviac využívané v náučnom jazykovom štýle?",
+    options: [
+      "kancelarizmy",
+      "expresívne slová",
+      "nocionálne slová",
+      "univerbizácia",
+    ],
+    answer: "nocionálne slová",
+  },
+  {
+    question:
+      "Ktoré z nasledujúcich syntaktických prostriedkov nie je v tomto náučnom štýle bežne využívaný?",
+    options: ["elipsa", "enumerácia", "aliterácia", "parentéza"],
+    answer: "aliterácia",
+  },
+  {
+    question:
+      "ktorý lexikálny/morfologický prostriedok nie je vhodný ako jazykový konektor?",
+    options: ["antonymum", "homonymum", "synonymum", "zámeno"],
+    answer: "homonymum",
+  },
+  {
+    question: "Aké znaky má umelecký jazykový štýl?",
+    options: [
+      "súkromnosť, písomnosť, vecnosť",
+      "ústnosť, subjektívnosť, vecnosť",
+      "písomnosť, polysémantickosť, subjektívnosť",
+      "subjektívnosť, informatívnosť, stručnosť",
+    ],
+    answer: "písomnosť, polysémantickosť, subjektívnosť",
+  },
+  {
+    question: "Aké slohové postupy využíva umelecký jazykový štýl?",
+    options: [
+      "Najmä informačný, rozprávací a najmenej opisný a výkladový.",
+      "Všetky okrem výkladového slohového postupu.",
+      "Rozprávací, výkladový, opisný a najmenej informačný slohový postup",
+      "Všetky slohové postupy využíva rovnomerne.",
+    ],
+    answer:
+      "Rozprávací, výkladový, opisný a najmenej informačný slohový postup",
+  },
+  {
+    question: "V umeleckom jazykovom štýle sa používa:",
+    options: [
+      "viazaná, neviazaná aj dialogická reč",
+      "iba viazaná reč",
+      "iba viazaná a neviazaná reč",
+      "iba dialogická a neviazaná reč",
+    ],
+    answer: "viazaná, neviazaná aj dialogická reč",
+  },
+  {
+    question: "Pre umelecký štýl nie je/sú typické:",
+    options: ["eufemizmy", "antonymá", "multiverbizácia", "expresívne slová"],
+    answer: "multiverbizácia",
+  },
+  {
+    question: "Ktorá štylistická figúra nie je založená na opakovaní?",
+    options: ["epifora", "elipsa", "epizeuxa", "epanastrofa"],
+    answer: "elipsa",
+  },
+  {
+    question:
+      "Ktorá obsahová/rámcová časť umeleckého diela sa nenachádza na jeho začiatku?",
+    options: ["prológ", "expozícia", "invokácia", "epilóg"],
+    answer: "epilóg",
+  },
+  {
+    question: "Aké znaky má hovorový jazykový štýl?",
+    options: [
+      "verejnosť, sugestívnosť, ústnosť, adresnosť",
+      "písomnosť, dialogickosť, objektívnosť, polysémantickosť",
+      "objektívnosť, verejnosť, informatívnosť, názornosť",
+      "písomnosť, subjektívnosť, vecnosť, súkromnosť",
+    ],
+    answer: "verejnosť, sugestívnosť, ústnosť, adresnosť",
+  },
+  {
+    question: "Aké slohové postupy využíva hovorový jazykový štýl?",
+    options: [
+      "Najviac výkladový, opisný a rozprávací iba v častiach textu",
+      "Všetky okrem opisného a informačného slohového postupu",
+      "Najviac rozprávací a informačný, najmenej opisný a výkladový vôbec",
+      "Využíva všetky slohové postupy rovnomerne",
+    ],
+    answer: "Najviac výkladový, opisný a rozprávací iba v častiach textu",
+  },
+  {
+    question:
+      "Ktorý z nasledujúcich starovekých rečníkov nepatril do Starovekého Grécka?",
+    options: ["Sokrates", "Aristoteles", "Cicero", "Platón"],
+    answer: "Cicero",
+  },
+  {
+    question: "Ktorý zo žánrov rečníckeho štýlu medzi agitačné žánre?",
+    options: ["súdna reč", "kázeň", "referát", "smútočný prejav"],
+    answer: "súdna reč",
+  },
+  {
+    question: "Ktoré jazykové štýly sú prevažne subjektívne?",
+    options: [
+      "rečnícky a publicistický jazykový štýl",
+      "umelecký a rečnícky jazykový štýl",
+      "umelecký a publicistický jazykový štýl",
+      "hovorový a umelecký jazykový štýl",
+    ],
+    answer: "hovorový a umelecký jazykový štýl",
+  },
+  {
+    question:
+      "V ktorých jazykových štýloch sa nezvyknú používať frazeologizmy?",
+    options: [
+      "publicistický a umelecký štýl",
+      "administratívny a náučný štýl",
+      "rečnícky a administratívny štýl",
+      "hovorový a publicistický štýl",
+    ],
+    answer: "administratívny a náučný štýl",
+  },
+  {
+    question:
+      "Ktorý slohový postup majú hovorový a administratívny štýl najmenej spoločný?",
+    options: [
+      "informačný slohový postup",
+      "opisný slohový postup",
+      "rozprávací slohový postup",
+      "výkladový slohový postup",
+    ],
+    answer: "rozprávací slohový postup",
+  },
+  {
+    question: "Ktoré dva jazykové štýly zvyknú používať nocionálne slová?",
+    options: [
+      "umelecký a rečnícky",
+      "publicistický a hovorový",
+      "administratívny a náučný",
+      "rečnícky a hovorový",
+    ],
+    answer: "administratívny a náučný",
+  },
+  {
+    question:
+      "Ktorý slohový postup najviac dominuje v náučnom a rečníckom jazykovom štýle?",
+    options: [
+      "informačný slohový postup",
+      "opisný slohový postup",
+      "výkladový slohový postup",
+      "rozprávací slohový postup",
+    ],
+    answer: "výkladový slohový postup",
+  },
+  {
+    question: "Ktorý jazykový štýl využíva najmenej informačný slohový postup?",
+    options: [
+      "publicistický jazykový štýl",
+      "hovorový jazykový štýl",
+      "rečnícky jazykový štýl",
+      "umelecký jazykový štýl",
+    ],
+    answer: "umelecký jazykový štýl",
+  },
+  {
+    question: "Ktoré jazykové štýly spája multiverbizácia?",
+    options: [
+      "umelecký a rečnícky",
+      "administratívny a náučný",
+      "hovorový a rečnícky",
+      "náučný a publicistický",
+    ],
+    answer: "administratívny a náučný",
+  },
+  {
+    question: "Ktoré dva jazykové štýly sú využívané v reportáži?",
+    options: [
+      "publicistický a umelecký štýl",
+      "publicistický a hovorový štýl",
+      "náučný a rečnícky jazykový štýl",
+      "hovorový a rečnícky náučný štýl",
+    ],
+    answer: "publicistický a umelecký štýl",
+  },
+  {
+    question: "Ktoré dve jazykové štýly sú využívané v prednáške?",
+    options: [
+      "publicistický a náučný",
+      "náučný a rečnícky",
+      "náučný a publicistický",
+      "náučný a hovorový",
+    ],
+    answer: "náučný a rečnícky",
+  },
+  {
+    question: "Do ktorého jazykového štýlu patrí glosa?",
+    options: [
+      "administratívny jazykový štýl",
+      "umelecký jazykový štýl",
+      "publicistický jazykový štýl",
+      "náučný jazykový štýl",
+    ],
+    answer: "publicistický jazykový štýl",
+  },
+  {
+    question:
+      "Ktorá možnosť obsahuje žánre rozsahovo zoradené od najkratšieho po najdlhší?",
+    options: [
+      "prívet, anekdota, prejav, príhovor",
+      "anekdota, príhovor, prívet, prejav",
+      "prívet, anekdota, prejav, príhovor",
+      "anekdota, prívet, príhovor, prejav",
+    ],
+    answer: "anekdota, prívet, príhovor, prejav",
+  },
+  {
+    question: "Do ktorého jazykového štýlu zaraďujeme kázeň?",
+    options: [
+      "umelecký jazykový štýl",
+      "hovorový jazykový štýl",
+      "náučný jazykový štýl",
+      "rečnícky jazykový štýl",
+    ],
+    answer: "rečnícky jazykový štýl",
+  },
+  {
+    question: "Medzi ktoré jazykové štýly patrí editoriál?",
+    options: [
+      "hovorový jazykový štýl",
+      "publicistický jazykový štýl",
+      "administratívny jazykový štýl",
+      "náučný jazykový štýl",
+    ],
+    answer: "publicistický jazykový štýl",
+  },
+  {
+    question:
+      "V ktorých jazykových štýloch je rozprávací slohový postup najmenej zastúpený?",
+    options: [
+      "publicistický a administratívny jazykový štýl",
+      "hovorový a náučný jazykový štýl",
+      "náučný a publicistický jazykový štýl",
+      "administratívny a náučný jazykový štýl",
+    ],
+    answer: "administratívny a náučný jazykový štýl",
+  },
+  {
+    question:
+      "Čo znamená latinský pojem in medias res v súvislosti s rozprávaním?",
+    options: [
+      "rozprávanie deja bez časovej následnosti",
+      "rozprávanie deju, ktorý sa ešte len má stať",
+      "rozprávanie sa začína v strede deja bez expozície",
+      "rozprávanie deja od konca príbehu",
+    ],
+    answer: "rozprávanie sa začína v strede deja bez expozície",
+  },
+  {
+    question: "Ktorá osoba rozpráva v tzv. priamom rozprávačovi?",
+    options: [
+      "1. osoba jednotného čísla",
+      "oko kamery",
+      "2. osoba jednotného čísla",
+      "3. osoba jednotného čísla",
+    ],
+    answer: "1. osoba jednotného čísla",
+  },
+  {
+    question:
+      "V ktorom z nasledujúcich jazykových útvarov prevažuje rozprávací slohový postup?",
+    options: ["glosa", "noticka", "editoriál", "fejtón"],
+    answer: "fejtón",
+  },
+  {
+    question:
+      "Aký je základný znak pre reťazový kompozičný princíp v rozprávaní?",
+    options: [
+      "dejové udalosti na seba chronologicky nenadväzujú",
+      "príbehy na seba nadväzujú, a to napr. prostredníctvom hlavnej postavy",
+      "dejové udalosti na seba chronologicky nadväzujú",
+      "dej príbehu začína až po hlavnej udalosti",
+    ],
+    answer:
+      "príbehy na seba nadväzujú, a to napr. prostredníctvom hlavnej postavy",
+  },
+  {
+    question:
+      "V ktorom jazykovom štýle je informačný slohový postup najmenej využívaný?",
+    options: [
+      "hovorový jazykový štýl",
+      "umelecký jazykový štýl",
+      "rečnícky jazykový štýl",
+      "administratívny jazykový štýl",
+    ],
+    answer: "umelecký jazykový štýl",
+  },
+  {
+    question:
+      "V ktorom žánri publicistického jazykového štýlu prevláda informačný slohový postup?",
+    options: ["fejtón", "glosa", "noticka", "stĺpček"],
+    answer: "noticka",
+  },
+  {
+    question:
+      "V ktorom žánri publicistického jazykového štýlu najviac prevláda informačný slohový postup?",
+    options: ["interview", "recenzia", "anotácia", "komentár"],
+    answer: "anotácia",
+  },
+  {
+    question: "Ktorý útvar využíva primárne informačný slohový postup?",
+    options: ["úvodník", "editoriál", "inzerát", "reportáž"],
+    answer: "inzerát",
+  },
+  {
+    question: "V ktorom jazykovom štýle sa nepoužíva opisný slohový postup?",
+    options: [
+      "hovorový jazykový štýl",
+      "administratívny jazykový štýl",
+      "rečnícky jazykový štýl",
+      "používa sa vo všetkých jazykových štýloch",
+    ],
+    answer: "používa sa vo všetkých jazykových štýloch",
+  },
+  {
+    question:
+      "Ktorý z nasledujúcich jazykových prostriedkov je typický pre opisný slohový postup?",
+    options: [
+      "multiverbizácia",
+      "enumerácia",
+      "nocionálne slová",
+      "žurnalizmy",
+    ],
+    answer: "enumerácia",
+  },
+  {
+    question:
+      "Aký druh prívlastku je v nasledujúcej vete? : Z oblohy padali veľké biele vločky.",
+    options: ["holý", "viacnásobný", "postupne rozvíjací", "rozvitý"],
+    answer: "postupne rozvíjací",
+  },
+  {
+    question: "V ktorom druhu opisu je najvhodnejšie využívať synekdochu?",
+    options: [
+      "objektívny opis",
+      "opis pracovného postupu",
+      "náučný opis",
+      "náladový opis",
+    ],
+    answer: "náladový opis",
+  },
+  {
+    question:
+      "Aký druh slovesa je použitý v slovnom spojení (z opisu pracovnej činnosti) krájajúc mrkvu?",
+    options: [
+      "činné príčastie prítomné",
+      "činné príčastie minulé",
+      "prechodník",
+      "trpné príčastie",
+    ],
+    answer: "prechodník",
+  },
+  {
+    question: "V ktorej možnosti je nesprávne vytvorený komparatív?",
+    options: ["kvetnatejší", "drevenejší", "horší", "viac teplejší"],
+    answer: "viac teplejší",
+  },
+  {
+    question:
+      "V ktorom slohovom útvare je najviac využitý výkladový slohový postup?",
+    options: ["posudok", "inzerát", "štruktúrovaný životopis", "editoriál"],
+    answer: "editoriál",
+  },
+  {
+    question:
+      "Aký prívlastok má výklad, v ktorom myšlienkovo postupujeme od náročnejšiemu k ľahšiemu, a môžeme ho využiť napríklad pri rozbore básne?",
+    options: ["induktívny", "deduktívny", "analogický", "komparatívny"],
+    answer: "deduktívny",
+  },
+  {
+    question:
+      "Ktoré jazykové prostriedky sú najmenej vhodné pre využitie v odbornom výklade?",
+    options: [
+      "združené pomenovania",
+      "knižné slová",
+      "termíny",
+      "pojmové slová",
+    ],
+    answer: "knižné slová",
+  },
+  {
+    question:
+      "Ktorý žáner publicistického jazykového štýlu využíva najmenej úvahu?",
+    options: ["fejtón", "glosa", "stĺpček", "noticka"],
+    answer: "stĺpček",
+  },
+  {
+    question:
+      "Aký typ priraďovacieho súvetia je súvetie: Teplota na povrchu sa značne zvýšila, ale nestačilo to na dosiahnutie bodu varu.",
+    options: [
+      "odporovacie súvetie",
+      "zlučovacie súvetie",
+      "vylučovacie súvetie",
+      "dôvodové súvetie",
+    ],
+    answer: "odporovacie súvetie",
+  },
+  {
+    question:
+      "Ktorý lexikálny prostriedok je použitý ako jazykový konektor v uvedených vetách? Párne čísla boli napísané jednou cifrou (číslicou). Nepárne mali malý zvyšok po delení.",
+    options: ["synonymá", "polysémia", "homonymá", "antonymá"],
+    answer: "antonymá",
+  },
+  {
+    question: "Do ktorého slohového postupu patrí posudok?",
+    options: [
+      "informačný slohový postup",
+      "rozprávací slohový postup",
+      "opisný slohový postup",
+      "výkladový slohový postup",
+    ],
+    answer: "opisný slohový postup",
+  },
+  {
+    question: "Ktoré dva slohové postupy využíva beletrizovaný životopis?",
+    options: [
+      "opisný a rozprávací",
+      "informačný a rozprávací",
+      "výkladový a opisný",
+      "rozprávací a výkladový",
+    ],
+    answer: "opisný a rozprávací",
+  },
+  {
+    question:
+      "Do ktorého slohového žánru sa najviac hodí nasledujúca veta? Susedia ho často vídavajú s úsmevom na tvári.",
+    options: [
+      "subjektívny opis",
+      "nepriama charakteristika",
+      "skupinová charakteristika",
+      "objektívna charakteristika",
+    ],
+    answer: "nepriama charakteristika",
+  },
+  {
+    question:
+      "Ktorý slohový postup je dominantný pri výstavbe rečníckeho prejavu?",
+    options: [
+      "informačný slohový postup",
+      "opisný slohový postup",
+      "výkladový slohový postup",
+      "rozprávací slohový postup",
+    ],
+    answer: "výkladový slohový postup",
+  },
+  {
+    question: "Ktorý slohový postup je základom pre esej?",
+    options: [
+      "rozprávací slohový postup",
+      "informačný slohový postup",
+      "výkladový slohový postup",
+      "opisný slohový postup",
+    ],
+    answer: "výkladový slohový postup",
+  },
+  {
+    question: "Ktorý slohový postup je základom pre anekdotu?",
+    options: [
+      "rozprávací slohový postup",
+      "informačný slohový postup",
+      "výkladový slohový postup",
+      "opisný slohový postup",
+    ],
+    answer: "rozprávací slohový postup",
+  },
+  {
+    question: "Ktorý slohový postup využíva kompozičný postup in medias res?",
+    options: [
+      "rozprávací slohový postup",
+      "informačný slohový postup",
+      "výkladový slohový postup",
+      "opisný slohový postup",
+    ],
+    answer: "rozprávací slohový postup",
+  },
+  {
+    question:
+      "Ktorý slohový postup využíva prvú osobu množného čísla a/alebo druhú sobou množného čísla spolu s imperatívom?",
+    options: [
+      "rozprávací slohový postup",
+      "informačný slohový postup",
+      "výkladový slohový postup",
+      "opisný slohový postup",
+    ],
+    answer: "opisný slohový postup",
+  },
+  {
+    question:
+      "Ktorý z uvedených slohových postupov je najdôležitejší pri pozvánke?",
+    options: [
+      "opisný slohový postup",
+      "informačný slohový postup",
+      "výkladový slohový postup",
+      "rozprávací slohový postup",
+    ],
+    answer: "informačný slohový postup",
+  },
 ];
