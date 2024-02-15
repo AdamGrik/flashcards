@@ -4,6 +4,7 @@ import Question from "../../../molecules/Question/Question";
 import EndOfExam from "../../EndOfExam/EndOfExam";
 import { shuffleArray } from "../../../utils/common/shuffleArray";
 import { calculateFinalScore } from "../../../utils/common/calculateFinalScore";
+import ExamTimer from "../../../atoms/Timer";
 
 export type ExamQuestionProps = {
   question: string;
@@ -31,6 +32,7 @@ const Exam = (props: ExamProps) => {
   const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
+  const [isTimerDone, setIsTimerDone] = useState(false);
 
   useEffect(() => {
     const shuffledData = shuffleArray(data);
@@ -39,6 +41,12 @@ const Exam = (props: ExamProps) => {
     });
     setQuestionsData(newData);
   }, [data]);
+  useEffect(() => {
+    if (isTimerDone) {
+      const finalScore = calculateFinalScore(questionsData);
+      setEndOfExam({ finished: true, score: finalScore });
+    }
+  }, [isTimerDone, questionsData]);
 
   const handleQuestionChange = (
     selectedOption: string,
@@ -64,7 +72,8 @@ const Exam = (props: ExamProps) => {
 
   return (
     <>
-      {endOfExam.finished ? (
+      <ExamTimer setIsTimerDone={setIsTimerDone} />
+      {endOfExam.finished || isTimerDone ? (
         <EndOfExam
           questions={questionsData}
           score={endOfExam.score}

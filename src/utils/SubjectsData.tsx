@@ -1,26 +1,26 @@
 export const SubjectsData = [
   {
-    link: "matematika",
+    link: "matExam",
     name: "Matematika",
     author: "Adam Petrík",
   },
   {
-    link: "slovencina",
+    link: "sljExam",
     name: "Slovensky jazyk a literatúra",
     author: "Adam Petrík",
   },
   {
-    link: "AnglickyJazyk ",
+    link: "AnjExam",
     name: "Anglický Jazyk",
     author: "Adam Petrík",
   },
   {
-    link: "TCOZ",
+    link: "TCOZExam",
     name: "Teoretická časť odbornej zložky",
     author: "Adam Grík",
   },
   {
-    link: "ETS",
+    link: "ETSExam",
     name: "Elektrotechnická spôsobilosť",
     author: "Matúš Konečný, Adam Krajčovič",
   },

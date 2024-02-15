@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./MainPage.scss";
 import Card from "../../atoms/Card/Card";
 import Footer from "../Footer/Footer";
+import Button from "../../atoms/Button/Button";
+
 type CardProps = {
   data: CardsData[];
 };

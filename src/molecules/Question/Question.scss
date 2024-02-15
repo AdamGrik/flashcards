@@ -2,7 +2,9 @@
 .fc-question {
   display: flex;
   justify-content: center;
-
+  .fc-question-timer {
+    font-size: xx-large;
+  }
   .fc-question-border {
     border: $border-color 4px solid;
     box-shadow: 0 0 15px $border-color;
