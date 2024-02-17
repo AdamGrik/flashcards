@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { calculateFinalScore } from "../utils/common/calculateFinalScore";
 
 type ExamTimerProps = {
   setIsTimerDone: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const ExamTimer: React.FC<ExamTimerProps> = ({ setIsTimerDone }) => {
-  const [counter, setCounter] = useState(60);
+  const initialMinutes = 20;
+  const [counter, setCounter] = useState(initialMinutes * 60);
 
   useEffect(() => {
     if (counter > 0) {
@@ -20,7 +20,15 @@ const ExamTimer: React.FC<ExamTimerProps> = ({ setIsTimerDone }) => {
     }
   }, [counter, setIsTimerDone]);
 
-  return <>{counter}</>;
+  const displayMinutes = Math.floor(counter / 60);
+  const displaySeconds = counter % 60;
+
+  return (
+    <>
+      {displayMinutes}:
+      {displaySeconds < 10 ? `0${displaySeconds}` : displaySeconds}
+    </>
+  );
 };
 
 export default ExamTimer;
