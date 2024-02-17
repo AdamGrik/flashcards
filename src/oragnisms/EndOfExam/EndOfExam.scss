@@ -14,10 +14,10 @@
     font-weight: bolder;
     margin-top: 2px;
     &.fc-percentage-color-pass {
-      color: rgb(31, 160, 31);
+      color: $pass-color;
     }
     &.fc-percentage-color-fail {
-      color: rgb(235, 49, 49);
+      color: $fail-color;
     }
   }
   .fc-grade-and-number {
@@ -58,10 +58,10 @@
         background-repeat: no-repeat;
       }
       &.fc-end-of-exam-question-incorrect {
-        border: 2px solid red;
+        border: 2px solid $fail-color;
       }
       &.fc-end-of-exam-question-correct {
-        border: 2px solid green;
+        border: 2px solid $pass-color;
       }
     }
   }
@@ -74,8 +74,8 @@
     padding: 4px 4px 4px 5px;
   }
   .fc-end-of-exam-question-correct-answer {
-    border: green 1px solid;
-    background-color: rgba(0, 128, 0, 0.112);
+    border: $pass-color 1px solid;
+    background-color: #0080001d;
     margin-bottom: 4px;
     padding: 4px;
     border-radius: 4px;
@@ -86,8 +86,8 @@
     }
   }
   .fc-end-of-exam-question-selected-answer {
-    border: red 1px solid;
-    background-color: rgba(255, 0, 0, 0.112);
+    border: $fail-color 1px solid;
+    background-color: #ff2f2025;
     margin-bottom: 4px;
     padding: 4px;
     border-radius: 4px;

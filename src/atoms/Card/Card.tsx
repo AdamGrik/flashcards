@@ -14,10 +14,8 @@ const Card = (props: CardProps) => {
   return (
     <Link to={link} className="fc-card-link">
       <div className={`fc-card fc-card-${link}`}>
-        <div>
-          <div className={"fc-card-title"}>{title}</div>
-          <div className="fc-card-author">Autor: {author}</div>
-        </div>
+        <div className={"fc-card-title"}>{title}</div>
+        <div className="fc-card-author">Autor: {author}</div>
       </div>
     </Link>
   );

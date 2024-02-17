@@ -13,7 +13,7 @@ import { anjQuestions } from "./utils/Questions/Anglina";
 import { SubjectsData } from "./utils/SubjectsData";
 import { tcozQuestions } from "./utils/Questions/Tcoz";
 import { etsQuestions } from "./utils/Questions/ETS";
-import MainPage from "./molecules/Cards/MainPage";
+import MainPage from "./molecules/MainPage/MainPage";
 
 import BeforeExam from "./molecules/BeforeExam/BeforeExam";
 

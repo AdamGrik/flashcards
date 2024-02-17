@@ -72,20 +72,22 @@ const Exam = (props: ExamProps) => {
 
   return (
     <>
-      <ExamTimer setIsTimerDone={setIsTimerDone} />
       {endOfExam.finished || isTimerDone ? (
         <EndOfExam
           questions={questionsData}
           score={endOfExam.score}
           totalQuestions={totalQuestions}></EndOfExam>
       ) : (
-        <Question
-          data={{
-            ...questionsData[currentQuestion],
-            totalQuestions: totalQuestions,
-          }}
-          onQuestionChange={handleQuestionChange}
-        />
+        <>
+          <ExamTimer setIsTimerDone={setIsTimerDone} />
+          <Question
+            data={{
+              ...questionsData[currentQuestion],
+              totalQuestions: totalQuestions,
+            }}
+            onQuestionChange={handleQuestionChange}
+          />
+        </>
       )}
     </>
   );

@@ -87,9 +87,7 @@ const endOfExam = (props: ExamProps) => {
                       <div
                         key={index}
                         className="fc-end-of-exam-question-correct-answer">
-                        <div>
-                          {String.fromCharCode(97 + index)}.) {option}
-                        </div>
+                        {String.fromCharCode(97 + index)}.) {option}
                         <div className="correct-answer">Správna odpoveď</div>
                       </div>
                     );
@@ -98,9 +96,7 @@ const endOfExam = (props: ExamProps) => {
                       <div
                         key={index}
                         className="fc-end-of-exam-question-selected-answer">
-                        <div>
-                          {String.fromCharCode(97 + index)}.) {option}
-                        </div>
+                        {String.fromCharCode(97 + index)}.) {option}
                         <div className="your-answer">Vaša odpoveď</div>
                       </div>
                     );
@@ -109,9 +105,7 @@ const endOfExam = (props: ExamProps) => {
                       <div
                         key={index}
                         className="fc-end-of-exam-question-option">
-                        <div>
-                          {String.fromCharCode(97 + index)}.) {option}{" "}
-                        </div>
+                        {String.fromCharCode(97 + index)}.) {option}{" "}
                       </div>
                     );
                   }

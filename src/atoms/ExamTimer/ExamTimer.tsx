@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import "./ExamTimer.scss";
 type ExamTimerProps = {
   setIsTimerDone: React.Dispatch<React.SetStateAction<boolean>>;
 };
@@ -24,10 +24,10 @@ const ExamTimer: React.FC<ExamTimerProps> = ({ setIsTimerDone }) => {
   const displaySeconds = counter % 60;
 
   return (
-    <>
+    <div className="fc-timer">
       {displayMinutes}:
       {displaySeconds < 10 ? `0${displaySeconds}` : displaySeconds}
-    </>
+    </div>
   );
 };
 

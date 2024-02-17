@@ -19,7 +19,6 @@
     color: white;
     &:hover {
       filter: brightness(80%);
-      cursor: pointer;
     }
   }
   &.fc-button-back {
@@ -27,7 +26,6 @@
     color: white;
     &:hover {
       filter: brightness(80%);
-      cursor: pointer;
     }
   }
   &.fc-button-end {
@@ -35,7 +33,6 @@
     color: white;
     &:hover {
       filter: brightness(85%);
-      cursor: pointer;
     }
   }
   &:disabled {

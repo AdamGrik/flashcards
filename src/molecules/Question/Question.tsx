@@ -40,36 +40,35 @@ const Question = (props: QuestionProps) => {
         {data.image !== undefined ? (
           <div className={`fc-question-img fc-image-${data.image}`} />
         ) : null}
-        <div>
-          {data.options.map((option, index) => (
-            <div key={index} className="fc-question-bottom">
-              <input
-                className="fc-question-radio"
-                type="radio"
-                value={option}
-                checked={selectedOption === option}
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                  setSelectedOption(e.target.value);
-                }}
-              />
-              <span className="fc-option-abcd">
-                {String.fromCharCode(97 + index)}.){" "}
-              </span>{" "}
-              {option}
-            </div>
-          ))}
-          <Pagination
-            totalPages={data.totalQuestions ?? 0}
-            selected={data.questionNumber}
-            isFinalQuestion={isFinalQuestion}
-            onPageSelect={(selectedPage) =>
-              onQuestionChange(
-                selectedOption,
-                data.questionNumber ?? 0,
-                selectedPage
-              )
-            }></Pagination>
-        </div>
+
+        {data.options.map((option, index) => (
+          <div key={index} className="fc-question-bottom">
+            <input
+              className="fc-question-radio"
+              type="radio"
+              value={option}
+              checked={selectedOption === option}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                setSelectedOption(e.target.value);
+              }}
+            />
+            <span className="fc-option-abcd">
+              {String.fromCharCode(97 + index)}.){" "}
+            </span>{" "}
+            {option}
+          </div>
+        ))}
+        <Pagination
+          totalPages={data.totalQuestions ?? 0}
+          selected={data.questionNumber}
+          isFinalQuestion={isFinalQuestion}
+          onPageSelect={(selectedPage) =>
+            onQuestionChange(
+              selectedOption,
+              data.questionNumber ?? 0,
+              selectedPage
+            )
+          }></Pagination>
       </div>
     </div>
   ) : null;
