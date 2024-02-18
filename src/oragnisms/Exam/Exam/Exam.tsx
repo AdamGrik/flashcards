@@ -32,11 +32,16 @@ const Exam = (props: ExamProps) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
   const [isTimerDone, setIsTimerDone] = useState(false);
+  const [initialMinutes, setInitialMiutnes] = useState(20);
+  const handleTimeOfExamChange = (value: number) => {
+    setInitialMiutnes(value);
+  };
   const handleNumberOfQuestionsChange = (value: number) => {
     if (value <= data.length) {
       setTotalQuestions(value);
     }
   };
+
   const handleStartExam = () => {
     setShowBeforeExam(false);
   };
@@ -81,6 +86,7 @@ const Exam = (props: ExamProps) => {
       <BeforeExam
         onNumberOfQuestionsChange={handleNumberOfQuestionsChange}
         onStartExam={handleStartExam}
+        onTimeOfExamChange={handleTimeOfExamChange}
       />
       {showBeforeExam ? null : (
         <>
@@ -91,7 +97,10 @@ const Exam = (props: ExamProps) => {
               totalQuestions={totalQuestions}></EndOfExam>
           ) : (
             <>
-              <ExamTimer setIsTimerDone={setIsTimerDone} />
+              <ExamTimer
+                setIsTimerDone={setIsTimerDone}
+                initialMinutes={initialMinutes}
+              />
               <Question
                 data={{
                   ...questionsData[currentQuestion],

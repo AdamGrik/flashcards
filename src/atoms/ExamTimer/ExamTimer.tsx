@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./ExamTimer.scss";
 type ExamTimerProps = {
   setIsTimerDone: React.Dispatch<React.SetStateAction<boolean>>;
+  initialMinutes: number;
 };
 
-const ExamTimer: React.FC<ExamTimerProps> = ({ setIsTimerDone }) => {
-  const initialMinutes = 20;
+const ExamTimer = (props: ExamTimerProps) => {
+  const { setIsTimerDone, initialMinutes } = props;
   const [counter, setCounter] = useState(initialMinutes * 60);
 
   useEffect(() => {
