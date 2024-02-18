@@ -23,16 +23,11 @@ const App = () => {
       <Toolbar />
       <Routes>
         <Route path="/" element={<MainPage data={SubjectsData}></MainPage>} />
-        <Route path="/mat" element={<BeforeExam />} />
-        <Route path="/mat/exam" element={<Exam data={matQuestions} />} />
-        <Route path="/slj" element={<BeforeExam />} />
-        <Route path="/slj/exam" element={<Exam data={sjlQuestions} />} />
-        <Route path="/tcoz" element={<BeforeExam />} />
-        <Route path="/tcoz/exam" element={<Exam data={tcozQuestions} />} />
-        <Route path="/anj" element={<BeforeExam />} />
-        <Route path="/anj/exam" element={<Exam data={anjQuestions} />} />
-        <Route path="/ets" element={<BeforeExam />} />
-        <Route path="/ets/exam" element={<Exam data={etsQuestions} />} />
+        <Route path="/mat" element={<Exam data={matQuestions} />} />
+        <Route path="/slj" element={<Exam data={sjlQuestions} />} />
+        <Route path="/tcoz" element={<Exam data={tcozQuestions} />} />
+        <Route path="/anj" element={<Exam data={anjQuestions} />} />
+        <Route path="/ets" element={<Exam data={etsQuestions} />} />
       </Routes>
     </HashRouter>
   );
