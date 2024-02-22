@@ -1,3 +1,9 @@
+export const tcozDatabaseOptions = [
+  { title: "Elektrotechnika" },
+  { title: "Elektronika" },
+  { title: "Sieťové technológie" },
+  { title: "Komunikačné technológie" },
+];
 export const tcozQuestions = [
   //elektrotechnika
   {

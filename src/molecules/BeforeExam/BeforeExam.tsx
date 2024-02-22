@@ -1,17 +1,24 @@
 import React, { ChangeEvent, useState } from "react";
 import Button from "../../atoms/Button/Button";
 import { useNavigate } from "react-router-dom";
+import Checkbox from "../../atoms/Checkbox/Checkbox";
 type BeforeExamProps = {
   onNumberOfQuestionsChange: (value: number) => void;
   onTimeOfExamChange: (value: number) => void;
   onStartExam: () => void;
+  data: CheckboxData[];
 };
-
+type CheckboxData = {
+  title: string;
+};
 const BeforeExam = (props: BeforeExamProps) => {
-  const { onNumberOfQuestionsChange, onStartExam, onTimeOfExamChange } = props;
+  const { onNumberOfQuestionsChange, onStartExam, onTimeOfExamChange, data } =
+    props;
   const [numberOfQuestions, setNumberOfQuestions] = useState(20);
   const [showBeforeExam, setShowBeforeExam] = useState(true);
-
+  const [checkboxStates, setCheckboxStates] = useState<boolean[]>(
+    data.map(() => false)
+  );
   const [selectedTime, setselectedTime] = useState(20);
 
   const handleInputQuestionsChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -28,10 +35,24 @@ const BeforeExam = (props: BeforeExamProps) => {
     onStartExam();
     setShowBeforeExam(false);
   };
+
+  const handleCheckboxChange = (index: number, checked: boolean) => {
+    const newCheckboxStates = [...checkboxStates];
+    newCheckboxStates[index] = checked;
+    setCheckboxStates(newCheckboxStates);
+  };
   return (
     <>
       {showBeforeExam && (
         <>
+          {data.map((option, index) => (
+            <Checkbox
+              key={option.title}
+              title={option.title}
+              isChecked={checkboxStates[index]}
+              onChange={(checked) => handleCheckboxChange(index, checked)}
+            />
+          ))}
           <div>
             <input
               type="number"
@@ -46,8 +67,6 @@ const BeforeExam = (props: BeforeExamProps) => {
               onChange={handleInputTimeChange}></input>
             cas
           </div>
-          <div>{numberOfQuestions}</div>
-          <div>{selectedTime}</div>
           <Button title="Spustiť test" onClick={handleStartExamClick}></Button>
         </>
       )}

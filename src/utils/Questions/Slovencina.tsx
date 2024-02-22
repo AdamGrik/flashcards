@@ -1,3 +1,8 @@
+export const sljDatabaseOptions = [
+  { title: "Slovenský jazyk" },
+  { title: "Literatúra" },
+];
+
 export const sjlQuestions = [
   {
     question: "Ktorá z nasledujúcich viet neobsahuje vzťahové prídavné meno?",

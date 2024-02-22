@@ -1,3 +1,5 @@
+export const matDatabaseOptions = [{ title: "Príklady" }, { title: "Teória" }];
+
 export const matQuestions = [
   {
     question: "Ako sa nazýva spojenie výrokov pomocou logickej spojky ∨?",

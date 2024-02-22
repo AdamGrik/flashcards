@@ -19,13 +19,13 @@ export type ExamQuestionProps = {
   textQuestion?: string;
   subQuestionId?: number;
 };
-
 type ExamProps = {
   data: ExamQuestionProps[];
+  databaseoptions?: any;
 };
 
 const Exam = (props: ExamProps) => {
-  const { data } = props;
+  const { data, databaseoptions } = props;
   const [totalQuestions, setTotalQuestions] = useState(20);
   const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
   const [showBeforeExam, setShowBeforeExam] = useState(true);
@@ -84,6 +84,7 @@ const Exam = (props: ExamProps) => {
   return (
     <>
       <BeforeExam
+        data={databaseoptions}
         onNumberOfQuestionsChange={handleNumberOfQuestionsChange}
         onStartExam={handleStartExam}
         onTimeOfExamChange={handleTimeOfExamChange}

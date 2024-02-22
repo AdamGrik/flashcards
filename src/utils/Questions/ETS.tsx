@@ -1,3 +1,11 @@
+export const etsDatabaseOptions = [
+  { title: "Prvá pomoc" },
+  { title: "Zákony vyhlašky a označovanie v elektrotechnike" },
+  { title: "Ochranné opatrenia pred úrazom elektrickým prúdom" },
+  { title: "Bleskozvody" },
+  { title: "Elektrické inštalácie" },
+];
+
 export const etsQuestions = [
   //ochranne opatrenia
 
