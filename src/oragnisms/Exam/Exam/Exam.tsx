@@ -88,6 +88,7 @@ const Exam = (props: ExamProps) => {
         onNumberOfQuestionsChange={handleNumberOfQuestionsChange}
         onStartExam={handleStartExam}
         onTimeOfExamChange={handleTimeOfExamChange}
+        maxQuestions={data.length}
       />
       {showBeforeExam ? null : (
         <>

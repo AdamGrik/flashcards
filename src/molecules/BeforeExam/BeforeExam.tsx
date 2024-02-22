@@ -7,13 +7,19 @@ type BeforeExamProps = {
   onTimeOfExamChange: (value: number) => void;
   onStartExam: () => void;
   data: CheckboxData[];
+  maxQuestions: number;
 };
 type CheckboxData = {
   title: string;
 };
 const BeforeExam = (props: BeforeExamProps) => {
-  const { onNumberOfQuestionsChange, onStartExam, onTimeOfExamChange, data } =
-    props;
+  const {
+    onNumberOfQuestionsChange,
+    onStartExam,
+    onTimeOfExamChange,
+    data,
+    maxQuestions,
+  } = props;
   const [numberOfQuestions, setNumberOfQuestions] = useState(20);
   const [showBeforeExam, setShowBeforeExam] = useState(true);
   const [checkboxStates, setCheckboxStates] = useState<boolean[]>(
@@ -41,6 +47,11 @@ const BeforeExam = (props: BeforeExamProps) => {
     newCheckboxStates[index] = checked;
     setCheckboxStates(newCheckboxStates);
   };
+  if (numberOfQuestions > maxQuestions) {
+    window.alert("Maximálny počet otázok je " + maxQuestions);
+    setNumberOfQuestions(1);
+    handleInputQuestionsChange;
+  }
   return (
     <>
       {showBeforeExam && (
@@ -54,18 +65,24 @@ const BeforeExam = (props: BeforeExamProps) => {
             />
           ))}
           <div>
+            Počet otázok
             <input
               type="number"
               value={numberOfQuestions}
-              onChange={handleInputQuestionsChange}></input>
-            pocet otazok
+              onChange={handleInputQuestionsChange}
+              max={maxQuestions}
+              min={1}></input>
+            /{maxQuestions}
           </div>
           <div>
+            Čas
             <input
               type="number"
               value={selectedTime}
-              onChange={handleInputTimeChange}></input>
-            cas
+              onChange={handleInputTimeChange}
+              min={1}
+              max={999}></input>
+            minút
           </div>
           <Button title="Spustiť test" onClick={handleStartExamClick}></Button>
         </>
