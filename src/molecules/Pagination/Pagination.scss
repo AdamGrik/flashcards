@@ -1,28 +1,25 @@
 @import "/src/variables.scss";
 .fc-pagination {
+  margin: 4px;
   display: flex;
   justify-content: center;
-
-  .fc-navigation-buttons {
-    margin: 4px;
-    display: block;
-    .fc-button {
-      margin: 2px;
-      width: 40px;
-    }
+  flex-flow: row wrap;
+  .fc-button {
+    margin: 2px;
+    width: 40px;
   }
-  @media (max-width: 768px) {
-    .fc-navigation-buttons {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .fc-navigation-buttons {
-      .fc-button {
-        font-size: x-small;
-        height: 34px;
-        width: 34px;
-        padding: unset;
-      }
+}
+.fc-navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  .fc-button {
+    width: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .fc-navigation-buttons {
+    .fc-button {
     }
   }
 }

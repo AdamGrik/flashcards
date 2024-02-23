@@ -23,14 +23,36 @@ const Pagination = (props: PaginationProps) => {
   };
 
   return (
-    <div className="fc-pagination">
-      <Button
-        title="Späť"
-        onClick={() => handlePageSelect(selected - 1)}
-        disabled={selected === 0}
-        id="back"
-      />
+    <>
       <div className="fc-navigation-buttons">
+        <Button
+          title="Späť"
+          onClick={() => handlePageSelect(selected - 1)}
+          disabled={selected === 0}
+          id="back"
+        />
+        {isFinalQuestion ? (
+          <Button
+            title="Koniec testu"
+            id="end"
+            onClick={() => {
+              const userConfirmed: boolean = window.confirm(
+                "Ste si istý, že chcete ukončiť test ?"
+              );
+              if (userConfirmed) {
+                handlePageSelect(selected + 1);
+              }
+            }}
+          />
+        ) : (
+          <Button
+            title="Ďalej"
+            id="next"
+            onClick={() => handlePageSelect(selected + 1)}
+          />
+        )}
+      </div>
+      <div className="fc-pagination">
         {pageNumbers.map((pageNumber) => (
           <Button
             title={pageNumber.toString()}
@@ -39,27 +61,7 @@ const Pagination = (props: PaginationProps) => {
             onClick={() => handlePageSelect(pageNumber - 1)}></Button>
         ))}
       </div>
-      {isFinalQuestion ? (
-        <Button
-          title="Koniec testu"
-          id="end"
-          onClick={() => {
-            const userConfirmed: boolean = window.confirm(
-              "Ste si istý, že chcete ukončiť test ?"
-            );
-            if (userConfirmed) {
-              handlePageSelect(selected + 1);
-            }
-          }}
-        />
-      ) : (
-        <Button
-          title="Ďalej"
-          id="next"
-          onClick={() => handlePageSelect(selected + 1)}
-        />
-      )}
-    </div>
+    </>
   );
 };
 
