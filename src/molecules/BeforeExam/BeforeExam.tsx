@@ -1,77 +1,86 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import Button from "../../atoms/Button/Button";
 import { useNavigate } from "react-router-dom";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
+import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 type BeforeExamProps = {
-  onNumberOfQuestionsChange: (value: number) => void;
-  onTimeOfExamChange: (value: number) => void;
-  onStartExam: () => void;
-  data: CheckboxData[];
-  maxQuestions: number;
+  data: database[];
 };
-type CheckboxData = {
-  title: string;
+type database = {
+  label: string;
+  items: ExamQuestionProps[];
 };
 const BeforeExam = (props: BeforeExamProps) => {
-  const {
-    onNumberOfQuestionsChange,
-    onStartExam,
-    onTimeOfExamChange,
-    data,
-    maxQuestions,
-  } = props;
-  const [numberOfQuestions, setNumberOfQuestions] = useState(20);
-  const [showBeforeExam, setShowBeforeExam] = useState(true);
-  const [checkboxStates, setCheckboxStates] = useState<boolean[]>(
-    data.map(() => false)
-  );
+  const { data } = props;
+  const [numberOfQuestions, setNumberOfQuestions] = useState(0);
+  const [maxQuestions, setMaxQuestions] = useState(0);
   const [selectedTime, setselectedTime] = useState(20);
+  const [checkboxArrays, setCheckboxArrays] = useState<database[]>(data);
+  const [selectedArrays, setSelectedArrays] = useState<string[]>([]);
+  const [startExamData, setStartExamData] = useState<ExamQuestionProps[]>([]);
+  const [startExam, setStartExam] = useState(false);
+
+  const handleCheckboxChange = (label: string) => {
+    setSelectedArrays((prevSelectedArrays) => {
+      if (prevSelectedArrays.includes(label)) {
+        return prevSelectedArrays.filter((item) => item !== label);
+      } else {
+        return [...prevSelectedArrays, label];
+      }
+    });
+  };
+  useEffect(() => {
+    handleButtonClick();
+  }, [selectedArrays]);
 
   const handleInputQuestionsChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value, 10);
     setNumberOfQuestions(value);
-    onNumberOfQuestionsChange(value);
   };
   const handleInputTimeChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value, 10);
     setselectedTime(value);
-    onTimeOfExamChange(value);
   };
-  const handleStartExamClick = () => {
-    onStartExam();
-    setShowBeforeExam(false);
+  const handleButtonClick = () => {
+    const newArray: ExamQuestionProps[] = [];
+
+    checkboxArrays.forEach((checkboxArray) => {
+      if (selectedArrays.includes(checkboxArray.label)) {
+        newArray.push(...checkboxArray.items);
+      }
+    });
+    setStartExamData(newArray);
+    setMaxQuestions(newArray.length);
+    console.log(newArray);
   };
 
-  const handleCheckboxChange = (index: number, checked: boolean) => {
-    const newCheckboxStates = [...checkboxStates];
-    newCheckboxStates[index] = checked;
-    setCheckboxStates(newCheckboxStates);
-  };
-  if (numberOfQuestions > maxQuestions) {
-    window.alert("Maximálny počet otázok je " + maxQuestions);
-    setNumberOfQuestions(1);
-    handleInputQuestionsChange;
-  }
   return (
     <>
-      {showBeforeExam && (
+      {startExam === true ? (
+        <Exam
+          data={startExamData}
+          totalQuestions={numberOfQuestions}
+          initialMinutes={selectedTime}></Exam>
+      ) : (
         <>
-          {data.map((option, index) => (
-            <Checkbox
-              key={option.title}
-              title={option.title}
-              isChecked={checkboxStates[index]}
-              onChange={(checked) => handleCheckboxChange(index, checked)}
-            />
+          {checkboxArrays.map((checkboxArray) => (
+            <div key={checkboxArray.label}>
+              <Checkbox
+                title={checkboxArray.label}
+                isChecked={selectedArrays.includes(checkboxArray.label)}
+                onChange={() => handleCheckboxChange(checkboxArray.label)}
+              />
+            </div>
           ))}
+
           <div>
             Počet otázok
             <input
               type="number"
               value={numberOfQuestions}
               onChange={handleInputQuestionsChange}
-              max={maxQuestions}
-              min={1}></input>
+              min={1}
+              max={maxQuestions}></input>
             /{maxQuestions}
           </div>
           <div>
@@ -84,7 +93,7 @@ const BeforeExam = (props: BeforeExamProps) => {
               max={999}></input>
             minút
           </div>
-          <Button title="Spustiť test" onClick={handleStartExamClick}></Button>
+          <Button title="test" onClick={() => setStartExam(true)}></Button>
         </>
       )}
     </>

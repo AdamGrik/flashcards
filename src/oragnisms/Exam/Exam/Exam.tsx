@@ -21,30 +21,18 @@ export type ExamQuestionProps = {
 };
 type ExamProps = {
   data: ExamQuestionProps[];
-  databaseoptions?: any;
+  totalQuestions: number;
+  initialMinutes: number;
 };
 
 const Exam = (props: ExamProps) => {
-  const { data, databaseoptions } = props;
-  const [totalQuestions, setTotalQuestions] = useState(20);
+  const { data, totalQuestions, initialMinutes } = props;
   const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
   const [showBeforeExam, setShowBeforeExam] = useState(true);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
   const [isTimerDone, setIsTimerDone] = useState(false);
-  const [initialMinutes, setInitialMiutnes] = useState(20);
-  const handleTimeOfExamChange = (value: number) => {
-    setInitialMiutnes(value);
-  };
-  const handleNumberOfQuestionsChange = (value: number) => {
-    if (value <= data.length) {
-      setTotalQuestions(value);
-    }
-  };
 
-  const handleStartExam = () => {
-    setShowBeforeExam(false);
-  };
   useEffect(() => {
     const shuffledData = shuffleArray(data);
     const newData = shuffledData.map((question, index) => {
@@ -83,37 +71,28 @@ const Exam = (props: ExamProps) => {
 
   return (
     <>
-      <BeforeExam
-        data={databaseoptions}
-        onNumberOfQuestionsChange={handleNumberOfQuestionsChange}
-        onStartExam={handleStartExam}
-        onTimeOfExamChange={handleTimeOfExamChange}
-        maxQuestions={data.length}
-      />
-      {showBeforeExam ? null : (
-        <>
-          {endOfExam.finished || isTimerDone ? (
-            <EndOfExam
-              questions={questionsData}
-              score={endOfExam.score}
-              totalQuestions={totalQuestions}></EndOfExam>
-          ) : (
-            <>
-              <ExamTimer
-                setIsTimerDone={setIsTimerDone}
-                initialMinutes={initialMinutes}
-              />
-              <Question
-                data={{
-                  ...questionsData[currentQuestion],
-                  totalQuestions: totalQuestions,
-                }}
-                onQuestionChange={handleQuestionChange}
-              />
-            </>
-          )}
-        </>
-      )}
+      <>
+        {endOfExam.finished || isTimerDone ? (
+          <EndOfExam
+            questions={questionsData}
+            score={endOfExam.score}
+            totalQuestions={totalQuestions}></EndOfExam>
+        ) : (
+          <>
+            <ExamTimer
+              setIsTimerDone={setIsTimerDone}
+              initialMinutes={initialMinutes}
+            />
+            <Question
+              data={{
+                ...questionsData[currentQuestion],
+                totalQuestions: totalQuestions,
+              }}
+              onQuestionChange={handleQuestionChange}
+            />
+          </>
+        )}
+      </>
     </>
   );
 };
