@@ -1,22 +1,27 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import Button from "../../atoms/Button/Button";
-import { useNavigate } from "react-router-dom";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 type BeforeExamProps = {
   data: database[];
 };
 type database = {
-  label: string;
-  items: ExamQuestionProps[];
+  subject: string;
+  questions: ExamQuestionProps[];
 };
 const BeforeExam = (props: BeforeExamProps) => {
   const { data } = props;
-  const [numberOfQuestions, setNumberOfQuestions] = useState(0);
-  const [maxQuestions, setMaxQuestions] = useState(0);
+  const [numberOfQuestions, setNumberOfQuestions] = useState(20);
+  const [maxQuestions, setMaxQuestions] = useState<number>(0);
   const [selectedTime, setselectedTime] = useState(20);
   const [checkboxArrays, setCheckboxArrays] = useState<database[]>(data);
-  const [selectedArrays, setSelectedArrays] = useState<string[]>([]);
+  const initialSelectedArrays = checkboxArrays.map(
+    (checkboxArray) => checkboxArray.subject
+  );
+  const [selectedArrays, setSelectedArrays] = useState<string[]>(
+    initialSelectedArrays
+  );
+
   const [startExamData, setStartExamData] = useState<ExamQuestionProps[]>([]);
   const [startExam, setStartExam] = useState(false);
 
@@ -40,18 +45,31 @@ const BeforeExam = (props: BeforeExamProps) => {
   const handleInputTimeChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value, 10);
     setselectedTime(value);
+    if (Number.isNaN(selectedTime)) {
+      setselectedTime(1);
+    }
   };
   const handleButtonClick = () => {
     const newArray: ExamQuestionProps[] = [];
 
     checkboxArrays.forEach((checkboxArray) => {
-      if (selectedArrays.includes(checkboxArray.label)) {
-        newArray.push(...checkboxArray.items);
+      if (selectedArrays.includes(checkboxArray.subject)) {
+        newArray.push(...checkboxArray.questions);
       }
     });
     setStartExamData(newArray);
     setMaxQuestions(newArray.length);
     console.log(newArray);
+  };
+  const handleStartExam = () => {
+    if (maxQuestions === 0) {
+      null;
+    } else {
+      setStartExam(true);
+      if (maxQuestions < numberOfQuestions) {
+        setNumberOfQuestions(maxQuestions);
+      }
+    }
   };
 
   return (
@@ -64,11 +82,11 @@ const BeforeExam = (props: BeforeExamProps) => {
       ) : (
         <>
           {checkboxArrays.map((checkboxArray) => (
-            <div key={checkboxArray.label}>
+            <div key={checkboxArray.subject}>
               <Checkbox
-                title={checkboxArray.label}
-                isChecked={selectedArrays.includes(checkboxArray.label)}
-                onChange={() => handleCheckboxChange(checkboxArray.label)}
+                title={checkboxArray.subject}
+                isChecked={selectedArrays.includes(checkboxArray.subject)}
+                onChange={() => handleCheckboxChange(checkboxArray.subject)}
               />
             </div>
           ))}
@@ -93,7 +111,10 @@ const BeforeExam = (props: BeforeExamProps) => {
               max={999}></input>
             minút
           </div>
-          <Button title="test" onClick={() => setStartExam(true)}></Button>
+          <Button
+            title="test"
+            onClick={handleStartExam}
+            disabled={maxQuestions === 0}></Button>
         </>
       )}
     </>

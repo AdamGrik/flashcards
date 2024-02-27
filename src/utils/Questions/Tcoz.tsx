@@ -1,8 +1,7 @@
 export const tcozQuestions = [
-  //elektrotechnika
   {
-    label: "Elektrotechnika",
-    items: [
+    subject: "Elektrotechnika",
+    questions: [
       {
         question: "Aká je značka elektrického odporu ?",
         options: ["U", "I", "Q", "R"],
@@ -107,9 +106,8 @@ export const tcozQuestions = [
     ],
   },
   {
-    label: "Sieťové technológie",
-    items: [
-      //sietove
+    subject: "Sieťové technológie",
+    questions: [
       {
         question: "Ktorá je 4. vrstva OSI modelu ?",
         options: ["Fyzická", "Transportná", "Prezentačná", "Data-link"],

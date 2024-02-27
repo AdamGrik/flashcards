@@ -3,9 +3,9 @@
 import React from "react";
 import "./EndOfExam.scss";
 import { ExamQuestionProps } from "../Exam/Exam/Exam";
-import Question from "../../molecules/Question/Question";
+
 import Button from "../../atoms/Button/Button";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 type ExamProps = {
   questions: ExamQuestionProps[];

@@ -1,8 +1,7 @@
 export const etsQuestions = [
   {
-    //ochranne opatrenia
-    label: "Ochranné opatrenia pred úrazom elektrickým prúdom",
-    items: [
+    subject: "Ochranné opatrenia pred úrazom elektrickým prúdom",
+    questions: [
       {
         question: "Na obrázku je",
         options: ["Jednopólový dotyk", "Dvojpólový dotyk."],
@@ -314,10 +313,9 @@ export const etsQuestions = [
       },
     ],
   },
-  //prva pomoc
   {
-    label: "Prvá pomoc",
-    items: [
+    subject: "Prvá pomoc",
+    questions: [
       {
         question: "Najväčší odpor elektrickému prúdu kladie:",
         options: [
@@ -622,10 +620,9 @@ export const etsQuestions = [
       },
     ],
   },
-  //el instalacie
   {
-    label: "Elektrické inštalácie",
-    items: [
+    subject: "Elektrické inštalácie",
+    questions: [
       {
         question: "Na obrázku je:",
         options: [
@@ -949,10 +946,9 @@ export const etsQuestions = [
       },
     ],
   },
-  //blezkoyvody
   {
-    label: "Bleskozvody",
-    items: [
+    subject: "Bleskozvody",
+    questions: [
       {
         question: "Na obrázku je:",
         options: [
@@ -1256,9 +1252,8 @@ export const etsQuestions = [
     ],
   },
   {
-    //zakony vyhlasky
-    label: "Zákony vyhlašky a označovanie v elektrotechnike",
-    items: [
+    subject: "Zákony vyhlašky a označovanie v elektrotechnike",
+    questions: [
       {
         question: "Vyhláška 508/2009 Z.z. z 9. júla 2009 rieši:",
         options: [

@@ -4,16 +4,11 @@ import Toolbar from "./molecules/Tooblar/Toolbar";
 import "./index.scss";
 import "./images/images.scss";
 import { HashRouter, Route, Routes } from "react-router-dom";
-
-import Exam from "./oragnisms/Exam/Exam/Exam";
 import { matQuestions } from "./utils/Questions/Matematika";
 import { sjlQuestions } from "./utils/Questions/Slovencina";
-
 import { anjQuestions } from "./utils/Questions/Anglina";
 import { SubjectsData } from "./utils/SubjectsData";
-
 import MainPage from "./molecules/MainPage/MainPage";
-
 import BeforeExam from "./molecules/BeforeExam/BeforeExam";
 import { tcozQuestions } from "./utils/Questions/Tcoz";
 import { etsQuestions } from "./utils/Questions/ETS";

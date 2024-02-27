@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Question.scss";
 import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
-import Button from "../../atoms/Button/Button";
 import Pagination from "../Pagination/Pagination";
 
 type QuestionProps = {

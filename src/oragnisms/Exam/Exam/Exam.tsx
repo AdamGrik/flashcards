@@ -5,7 +5,6 @@ import EndOfExam from "../../EndOfExam/EndOfExam";
 import { shuffleArray } from "../../../utils/common/shuffleArray";
 import { calculateFinalScore } from "../../../utils/common/calculateFinalScore";
 import ExamTimer from "../../../atoms/ExamTimer/ExamTimer";
-import BeforeExam from "../../../molecules/BeforeExam/BeforeExam";
 
 export type ExamQuestionProps = {
   question: string;

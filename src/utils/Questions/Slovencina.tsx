@@ -1,7 +1,7 @@
 export const sjlQuestions = [
   {
-    label: "slj",
-    items: [
+    subject: "slj",
+    questions: [
       {
         question:
           "Ktorá z nasledujúcich viet neobsahuje vzťahové prídavné meno?",
