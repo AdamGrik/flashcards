@@ -2,14 +2,14 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import Button from "../../atoms/Button/Button";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
-type BeforeExamProps = {
+type ExamOptionsProps = {
   data: database[];
 };
 type database = {
   subject: string;
   questions: ExamQuestionProps[];
 };
-const BeforeExam = (props: BeforeExamProps) => {
+const ExamOptions = (props: ExamOptionsProps) => {
   const { data } = props;
   const [numberOfQuestions, setNumberOfQuestions] = useState(20);
   const [maxQuestions, setMaxQuestions] = useState<number>(0);
@@ -37,7 +37,14 @@ const BeforeExam = (props: BeforeExamProps) => {
   useEffect(() => {
     handleButtonClick();
   }, [selectedArrays]);
-
+  useEffect(() => {
+    if (selectedTime === 0) {
+      setselectedTime(1);
+    }
+    if (Number.isNaN(selectedTime)) {
+      setselectedTime(1);
+    }
+  }, [selectedTime]);
   const handleInputQuestionsChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value, 10);
     setNumberOfQuestions(value);
@@ -45,9 +52,6 @@ const BeforeExam = (props: BeforeExamProps) => {
   const handleInputTimeChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value, 10);
     setselectedTime(value);
-    if (Number.isNaN(selectedTime)) {
-      setselectedTime(1);
-    }
   };
   const handleButtonClick = () => {
     const newArray: ExamQuestionProps[] = [];
@@ -59,16 +63,11 @@ const BeforeExam = (props: BeforeExamProps) => {
     });
     setStartExamData(newArray);
     setMaxQuestions(newArray.length);
-    console.log(newArray);
   };
   const handleStartExam = () => {
-    if (maxQuestions === 0) {
-      null;
-    } else {
-      setStartExam(true);
-      if (maxQuestions < numberOfQuestions) {
-        setNumberOfQuestions(maxQuestions);
-      }
+    setStartExam(true);
+    if (maxQuestions < numberOfQuestions) {
+      setNumberOfQuestions(maxQuestions);
     }
   };
 
@@ -121,4 +120,4 @@ const BeforeExam = (props: BeforeExamProps) => {
   );
 };
 
-export default BeforeExam;
+export default ExamOptions;

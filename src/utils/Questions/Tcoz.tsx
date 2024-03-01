@@ -572,6 +572,110 @@ export const tcozQuestions = [
       },
     ],
   },
+  {
+    subject: "Komunikačné technológie",
+    questions: [
+      {
+        question: "Čo je to informácia ?",
+        options: [
+          "Prechod zo stavu „neviem“ do stavu „viem“",
+          "Fyzický nosič správ - fyzikálne vyjadrenie informácie (elektricky, opticky, el. mag. vlny)",
+          "Je kombináciou znakov z abecedy usporiadaných tak, aby bola zrozumiteľná.",
+          "Kombinácia znakov z abecedy",
+        ],
+        answer: "Prechod zo stavu „neviem“ do stavu „viem“",
+      },
+      {
+        question: "Čo je signál v teórii komunikácie ?",
+        options: [
+          "Prechod zo stavu „neviem“ do stavu „viem“",
+          "Fyzický nosič správ - fyzikálne vyjadrenie informácie (elektricky, opticky, el. mag. vlny)",
+          "Je kombináciou znakov z abecedy usporiadaných tak, aby bola zrozumiteľná.",
+          "Kombinácia znakov usporiadaných tak, aby bola zrozumiteľná",
+        ],
+        answer:
+          "Fyzický nosič správ - fyzikálne vyjadrenie informácie (elektricky, opticky, el. mag. vlny)",
+      },
+
+      {
+        question: "Čo je kód ?",
+        options: [
+          "Prechod zo stavu „neviem“ do stavu „viem“",
+          "Fyzický nosič správ - fyzikálne vyjadrenie informácie (elektricky, opticky, el. mag. vlny)",
+          "Je kombináciou znakov z abecedy usporiadaných tak, aby bola zrozumiteľná.",
+          "Prechod z jednej informačnej sústavy do inej",
+        ],
+        answer: "Prechod z jednej informačnej sústavy do inej",
+      },
+      {
+        question:
+          "Ktorý druh signálu zaznamenáva súvislé hodnoty napätia signálu v čase aj amplitúde ?",
+        options: ["Spojitý/analógový", "Nespojitý/diskrétny"],
+        answer: "Spojitý/analógový",
+      },
+      {
+        question:
+          "Ktorý druh signálu zaznamenáva súvislé hodnoty napätia signálu buď v čase alebo amplitúde alebo ani v jednom z nich ?",
+        options: ["Spojitý/analógový", "Nespojitý/diskrétny"],
+        answer: "Nespojitý/diskrétny",
+      },
+
+      {
+        question: "Aký typ filtra je na obrázku ?",
+        options: [
+          "Dolná priepusť",
+          "Horná priepusť",
+          "Pásmová zádrž",
+          "Pásmová priepusť",
+        ],
+        image: "obr11",
+        answer: "Dolná priepusť",
+      },
+      {
+        question: "Aký typ filtra je na obrázku ?",
+        options: [
+          "Dolná priepusť",
+          "Horná priepusť",
+          "Pásmová zádrž",
+          "Pásmová priepusť",
+        ],
+        image: "obr12",
+        answer: "Horná priepusť",
+      },
+      {
+        question: "Aký typ filtra je na obrázku ?",
+        options: [
+          "Dolná priepusť",
+          "Horná priepusť",
+          "Pásmová zádrž",
+          "Pásmová priepusť",
+        ],
+        image: "obr14",
+        answer: "Pásmová zádrž",
+      },
+      {
+        question: "Aký typ filtra je na obrázku ?",
+        options: [
+          "Dolná priepusť",
+          "Horná priepusť",
+          "Pásmová zádrž",
+          "Pásmová priepusť",
+        ],
+        image: "obr13",
+        answer: "Pásmová priepusť",
+      },
+      {
+        question: "Aká je úloha filtra ?",
+        options: [
+          "",
+          "",
+          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme",
+          "",
+        ],
+        answer: "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme",
+      },
+    ],
+  },
 ];
 /*
 {

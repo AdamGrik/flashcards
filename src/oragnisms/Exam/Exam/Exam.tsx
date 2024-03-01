@@ -27,7 +27,6 @@ type ExamProps = {
 const Exam = (props: ExamProps) => {
   const { data, totalQuestions, initialMinutes } = props;
   const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
-  const [showBeforeExam, setShowBeforeExam] = useState(true);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
   const [isTimerDone, setIsTimerDone] = useState(false);
@@ -79,7 +78,7 @@ const Exam = (props: ExamProps) => {
         ) : (
           <>
             <ExamTimer
-              setIsTimerDone={setIsTimerDone}
+              isTimerDone={setIsTimerDone}
               initialMinutes={initialMinutes}
             />
             <Question
