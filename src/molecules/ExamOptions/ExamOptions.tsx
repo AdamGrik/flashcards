@@ -21,7 +21,6 @@ const ExamOptions = (props: ExamOptionsProps) => {
   const [selectedArrays, setSelectedArrays] = useState<string[]>(
     initialSelectedArrays
   );
-
   const [startExamData, setStartExamData] = useState<ExamQuestionProps[]>([]);
   const [startExam, setStartExam] = useState(false);
 
@@ -38,13 +37,15 @@ const ExamOptions = (props: ExamOptionsProps) => {
     handleButtonClick();
   }, [selectedArrays]);
   useEffect(() => {
-    if (selectedTime === 0) {
-      setselectedTime(1);
-    }
-    if (Number.isNaN(selectedTime)) {
+    if (selectedTime === 0 || Number.isNaN(selectedTime)) {
       setselectedTime(1);
     }
   }, [selectedTime]);
+  useEffect(() => {
+    if (numberOfQuestions === 0 || Number.isNaN(numberOfQuestions)) {
+      setNumberOfQuestions(1);
+    }
+  }, [numberOfQuestions]);
   const handleInputQuestionsChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value, 10);
     setNumberOfQuestions(value);
