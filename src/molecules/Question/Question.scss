@@ -12,7 +12,7 @@
     border-radius: 10px;
     margin: 6px 14px 14px 14px;
   }
-  .fc-question-top {
+  .fc-question-question {
     display: flex;
     justify-content: center;
     font-size: xx-large;
@@ -20,7 +20,7 @@
     margin-bottom: 20px;
     font-weight: bold;
   }
-  .fc-text-question {
+  .fc-question-text {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -32,43 +32,57 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  .fc-option-abcd {
-    margin-right: 12px;
-    padding-top: 4px;
-    font-size: large;
-  }
-  .fc-question-bottom {
+
+  .fc-question-options {
     display: flex;
     font-size: x-large;
     color: $text-color;
-    margin-bottom: 8px;
-  }
+    margin-bottom: 4px;
+    padding: 6px;
 
-  .fc-question-radio {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
     &:hover {
       cursor: pointer;
+      background-color: $terniary-color;
+      border-radius: 10px;
+    }
+    .fc-question-options-abcd {
+      margin-right: 8px;
+      padding-top: 4px;
+      font-size: large;
+    }
+    .fc-question-options-radio {
+      min-width: 20px;
+      min-height: 20px;
+      max-height: 20px;
+      margin-right: 8px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
   .fc-question-pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
+    margin-top: 14px;
   }
   @media (max-width: 768px) {
-    .fc-question-top {
+    .fc-question-question {
       font-size: x-large;
     }
-    .fc-question-bottom {
+    .fc-question-border {
+      padding: 14px 6px 14px 6px;
+    }
+    .fc-question-options {
       font-size: large;
+      .fc-question-options-radio {
+        min-width: 18px;
+        min-height: 18px;
+      }
+      .fc-question-options-abcd {
+        padding-top: 2px;
+        font-size: medium;
+      }
     }
-    .fc-option-abcd {
-      padding-top: 2px;
-      font-size: medium;
-    }
+
     .fc-question-img {
       height: 200px;
     }
