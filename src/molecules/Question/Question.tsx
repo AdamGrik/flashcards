@@ -27,6 +27,11 @@ const Question = (props: QuestionProps) => {
 
   const isFinalQuestion =
     data && data.questionNumber === (data.totalQuestions ?? 0) - 1;
+  const selectOption = (option: string) => {
+    selectedOption === option
+      ? setSelectedOption("")
+      : setSelectedOption(option);
+  };
 
   return data && data.questionNumber !== undefined ? (
     <div className="fc-question">
@@ -44,14 +49,14 @@ const Question = (props: QuestionProps) => {
           <div
             key={index}
             className="fc-question-options"
-            onClick={() => setSelectedOption(option)}>
+            onClick={() => selectOption(option)}>
             <input
               className="fc-question-options-radio"
               type="radio"
               value={option}
               checked={selectedOption === option}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                setSelectedOption(e.target.value);
+                selectOption(e.target.value);
               }}
             />
             <span className="fc-question-options-abcd">
