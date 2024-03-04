@@ -13,7 +13,8 @@ export const tcozQuestions = [
         answer: "I = U / R",
       },
       {
-        question: "Ktorá súčiastka ukladá elektrickú energiu ?",
+        question:
+          "Ktorá súčiastka má prevažujúcu vlastnosť  udržať na sebe elektrický náboj pri určitom elektrickom napätí ?",
         options: ["Rezistor", "Kondenzátor", "Cievka", "Dióda"],
         answer: "Kondenzátor",
       },
@@ -102,6 +103,50 @@ export const tcozQuestions = [
           "Odpor, kapacita, indukčnosť a vodivosť",
         ],
         answer: "Všetky napätia a prúdy",
+      },
+      {
+        question: "Aká je úloha transformátora ?",
+        options: [
+          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie", //trafo
+          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované", //zos
+          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme", //filter
+          "Vytvoreniť magnetické pole elektrického prúdu", //cievka
+        ],
+        answer:
+          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie",
+      },
+      {
+        question: "Aká je úloha zosilňovača ?",
+        options: [
+          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie", //trafo
+          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované", //zos
+          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme", //filter
+          "Vytvoreniť magnetické pole elektrického prúdu", //cievka
+        ],
+        answer:
+          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované",
+      },
+      {
+        question: "Aká je úloha cievky ?",
+        options: [
+          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie", //trafo
+          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované", //zos
+          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme", //filter
+          "Vytvoreniť magnetické pole elektrického prúdu", //cievka
+        ],
+        answer: "Vytvoreniť magnetické pole elektrického prúdu",
+      },
+      {
+        question: "Aký typ bipolárneho tranzistora je na obrázku ?",
+        options: ["NPN", "PNP"],
+        image: "obr20",
+        answer: "NPN",
+      },
+      {
+        question: "Aký typ bipolárneho tranzistora je na obrázku ?",
+        options: ["NPN", "PNP"],
+        image: "obr21",
+        answer: "PNP",
       },
     ],
   },
@@ -667,12 +712,127 @@ export const tcozQuestions = [
       {
         question: "Aká je úloha filtra ?",
         options: [
-          "",
-          "",
-          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme",
-          "",
+          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie", //trafo
+          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované", //zos
+          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme", //filter
+          "Vytvoreniť magnetické pole elektrického prúdu", //cievka
         ],
         answer: "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme",
+      },
+      {
+        question:
+          "Čo sa deje počas fázy vzorkovania v Pulznej kódovej modulácii (PCM) ?",
+        options: [
+          "Signál sa moduluje do pulzov",
+          "Odoberajú sa vzorky amplitúdy v pravidelných časových intervaloch",
+          "V každej kvantovacej úrovni je priradená určitá kódová kombinácia",
+          "Priradí sa napäťová úroveň amplitúdy odsnímanej vzorky",
+        ],
+        answer:
+          "Odoberajú sa vzorky amplitúdy v pravidelných časových intervaloch",
+      },
+      {
+        question:
+          "Čo sa deje počas fázy kvantovania v Pulznej kódovej modulácii (PCM) ?",
+        options: [
+          "Signál sa moduluje do pulzov",
+          "Odoberajú sa vzorky amplitúdy v pravidelných časových intervaloch",
+          "V každej kvantovacej úrovni je priradená určitá kódová kombinácia",
+          "Priradí sa napäťová úroveň amplitúdy odsnímanej vzorky",
+        ],
+        answer: "Priradí sa napäťová úroveň amplitúdy odsnímanej vzorky",
+      },
+      {
+        question:
+          "Čo sa deje počas fázy kódovania v Pulznej kódovej modulácii (PCM) ?",
+        options: [
+          "Signál sa moduluje do pulzov",
+          "Odoberajú sa vzorky amplitúdy v pravidelných časových intervaloch",
+          "V každej kvantovacej úrovni je priradená určitá kódová kombinácia",
+          "Priradí sa napäťová úroveň amplitúdy odsnímanej vzorky",
+        ],
+        answer:
+          "V každej kvantovacej úrovni je priradená určitá kódová kombinácia",
+      },
+      {
+        question: "Aká je nevýhoda lineárneho kvantovaia ?",
+        options: [
+          "Nižšia bezpečnosť",
+          "Dopúšťame sa pomerne veľkých chýb pri zaokrúhlovaní malých amplitúd",
+          "Môže spôsobiť zmenu frekvencie signálu",
+        ],
+        answer:
+          "Dopúšťame sa pomerne veľkých chýb pri zaokrúhlovaní malých amplitúd",
+      },
+      {
+        question: "Aký typ modulácie je na obrázku ?",
+        options: [
+          "Amplitúdová",
+          "Frekvenčná",
+          "Pulzne amplitúdová",
+          "Pulzne kódová",
+        ],
+        image: "obr15",
+        answer: "Amplitúdová",
+      },
+      {
+        question: "Aký typ modulácie je na obrázku ?",
+        options: [
+          "Amplitúdová",
+          "Frekvenčná",
+          "Pulzne amplitúdová",
+          "Pulzne kódová",
+        ],
+        image: "obr16",
+        answer: "Frekvenčná",
+      },
+      {
+        question: "Aký typ modulácie je na obrázku ?",
+        options: ["Amplitúdová", "Frekvenčná", "Fázová", "Pulzne kódová"],
+        image: "obr17",
+        answer: "Fázová",
+      },
+      {
+        question: "Aký typ modulácie je na obrázku ?",
+        options: [
+          "Amplitúdová",
+          "Frekvenčná",
+          "Pulzne amplitúdová",
+          "Pulzne kódová",
+        ],
+        image: "obr18",
+        answer: "Pulzne amplitúdová",
+      },
+      {
+        question: "Aký typ modulácie je na obrázku ?",
+        options: [
+          "Amplitúdová",
+          "Frekvenčná",
+          "Pulzne amplitúdová",
+          "Pulzne kódová",
+        ],
+        image: "obr19",
+        answer: "Pulzne kódová",
+      },
+      {
+        question: "Ako sa šíri svetlo optickým vláknom ?",
+        options: [
+          "Prostredníctvom elektromagnetickej vlny",
+          "Na základe princípu úplného odrazu",
+          "Prenosom elektrónov",
+          "Kombinovaním elektromagnetickej a zvukovej energie",
+        ],
+        answer: "Na základe princípu úplného odrazu",
+      },
+      {
+        question: "Čo je numerická apertúra v kontexte optických vlákien ?",
+        options: [
+          "Miera straty svetla v optickom vlákne",
+          "Kapacita prenosu dát",
+          "Časové oneskorenie pri prenose",
+          "Schopnosť zozbierať svetlo z vonkajšieho prostredia",
+        ],
+        answer: "Schopnosť zozbierať svetlo z vonkajšieho prostredia",
       },
     ],
   },

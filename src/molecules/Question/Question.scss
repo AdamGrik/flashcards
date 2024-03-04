@@ -28,6 +28,7 @@
   .fc-question-img {
     width: 100%;
     height: 300px;
+    margin-bottom: 10px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,11 +40,12 @@
     color: $text-color;
     margin-bottom: 4px;
     padding: 6px;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $terniary-color;
-      border-radius: 10px;
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+        background-color: $terniary-color;
+        border-radius: 10px;
+      }
     }
     .fc-question-options-abcd {
       margin-right: 8px;

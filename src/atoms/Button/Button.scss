@@ -8,11 +8,13 @@
   padding: 12px;
   font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
   color: $accent-color;
-  &:hover {
-    background-color: $secondary-color;
-    cursor: pointer;
-    scale: 1.05;
-    transition: scale 0.1s ease;
+  @media (hover: hover) {
+    &:hover {
+      background-color: $secondary-color;
+      cursor: pointer;
+      scale: 1.05;
+      transition: scale 0.1s ease;
+    }
   }
   &.fc-button-next {
     background-color: rgb(0, 100, 0);

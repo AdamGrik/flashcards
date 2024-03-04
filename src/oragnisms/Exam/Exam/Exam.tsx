@@ -69,28 +69,26 @@ const Exam = (props: ExamProps) => {
 
   return (
     <>
-      <>
-        {endOfExam.finished || isTimerDone ? (
-          <EndOfExam
-            questions={questionsData}
-            score={endOfExam.score}
-            totalQuestions={totalQuestions}></EndOfExam>
-        ) : (
-          <>
-            <ExamTimer
-              isTimerDone={setIsTimerDone}
-              initialMinutes={initialMinutes}
-            />
-            <Question
-              data={{
-                ...questionsData[currentQuestion],
-                totalQuestions: totalQuestions,
-              }}
-              onQuestionChange={handleQuestionChange}
-            />
-          </>
-        )}
-      </>
+      {endOfExam.finished || isTimerDone ? (
+        <EndOfExam
+          questions={questionsData}
+          score={endOfExam.score}
+          totalQuestions={totalQuestions}></EndOfExam>
+      ) : (
+        <>
+          <ExamTimer
+            isTimerDone={setIsTimerDone}
+            initialMinutes={initialMinutes}
+          />
+          <Question
+            data={{
+              ...questionsData[currentQuestion],
+              totalQuestions: totalQuestions,
+            }}
+            onQuestionChange={handleQuestionChange}
+          />
+        </>
+      )}
     </>
   );
 };

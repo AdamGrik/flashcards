@@ -1424,7 +1424,7 @@ export const etsQuestions = [
       },
       {
         question: "Kombinovaný vodič označujeme písmenami:",
-        options: ["PEN", "KV", "PE", "PE"],
+        options: ["PEN", "KV", "PE"],
         answer: "PEN",
       },
       {

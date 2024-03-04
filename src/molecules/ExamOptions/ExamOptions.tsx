@@ -36,16 +36,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
   useEffect(() => {
     handleButtonClick();
   }, [selectedArrays]);
-  useEffect(() => {
-    if (selectedTime === 0 || Number.isNaN(selectedTime)) {
-      setselectedTime(1);
-    }
-  }, [selectedTime]);
-  useEffect(() => {
-    if (numberOfQuestions === 0 || Number.isNaN(numberOfQuestions)) {
-      setNumberOfQuestions(1);
-    }
-  }, [numberOfQuestions]);
+
   const handleInputQuestionsChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value, 10);
     setNumberOfQuestions(value);
@@ -114,7 +105,13 @@ const ExamOptions = (props: ExamOptionsProps) => {
           <Button
             title="test"
             onClick={handleStartExam}
-            disabled={maxQuestions === 0}></Button>
+            disabled={
+              maxQuestions === 0 ||
+              selectedTime <= 0 ||
+              Number.isNaN(selectedTime) ||
+              numberOfQuestions <= 0 ||
+              Number.isNaN(numberOfQuestions)
+            }></Button>
         </>
       )}
     </>
