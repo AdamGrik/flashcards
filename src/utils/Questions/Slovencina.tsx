@@ -309,7 +309,7 @@ export const sjlQuestions = [
         answer: " Kúpil okolo päť jabĺk.",
       },
       {
-        question: "Ktorá z viet neobsahuje časticu?",
+        question: "Ktorá z viet obsahuje časticu?",
         options: [
           " Prosím, odíď.",
           " Kúpiš mi to, prosím?",
@@ -749,7 +749,7 @@ export const sjlQuestions = [
       },
       {
         question:
-          "Ktorý vetný člen nepatria medzi základné, ale rozvíjacie vetné členy?",
+          "Ktorý vetný člen nepatrí medzi základné, ale rozvíjacie vetné členy?",
         options: ["podmet", "prísudok", "predmet", "prívlastok"],
         answer: "predmet",
       },
@@ -807,7 +807,7 @@ export const sjlQuestions = [
       },
       {
         question:
-          "Kým prívlastok obsahuje nasledujúca veta?: Nepodarilo sa mu spraviť oheň ani z veľmi suchého dreva.",
+          "Aký prívlastok obsahuje nasledujúca veta?: Nepodarilo sa mu spraviť oheň ani z veľmi suchého dreva.",
         options: [
           "postupne rozvíjací zhodný prívlastok",
           "viacnásobný nezhodný prívlastok",
@@ -836,28 +836,6 @@ export const sjlQuestions = [
           "prísudok a predmet",
         ],
         answer: "podmet a prísudok",
-      },
-      {
-        question:
-          "Urč typ vetného skladu vyznačenej časti vety: Na záhrade mu znepríjemňoval život roj múch.",
-        options: [
-          "určovací sklad",
-          "priraďovací sklad",
-          "prisudzovací sklad",
-          "vyznačená časť vety nepredstavuje vetný sklad",
-        ],
-        answer: "určovací sklad",
-      },
-      {
-        question:
-          "Urč typ vetného skladu vyznačenej časti vety: Ani dievčatá, ani chlapci nedosiahli v súťaži dostatočný počet bodov.",
-        options: [
-          "prisudzovací sklad",
-          "určovací sklad",
-          "priraďovací sklad",
-          "vyznačená časť vety nepredstavuje vetný sklad",
-        ],
-        answer: "priraďovací sklad",
       },
       {
         question: "V ktorom roku kodifikoval Anton Bernolák spisovný jazyk?",

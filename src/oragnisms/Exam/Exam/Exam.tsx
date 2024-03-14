@@ -32,6 +32,41 @@ const Exam = (props: ExamProps) => {
   const [isTimerDone, setIsTimerDone] = useState(false);
 
   useEffect(() => {
+    const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+      const confirmationMessage =
+        "Are you sure you want to leave? Your changes may not be saved.";
+
+      event.returnValue = confirmationMessage;
+      return confirmationMessage;
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      const confirmationMessage =
+        "Are you sure you want to leave? Your changes may not be saved.";
+
+      const userConfirmed = window.confirm(confirmationMessage);
+
+      if (!userConfirmed) {
+        history.pushState(null, document.title, location.href);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, []);
+
+  useEffect(() => {
     const shuffledData = shuffleArray(data);
     const newData = shuffledData.map((question, index) => {
       return { ...question, selected: "", questionNumber: index };

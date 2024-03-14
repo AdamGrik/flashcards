@@ -3,9 +3,9 @@
 import React from "react";
 import "./EndOfExam.scss";
 import { ExamQuestionProps } from "../Exam/Exam/Exam";
-
 import Button from "../../atoms/Button/Button";
 import { useNavigate } from "react-router-dom";
+import Grade from "../../atoms/Grade/Grade";
 
 type ExamProps = {
   questions: ExamQuestionProps[];
@@ -15,28 +15,6 @@ type ExamProps = {
 
 const endOfExam = (props: ExamProps) => {
   const { questions, score, totalQuestions } = props;
-
-  const percentage: number = (score / totalQuestions) * 100;
-  const percentageColor =
-    percentage > 32 ? "fc-percentage-color-pass" : "fc-percentage-color-fail";
-  let grade: number;
-  switch (true) {
-    case percentage > 89:
-      grade = 1;
-      break;
-    case percentage > 74:
-      grade = 2;
-      break;
-    case percentage > 49:
-      grade = 3;
-      break;
-    case percentage > 32:
-      grade = 4;
-      break;
-    default:
-      grade = 5;
-  }
-
   const navigate = useNavigate();
   const handleClick = () => {
     navigate("/");
@@ -44,16 +22,7 @@ const endOfExam = (props: ExamProps) => {
 
   return (
     <div className="fc-end-of-exam">
-      <div className="fc-end-of-exam-score">
-        Skóre: {score} / {totalQuestions}
-      </div>
-      <div className={"fc-percentage " + percentageColor}>
-        {Math.round(percentage)} %
-      </div>
-      <div className="fc-grade-and-number">
-        <div className="fc-grade">Známka: </div>
-        <div className="fc-grade-number">{grade}</div>
-      </div>
+      <Grade score={score} totalQuestions={totalQuestions}></Grade>
       <div className="fc-main-page-button">
         <Button title="Späť na hlavnú stránku" onClick={handleClick} />
       </div>

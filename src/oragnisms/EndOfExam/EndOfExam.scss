@@ -1,38 +1,6 @@
 @import "/src/variables.scss";
 
 .fc-end-of-exam {
-  .fc-end-of-exam-score {
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-    font-size: xx-large;
-  }
-  .fc-percentage {
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-    font-weight: bolder;
-    margin-top: 2px;
-    &.fc-percentage-color-pass {
-      color: $pass-color;
-    }
-    &.fc-percentage-color-fail {
-      color: $fail-color;
-    }
-  }
-  .fc-grade-and-number {
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-    margin-bottom: 4px;
-    gap: 10px;
-    .fc-grade {
-      padding-top: 8px;
-    }
-    .fc-grade-number {
-      font-size: xxx-large;
-    }
-  }
   .fc-main-page-button {
     display: flex;
     justify-content: center;
