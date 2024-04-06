@@ -5,6 +5,7 @@ import Pagination from "../Pagination/Pagination";
 
 type QuestionProps = {
   data: ExamQuestionProps;
+  examData: ExamQuestionProps[];
   onQuestionChange: (
     selectedOption: string,
     questionNumber: number,
@@ -13,8 +14,7 @@ type QuestionProps = {
 };
 
 const Question = (props: QuestionProps) => {
-  const { data, onQuestionChange } = props;
-
+  const { data, onQuestionChange, examData } = props;
   const [selectedOption, setSelectedOption] = useState<string>("");
 
   useEffect(() => {
@@ -70,6 +70,7 @@ const Question = (props: QuestionProps) => {
             totalPages={data.totalQuestions ?? 0}
             selected={data.questionNumber}
             isFinalQuestion={isFinalQuestion}
+            examData={examData}
             onPageSelect={(selectedPage) =>
               onQuestionChange(
                 selectedOption,

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Checkbox.scss";
 
 type CheckboxProps = {
   title: string;
@@ -13,11 +14,13 @@ const Checkbox = (props: CheckboxProps) => {
   };
   return (
     <>
-      <input
-        type="checkbox"
-        checked={isChecked}
-        onChange={handleChange}></input>
-      {title}
+      <span className="checkbox-wrapper" onClick={handleChange}>
+        <input type="checkbox" checked={isChecked} id="cbx"></input>
+        <label className="toggle">
+          <span className="ball"></span>
+          <span className="title">{title}</span>
+        </label>
+      </span>
     </>
   );
 };

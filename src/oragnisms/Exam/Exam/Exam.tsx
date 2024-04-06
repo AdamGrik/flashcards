@@ -120,6 +120,7 @@ const Exam = (props: ExamProps) => {
               ...questionsData[currentQuestion],
               totalQuestions: totalQuestions,
             }}
+            examData={questionsData}
             onQuestionChange={handleQuestionChange}
           />
         </>

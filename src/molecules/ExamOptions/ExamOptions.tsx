@@ -2,6 +2,8 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import Button from "../../atoms/Button/Button";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
+import "./ExamOptions.scss";
+
 type ExamOptionsProps = {
   data: database[];
 };
@@ -34,7 +36,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
     });
   };
   useEffect(() => {
-    handleButtonClick();
+    handleCheckboxClick();
   }, [selectedArrays]);
 
   const handleInputQuestionsChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -45,7 +47,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
     const value = parseInt(event.target.value, 10);
     setselectedTime(value);
   };
-  const handleButtonClick = () => {
+  const handleCheckboxClick = () => {
     const newArray: ExamQuestionProps[] = [];
 
     checkboxArrays.forEach((checkboxArray) => {
@@ -73,7 +75,9 @@ const ExamOptions = (props: ExamOptionsProps) => {
       ) : (
         <>
           {checkboxArrays.map((checkboxArray) => (
-            <div key={checkboxArray.subject}>
+            <div
+              key={checkboxArray.subject}
+              className="exam-options-checkboxes">
               <Checkbox
                 title={checkboxArray.subject}
                 isChecked={selectedArrays.includes(checkboxArray.subject)}

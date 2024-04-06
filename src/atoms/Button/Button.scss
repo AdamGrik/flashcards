@@ -19,22 +19,28 @@
   &.fc-button-next {
     background-color: rgb(0, 100, 0);
     color: white;
-    &:hover {
-      filter: brightness(80%);
+    @media (hover: hover) {
+      &:hover {
+        filter: brightness(80%);
+      }
     }
   }
   &.fc-button-back {
     background-color: rgb(0, 0, 209);
     color: white;
-    &:hover {
-      filter: brightness(80%);
+    @media (hover: hover) {
+      &:hover {
+        filter: brightness(80%);
+      }
     }
   }
   &.fc-button-end {
     background-color: rgb(199, 0, 0);
     color: white;
-    &:hover {
-      filter: brightness(85%);
+    @media (hover: hover) {
+      &:hover {
+        filter: brightness(85%);
+      }
     }
   }
   &:disabled {
@@ -49,5 +55,8 @@
   &.fc-button-pagination {
     background-color: $secondary-color;
     scale: 1.05;
+  }
+  &.fc-button-answered {
+    background-color: #00000048;
   }
 }

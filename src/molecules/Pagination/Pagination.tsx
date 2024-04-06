@@ -1,25 +1,29 @@
 import React from "react";
 import "./Pagination.scss";
 import Button from "../../atoms/Button/Button";
+import { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 
 type PaginationProps = {
   totalPages: number;
   selected: number;
   isFinalQuestion: boolean;
+  examData: ExamQuestionProps[];
   onPageSelect?: (selectedPage: number) => void;
 };
 
 const Pagination = (props: PaginationProps) => {
-  const { totalPages, selected, isFinalQuestion, onPageSelect } = props;
+  const { totalPages, selected, isFinalQuestion, onPageSelect, examData } =
+    props;
 
-  const pageNumbers = Array.from(
-    { length: totalPages },
-    (_, index) => index + 1
-  );
   const handlePageSelect = (selectedPage: number) => {
     if (onPageSelect) {
       onPageSelect(selectedPage);
     }
+  };
+  const idOfButtons = (pageNumber: number, data: any) => {
+    if (pageNumber === selected) return "pagination";
+    else if (data.selected !== "") return "answered";
+    else undefined;
   };
 
   return (
@@ -53,12 +57,12 @@ const Pagination = (props: PaginationProps) => {
         )}
       </div>
       <div className="fc-pagination">
-        {pageNumbers.map((pageNumber) => (
+        {examData.slice(0, totalPages).map((data, pageNumber) => (
           <Button
-            title={pageNumber.toString()}
+            title={(pageNumber + 1).toString()}
             key={pageNumber}
-            id={pageNumber === selected + 1 ? "pagination" : undefined}
-            onClick={() => handlePageSelect(pageNumber - 1)}></Button>
+            id={idOfButtons((pageNumber = pageNumber), (data = data))}
+            onClick={() => handlePageSelect(pageNumber)}></Button>
         ))}
       </div>
     </>

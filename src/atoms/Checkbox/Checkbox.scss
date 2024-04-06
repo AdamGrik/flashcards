@@ -1,0 +1,45 @@
+@import "/src/variables.scss";
+.checkbox-wrapper input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+}
+.toggle:before {
+  content: "";
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 34px;
+  height: 14px;
+  display: inline-block;
+  background: #9a9999;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+.ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.384);
+  background: white;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.title {
+  margin-left: 10px;
+}
+.checkbox-wrapper #cbx:checked + .toggle:before {
+  background: $pass-color;
+}
+.checkbox-wrapper #cbx:checked + .toggle .ball {
+  transform: translateX(20px);
+  transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+}
