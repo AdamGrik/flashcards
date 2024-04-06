@@ -3,6 +3,7 @@ import Button from "../../atoms/Button/Button";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 import "./ExamOptions.scss";
+import NumberInput from "../../atoms/NumberInput/NumberInput";
 
 type ExamOptionsProps = {
   data: database[];
@@ -73,50 +74,59 @@ const ExamOptions = (props: ExamOptionsProps) => {
           totalQuestions={numberOfQuestions}
           initialMinutes={selectedTime}></Exam>
       ) : (
-        <>
-          {checkboxArrays.map((checkboxArray) => (
-            <div
-              key={checkboxArray.subject}
-              className="exam-options-checkboxes">
-              <Checkbox
-                title={checkboxArray.subject}
-                isChecked={selectedArrays.includes(checkboxArray.subject)}
-                onChange={() => handleCheckboxChange(checkboxArray.subject)}
-              />
+        <div className="fc-exam-options">
+          <div className="fc-exam-options-border">
+            <div className="fc-exam-options-label">Nastavenie testu</div>
+            <div className="fc-exam-options-inputs">
+              <div className="fc-exam-options-input-questions">
+                <div>Počet otázok:</div>
+                <div>
+                  <NumberInput
+                    value={numberOfQuestions}
+                    onChange={handleInputQuestionsChange}
+                    min={1}
+                    max={maxQuestions}></NumberInput>
+                  /{maxQuestions}
+                </div>
+              </div>
+              <div className="fc-exam-options-input-time">
+                <div>Čas:</div>
+                <div>
+                  <NumberInput
+                    value={selectedTime}
+                    onChange={handleInputTimeChange}
+                    min={1}></NumberInput>
+                  minút
+                </div>
+              </div>
             </div>
-          ))}
-
-          <div>
-            Počet otázok
-            <input
-              type="number"
-              value={numberOfQuestions}
-              onChange={handleInputQuestionsChange}
-              min={1}
-              max={maxQuestions}></input>
-            /{maxQuestions}
+            <div className="fc-exam-options-checkboxes">
+              {checkboxArrays.map((checkboxArray) => (
+                <div
+                  key={checkboxArray.subject}
+                  className="fc-exam-options-checkbox">
+                  <Checkbox
+                    title={checkboxArray.subject}
+                    isChecked={selectedArrays.includes(checkboxArray.subject)}
+                    onChange={() => handleCheckboxChange(checkboxArray.subject)}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="fc-exam-options-start-test">
+              <Button
+                title="Spustiť test"
+                onClick={handleStartExam}
+                disabled={
+                  maxQuestions === 0 ||
+                  selectedTime <= 0 ||
+                  Number.isNaN(selectedTime) ||
+                  numberOfQuestions <= 0 ||
+                  Number.isNaN(numberOfQuestions)
+                }></Button>
+            </div>
           </div>
-          <div>
-            Čas
-            <input
-              type="number"
-              value={selectedTime}
-              onChange={handleInputTimeChange}
-              min={1}
-              max={999}></input>
-            minút
-          </div>
-          <Button
-            title="test"
-            onClick={handleStartExam}
-            disabled={
-              maxQuestions === 0 ||
-              selectedTime <= 0 ||
-              Number.isNaN(selectedTime) ||
-              numberOfQuestions <= 0 ||
-              Number.isNaN(numberOfQuestions)
-            }></Button>
-        </>
+        </div>
       )}
     </>
   );

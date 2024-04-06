@@ -107,10 +107,10 @@ export const tcozQuestions = [
       {
         question: "Aká je úloha transformátora ?",
         options: [
-          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie", //trafo
-          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované", //zos
-          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme", //filter
-          "Vytvoreniť magnetické pole elektrického prúdu", //cievka
+          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie",
+          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované",
+          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme",
+          "Vytvoreniť magnetické pole elektrického prúdu",
         ],
         answer:
           "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie",
@@ -118,10 +118,10 @@ export const tcozQuestions = [
       {
         question: "Aká je úloha zosilňovača ?",
         options: [
-          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie", //trafo
-          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované", //zos
-          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme", //filter
-          "Vytvoreniť magnetické pole elektrického prúdu", //cievka
+          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie",
+          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované",
+          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme",
+          "Vytvoreniť magnetické pole elektrického prúdu",
         ],
         answer:
           "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované",
@@ -129,10 +129,10 @@ export const tcozQuestions = [
       {
         question: "Aká je úloha cievky ?",
         options: [
-          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie", //trafo
-          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované", //zos
-          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme", //filter
-          "Vytvoreniť magnetické pole elektrického prúdu", //cievka
+          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie",
+          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované",
+          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme",
+          "Vytvoreniť magnetické pole elektrického prúdu",
         ],
         answer: "Vytvoreniť magnetické pole elektrického prúdu",
       },
@@ -712,10 +712,10 @@ export const tcozQuestions = [
       {
         question: "Aká je úloha filtra ?",
         options: [
-          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie", //trafo
-          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované", //zos
-          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme", //filter
-          "Vytvoreniť magnetické pole elektrického prúdu", //cievka
+          "Prenos elektrickej energie z jedného elektrického obvodu do druhého pomocou elektromagnetickej indukcie",
+          "Zvýšiť amplitúdu premenlivého elektrického signálu tak, aby jeho ostatné charakteristiky zostali v rámci nejakého pracovného rozsahu podľa možnosti zachované",
+          "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme",
+          "Vytvoreniť magnetické pole elektrického prúdu",
         ],
         answer: "Prepúšťa elektrickú energiu len v určitom frekvenčnom pásme",
       },
@@ -833,6 +833,48 @@ export const tcozQuestions = [
           "Schopnosť zozbierať svetlo z vonkajšieho prostredia",
         ],
         answer: "Schopnosť zozbierať svetlo z vonkajšieho prostredia",
+      },
+      {
+        question:
+          "Ako môže byť realizované hlavné napájanie pre záložný zdroj?",
+        options: [
+          "Transformátorom ako striedavé napájanie",
+          "Usmerňovačom ako jednosmerné napájanie",
+          "Oboje vyššie uvedené",
+          "Napájanie z batérií",
+        ],
+        answer: "Oboje vyššie uvedené",
+      },
+      {
+        question: "Aký je hlavný účel separátorov v akumulátoroch?",
+        options: [
+          "Zvyšovať kapacitu akumulátoru",
+          "Mechanicky a elektricky oddeliť kladné a záporné elektródy",
+          "Znižovať vnútorný odpor článku",
+          "Zabezpečiť prúdenie elektrolytu",
+        ],
+        answer: "Mechanicky a elektricky oddeliť kladné a záporné elektródy",
+      },
+      {
+        question: "Aký je rozdiel medzi FTTC a FTTN",
+        options: [
+          "",
+          "Pri FTTC je prípojná skrinka je bližšie k priestorom uživateľa",
+          "",
+          "",
+        ],
+        answer: "",
+      },
+      {
+        question:
+          "Aký je účel optického linkového ukončenia (OLT) v technológii FTTx?",
+        options: [
+          "Prevod optického signálu",
+          "Ukončenie linky na strane účastníka",
+          "Prenos signálu medzi sieťovými zakončeniami",
+          "Pasívne zdieľanie prenosovej kapacity optického vlákna",
+        ],
+        answer: "Prevod optického signálu",
       },
     ],
   },

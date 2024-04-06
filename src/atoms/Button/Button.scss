@@ -45,6 +45,7 @@
   }
   &:disabled {
     background-color: grey;
+    color: white;
     &:hover {
       cursor: not-allowed;
       scale: unset;
