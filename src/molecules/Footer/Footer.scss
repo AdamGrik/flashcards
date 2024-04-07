@@ -30,7 +30,8 @@
 
 @media (max-width: 768px) {
   .fc-footer {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     font-size: x-small;
     .fc-footer-left {
       width: 80%;

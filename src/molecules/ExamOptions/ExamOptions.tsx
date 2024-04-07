@@ -102,15 +102,25 @@ const ExamOptions = (props: ExamOptionsProps) => {
             </div>
             <div className="fc-exam-options-checkboxes">
               {checkboxArrays.map((checkboxArray) => (
-                <div
-                  key={checkboxArray.subject}
-                  className="fc-exam-options-checkbox">
-                  <Checkbox
-                    title={checkboxArray.subject}
-                    isChecked={selectedArrays.includes(checkboxArray.subject)}
-                    onChange={() => handleCheckboxChange(checkboxArray.subject)}
-                  />
-                </div>
+                <>
+                  <div
+                    key={checkboxArray.subject}
+                    className="fc-exam-options-checkbox">
+                    <Checkbox
+                      isChecked={selectedArrays.includes(checkboxArray.subject)}
+                      onChange={() =>
+                        handleCheckboxChange(checkboxArray.subject)
+                      }
+                    />
+                    <span
+                      className="fc-exam-options-checkbox-label"
+                      onClick={() =>
+                        handleCheckboxChange(checkboxArray.subject)
+                      }>
+                      {checkboxArray.subject}
+                    </span>
+                  </div>
+                </>
               ))}
             </div>
             <div className="fc-exam-options-start-test">

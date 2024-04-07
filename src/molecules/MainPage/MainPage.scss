@@ -12,6 +12,11 @@
       width: 20%;
     }
   }
+  .fc-main-page-navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
   .fc-school-photo {
     background-image: url("/src/images/Dopravna-TT-edit.jpg");
     height: calc(100% - 180px);
@@ -29,6 +34,9 @@
     }
     .fc-school-photo {
       display: none;
+    }
+    .gap {
+      height: 40px;
     }
   }
 }
