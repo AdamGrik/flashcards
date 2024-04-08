@@ -1,6 +1,6 @@
 export const matQuestions = [
   {
-    subject: "Array 1",
+    subject: "Teória",
     questions: [
       {
         question: "Ako sa nazýva spojenie výrokov pomocou logickej spojky ∨?",
@@ -33,11 +33,6 @@ export const matQuestions = [
         ],
         answer: "tautológia/negácia",
       },
-    ],
-  },
-  {
-    subject: "Array 2",
-    questions: [
       {
         question:
           "Ktoré dva matematické symboly označujú všeobecný kvantifikátor a existenčný kvantifikátor, ktoré sa používajú na určenie množstva pri kvantifikovaných výrokoch?",
@@ -59,11 +54,6 @@ export const matQuestions = [
         options: ["B ⇒ A", "¬B ⇒ ¬A", "¬A ⇒ B", "A ⇒ ¬B"],
         answer: "B ⇒ A",
       },
-    ],
-  },
-  {
-    subject: "Array 3",
-    questions: [
       {
         question: "Ako sa nazýva nasledujúca základná množinová operácia?",
         options: [
@@ -84,11 +74,6 @@ export const matQuestions = [
         ],
         answer: "prienik množín",
       },
-    ],
-  },
-  {
-    subject: "Array 4",
-    questions: [
       {
         question: "Ktoré tvrdenie naisto platí pre toto označenie množín?",
         options: [
@@ -141,11 +126,6 @@ export const matQuestions = [
         ],
         answer: "Karol, Filip a Milan",
       },
-    ],
-  },
-  {
-    subject: "Array 5",
-    questions: [
       {
         question: "V ovocnom sade sú stromy vysadené v rade...",
         options: ["k 13.", "k 14.", "k 15.", "k 16."],
