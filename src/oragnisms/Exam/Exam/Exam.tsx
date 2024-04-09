@@ -29,42 +29,6 @@ const Exam = (props: ExamProps) => {
   const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
-  const [isTimerDone, setIsTimerDone] = useState(false);
-
-  useEffect(() => {
-    const handleBeforeUnload = (event: BeforeUnloadEvent) => {
-      const confirmationMessage =
-        "Are you sure you want to leave? Your changes may not be saved.";
-
-      event.returnValue = confirmationMessage;
-      return confirmationMessage;
-    };
-
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handlePopState = (event: PopStateEvent) => {
-      const confirmationMessage =
-        "Are you sure you want to leave? Your changes may not be saved.";
-
-      const userConfirmed = window.confirm(confirmationMessage);
-
-      if (!userConfirmed) {
-        history.pushState(null, document.title, location.href);
-      }
-    };
-
-    window.addEventListener("popstate", handlePopState);
-
-    return () => {
-      window.removeEventListener("popstate", handlePopState);
-    };
-  }, []);
 
   useEffect(() => {
     const shuffledData = shuffleArray(data);
@@ -73,12 +37,11 @@ const Exam = (props: ExamProps) => {
     });
     setQuestionsData(newData);
   }, [data]);
-  useEffect(() => {
-    if (isTimerDone) {
-      const finalScore = calculateFinalScore(questionsData);
-      setEndOfExam({ finished: true, score: finalScore });
-    }
-  }, [isTimerDone, questionsData]);
+
+  const finishExam = () => {
+    const finalScore = calculateFinalScore(questionsData);
+    setEndOfExam({ finished: true, score: finalScore });
+  };
 
   const handleQuestionChange = (
     selectedOption: string,
@@ -95,16 +58,15 @@ const Exam = (props: ExamProps) => {
     setQuestionsData(newQuestionsData);
 
     if (nextQuestion <= totalQuestions - 1) {
-      setCurrentQuestion(nextQuestion ?? currentQuestion + 1);
+      setCurrentQuestion(nextQuestion);
     } else {
-      const finalScore = calculateFinalScore(newQuestionsData);
-      setEndOfExam({ finished: true, score: finalScore });
+      finishExam();
     }
   };
 
   return (
     <>
-      {endOfExam.finished || isTimerDone ? (
+      {endOfExam.finished ? (
         <EndOfExam
           questions={questionsData}
           score={endOfExam.score}
@@ -112,8 +74,8 @@ const Exam = (props: ExamProps) => {
       ) : (
         <>
           <ExamTimer
-            isTimerDone={setIsTimerDone}
             initialMinutes={initialMinutes}
+            handleTimeEnd={finishExam}
           />
           <Question
             data={{

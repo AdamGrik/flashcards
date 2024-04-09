@@ -863,7 +863,8 @@ export const tcozQuestions = [
           "",
           "",
         ],
-        answer: "",
+        answer:
+          "Pri FTTC je prípojná skrinka je bližšie k priestorom uživateľa",
       },
       {
         question:

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./ExamTimer.scss";
 type ExamTimerProps = {
-  isTimerDone: React.Dispatch<React.SetStateAction<boolean>>;
   initialMinutes: number;
+  handleTimeEnd: () => void;
 };
 
 const ExamTimer = (props: ExamTimerProps) => {
-  const { isTimerDone, initialMinutes } = props;
+  const { initialMinutes, handleTimeEnd } = props;
   const [counter, setCounter] = useState(initialMinutes * 60);
 
   useEffect(() => {
@@ -17,9 +17,9 @@ const ExamTimer = (props: ExamTimerProps) => {
       );
       return () => clearInterval(timer);
     } else {
-      isTimerDone(true);
+      handleTimeEnd();
     }
-  }, [counter, isTimerDone]);
+  }, [counter]);
 
   const displayMinutes = Math.floor(counter / 60);
   const displaySeconds = counter % 60;

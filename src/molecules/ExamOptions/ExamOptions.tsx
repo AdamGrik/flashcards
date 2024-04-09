@@ -17,7 +17,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
   const [numberOfQuestions, setNumberOfQuestions] = useState(20);
   const [maxQuestions, setMaxQuestions] = useState<number>(0);
   const [selectedTime, setselectedTime] = useState(20);
-  const [checkboxArrays, setCheckboxArrays] = useState<database[]>(data);
+  const checkboxArrays: database[] = data;
   const initialSelectedArrays = checkboxArrays.map(
     (checkboxArray) => checkboxArray.subject
   );
@@ -40,6 +40,18 @@ const ExamOptions = (props: ExamOptionsProps) => {
     handleCheckboxClick();
   }, [selectedArrays]);
 
+  const handleCheckboxClick = () => {
+    const newArray: ExamQuestionProps[] = [];
+
+    checkboxArrays.map((checkboxArray) => {
+      if (selectedArrays.includes(checkboxArray.subject)) {
+        newArray.push(...checkboxArray.questions);
+      }
+    });
+    setStartExamData(newArray);
+    setMaxQuestions(newArray.length);
+  };
+
   const handleInputQuestionsChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value, 10);
     setNumberOfQuestions(value);
@@ -48,17 +60,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
     const value = parseInt(event.target.value, 10);
     setselectedTime(value);
   };
-  const handleCheckboxClick = () => {
-    const newArray: ExamQuestionProps[] = [];
 
-    checkboxArrays.forEach((checkboxArray) => {
-      if (selectedArrays.includes(checkboxArray.subject)) {
-        newArray.push(...checkboxArray.questions);
-      }
-    });
-    setStartExamData(newArray);
-    setMaxQuestions(newArray.length);
-  };
   const handleStartExam = () => {
     setStartExam(true);
     if (maxQuestions < numberOfQuestions) {

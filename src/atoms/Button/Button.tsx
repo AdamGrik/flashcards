@@ -1,6 +1,5 @@
 import React from "react";
 import "./Button.scss";
-import classNames from "classnames";
 
 type ButtonProps = {
   title: string;
@@ -12,12 +11,11 @@ type ButtonProps = {
 const Button = (props: ButtonProps) => {
   const { title, onClick, id, disabled } = props;
 
-  const className = classNames("fc-button", {
-    [`fc-button-${id}`]: id !== undefined,
-  });
-
   return (
-    <button className={className} onClick={onClick} disabled={disabled}>
+    <button
+      className={`fc-button fc-button-${id}`}
+      onClick={onClick}
+      disabled={disabled}>
       {title}
     </button>
   );

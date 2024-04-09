@@ -27,6 +27,7 @@ const Question = (props: QuestionProps) => {
 
   const isFinalQuestion =
     data && data.questionNumber === (data.totalQuestions ?? 0) - 1;
+
   const selectOption = (option: string) => {
     selectedOption === option
       ? setSelectedOption("")
@@ -39,12 +40,11 @@ const Question = (props: QuestionProps) => {
         <div className="fc-question-question">
           {data.questionNumber + 1}. / {data.totalQuestions} {data.question}
         </div>
-        <div>{data.text}</div>
+        {data.text !== undefined ? <div>{data.text}</div> : null}
         <div className="fc-question-text"> {data.textQuestion}</div>
         {data.image !== undefined ? (
           <div className={`fc-question-img fc-image-${data.image}`} />
         ) : null}
-
         {data.options.map((option, index) => (
           <div
             key={index}
@@ -55,9 +55,6 @@ const Question = (props: QuestionProps) => {
               type="radio"
               value={option}
               checked={selectedOption === option}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                selectOption(e.target.value);
-              }}
             />
             <span className="fc-question-options-abcd">
               {String.fromCharCode(97 + index)}.)
