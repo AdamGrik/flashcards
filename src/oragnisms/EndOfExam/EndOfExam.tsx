@@ -1,5 +1,3 @@
-// TODO : REFACTOR
-
 import React from "react";
 import "./EndOfExam.scss";
 import { ExamQuestionProps } from "../Exam/Exam/Exam";
@@ -37,7 +35,6 @@ const endOfExam = (props: ExamProps) => {
             <div className={"fc-end-of-exam-question " + answerClass}>
               {question.textQuestion !== undefined ? (
                 <div className="fc-end-of-exam-question-question">
-                  {" "}
                   {question.questionNumber + 1}. {question.textQuestion}
                 </div>
               ) : (
@@ -51,33 +48,24 @@ const endOfExam = (props: ExamProps) => {
               ) : null}
               <div className="fc-end-of-exam-question-options">
                 {question.options.map((option, index) => {
+                  let optionClass = "fc-end-of-exam-question-option";
+                  let label: string = "";
                   if (option === question.answer) {
-                    return (
-                      <div
-                        key={index}
-                        className="fc-end-of-exam-question-correct-answer">
-                        {String.fromCharCode(97 + index)}.) {option}
-                        <div className="correct-answer">Správna odpoveď</div>
-                      </div>
-                    );
+                    optionClass = "fc-end-of-exam-question-correct-answer";
+                    label = "Správna odpoveď";
                   } else if (option === question.selected) {
-                    return (
-                      <div
-                        key={index}
-                        className="fc-end-of-exam-question-selected-answer">
-                        {String.fromCharCode(97 + index)}.) {option}
-                        <div className="your-answer">Vaša odpoveď</div>
-                      </div>
-                    );
-                  } else {
-                    return (
-                      <div
-                        key={index}
-                        className="fc-end-of-exam-question-option">
-                        {String.fromCharCode(97 + index)}.) {option}{" "}
-                      </div>
-                    );
+                    optionClass = "fc-end-of-exam-question-selected-answer";
+                    label = "Vaša odpoveď";
                   }
+
+                  return (
+                    <div key={index} className={optionClass}>
+                      {String.fromCharCode(97 + index)}.) {option}
+                      <span className="fc-end-of-exam-question-option-label">
+                        {label}
+                      </span>
+                    </div>
+                  );
                 })}
               </div>
             </div>
