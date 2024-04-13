@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Question.scss";
-import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
+import { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 import Pagination from "../Pagination/Pagination";
 
 type QuestionProps = {
@@ -64,7 +64,6 @@ const Question = (props: QuestionProps) => {
         ))}
         <div className="fc-question-pagination">
           <Pagination
-            totalPages={data.totalQuestions ?? 0}
             selected={data.questionNumber}
             isFinalQuestion={isFinalQuestion}
             examData={examData}

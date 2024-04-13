@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Exam.scss";
 import Question from "../../../molecules/Question/Question";
 import EndOfExam from "../../EndOfExam/EndOfExam";
-import { shuffleArray } from "../../../utils/common/shuffleArray";
 import { calculateFinalScore } from "../../../utils/common/calculateFinalScore";
 import ExamTimer from "../../../atoms/ExamTimer/ExamTimer";
 
@@ -26,17 +25,9 @@ type ExamProps = {
 
 const Exam = (props: ExamProps) => {
   const { data, totalQuestions, initialMinutes } = props;
-  const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>([]);
+  const [questionsData, setQuestionsData] = useState<ExamQuestionProps[]>(data);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [endOfExam, setEndOfExam] = useState({ finished: false, score: 0 });
-
-  useEffect(() => {
-    const shuffledData = shuffleArray(data);
-    const newData = shuffledData.map((question, index) => {
-      return { ...question, selected: "", questionNumber: index };
-    });
-    setQuestionsData(newData);
-  }, [data]);
 
   const finishExam = () => {
     const finalScore = calculateFinalScore(questionsData);

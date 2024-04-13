@@ -4,7 +4,6 @@ import Button from "../../atoms/Button/Button";
 import { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 
 type PaginationProps = {
-  totalPages: number;
   selected: number;
   isFinalQuestion: boolean;
   examData: ExamQuestionProps[];
@@ -12,9 +11,7 @@ type PaginationProps = {
 };
 
 const Pagination = (props: PaginationProps) => {
-  const { totalPages, selected, isFinalQuestion, onPageSelect, examData } =
-    props;
-
+  const { selected, isFinalQuestion, onPageSelect, examData } = props;
   const idOfButtons = (pageNumber: number, data: any) => {
     if (pageNumber === selected) return "pagination";
     else if (data.selected !== "") return "answered";
@@ -51,7 +48,7 @@ const Pagination = (props: PaginationProps) => {
         )}
       </div>
       <div className="fc-pagination">
-        {examData.slice(0, totalPages).map((data, pageNumber) => (
+        {examData.map((data, pageNumber) => (
           <Button
             title={(pageNumber + 1).toString()}
             key={pageNumber}

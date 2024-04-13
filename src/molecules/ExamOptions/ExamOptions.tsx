@@ -4,6 +4,7 @@ import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
 import "./ExamOptions.scss";
 import NumberInput from "../../atoms/NumberInput/NumberInput";
+import { shuffleArray } from "../../utils/common/shuffleArray";
 
 type ExamOptionsProps = {
   data: database[];
@@ -51,17 +52,12 @@ const ExamOptions = (props: ExamOptionsProps) => {
     setStartExamData(newArray);
     setMaxQuestions(newArray.length);
   };
-
-  const handleInputQuestionsChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const value = parseInt(event.target.value, 10);
-    setNumberOfQuestions(value);
-  };
-  const handleInputTimeChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const value = parseInt(event.target.value, 10);
-    setselectedTime(value);
-  };
-
   const handleStartExam = () => {
+    const shuffledQuestions = shuffleArray(startExamData);
+    const newData = shuffledQuestions.map((question, index) => {
+      return { ...question, selected: "", questionNumber: index };
+    });
+    setStartExamData(newData);
     setStartExam(true);
     if (maxQuestions < numberOfQuestions) {
       setNumberOfQuestions(maxQuestions);
@@ -72,7 +68,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
     <>
       {startExam === true ? (
         <Exam
-          data={startExamData}
+          data={startExamData.slice(0, numberOfQuestions)}
           totalQuestions={numberOfQuestions}
           initialMinutes={selectedTime}></Exam>
       ) : (
@@ -85,7 +81,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
                 <div>
                   <NumberInput
                     value={numberOfQuestions}
-                    onChange={handleInputQuestionsChange}
+                    change={setNumberOfQuestions}
                     min={1}
                     max={maxQuestions}></NumberInput>
                   /{maxQuestions}
@@ -96,7 +92,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
                 <div>
                   <NumberInput
                     value={selectedTime}
-                    onChange={handleInputTimeChange}
+                    change={setselectedTime}
                     min={1}></NumberInput>
                   minút
                 </div>
