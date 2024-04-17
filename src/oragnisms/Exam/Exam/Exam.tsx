@@ -64,10 +64,12 @@ const Exam = (props: ExamProps) => {
           totalQuestions={totalQuestions}></EndOfExam>
       ) : (
         <>
-          <ExamTimer
-            initialMinutes={initialMinutes}
-            handleTimeEnd={finishExam}
-          />
+          {isNaN(initialMinutes) || initialMinutes === 0 ? null : (
+            <ExamTimer
+              initialMinutes={initialMinutes}
+              handleTimeEnd={finishExam}
+            />
+          )}
           <Question
             data={{
               ...questionsData[currentQuestion],

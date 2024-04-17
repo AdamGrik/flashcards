@@ -3,12 +3,26 @@
   margin: 4px;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  .fc-pagination-buttons {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 1000px;
+  }
   .fc-button {
     margin: 2px;
     width: 46px;
   }
+  @media (max-width: 768px) {
+    .fc-button {
+      width: 34px;
+      height: 34px;
+      padding: 1px;
+      font-size: x-small;
+    }
+  }
 }
+
 .fc-navigation-buttons {
   display: flex;
   justify-content: center;

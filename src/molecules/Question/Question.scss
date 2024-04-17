@@ -11,6 +11,7 @@
     padding: 20px;
     border-radius: 10px;
     margin: 6px 14px 14px 14px;
+    max-width: 1200px;
   }
   .fc-question-question {
     display: flex;
@@ -68,20 +69,20 @@
   }
   @media (max-width: 768px) {
     .fc-question-question {
-      font-size: x-large;
+      font-size: large;
     }
     .fc-question-border {
       padding: 14px 6px 14px 6px;
     }
     .fc-question-options {
-      font-size: large;
+      font-size: medium;
       .fc-question-options-radio {
-        min-width: 18px;
-        min-height: 18px;
+        min-width: 14px;
+        min-height: 14px;
       }
       .fc-question-options-abcd {
         padding-top: 2px;
-        font-size: medium;
+        font-size: small;
       }
     }
 

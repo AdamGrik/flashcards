@@ -621,6 +621,70 @@ export const tcozQuestions = [
     subject: "Komunikačné technológie",
     questions: [
       {
+        question:
+          "Kde dochádza k modulácii v telekomunikačnom prenosovom reťazci ?",
+        options: ["V zdroji", "Vo vysielači", "V prenosovej ceste", "V sieti"],
+        answer: "Vo vysielači",
+      },
+      {
+        question: "Aký je rozdiel medzi half-duplex a full-duplex ?",
+        options: [
+          "Half-duplex je realizovaný iba jedným smerom od vysielača k prijímaču",
+          "Pri full duplex musí byť použitá pulzne kódová modulácia",
+          "Pri half-duplex nie je možný obojsmerný prenos súčasne",
+          "Pri full-duplex nastáva väčšie skreslenie",
+        ],
+        answer: "Pri half-duplex nie je možné obojsmerný prenos súčasne",
+      },
+      {
+        question: "Analógový signál je",
+        options: [
+          "Nespojitý v čase, spojitý v amplitúde",
+          "Nespojitý v čase aj amplitúde",
+          "Spojitý v čase i amplitúde",
+        ],
+        answer: "Spojitý v čase i amplitúde",
+      },
+      {
+        question: "Diskrétny signál je",
+        options: [
+          "Nespojitý v čase, spojitý v amplitúde",
+          "Nespojitý v čase i amplitúde",
+          "Spojitý v čase i amplitúde",
+        ],
+        answer: "Nespojitý v čase, spojitý v amplitúde",
+      },
+      {
+        question: "Digitálny signál je",
+        options: [
+          "Nespojitý v čase, spojitý v amplitúde",
+          "Nespojitý v čase i amplitúde",
+          "Spojitý v čase i amplitúde",
+        ],
+        answer: "Nespojitý v čase i amplitúde",
+      },
+      {
+        question: "Čo je to modulácia ?",
+        options: [
+          "Úprava signálu na tvar vhodný na prenos",
+          "Proces, pri ktorom sa vstupné dáta premieňajú na výstupné",
+          "Úprava signálu na zvýšenie jeho kvality",
+          "Úprava signálu na zvýšenie jeho frekvencie",
+        ],
+        answer: "Úprava signálu na tvar vhodný na prenos",
+      },
+      {
+        question: "Čo je to multiplex ?",
+        options: [
+          "Súhrn kmitočtov z ktorých sa skladá pôvodný signál",
+          "Spôsob prenosu, pri ktorom dochádza k súčasnému viacnásobnému využívaniu jedného prenosového prostredia",
+          "Jav znižujúci vernosť pôvodnej správy v dôsledku vonkajších vplyvov",
+          "Zvýšenie signálu na výstupnej strane prenosového kanála",
+        ],
+        answer:
+          "Spôsob prenosu, pri ktorom dochádza k súčasnému viacnásobnému využívaniu jedného prenosového prostredia",
+      },
+      {
         question: "Čo je to informácia ?",
         options: [
           "Prechod zo stavu „neviem“ do stavu „viem“",
@@ -815,6 +879,11 @@ export const tcozQuestions = [
         answer: "Pulzne kódová",
       },
       {
+        question: "Ktorá modulácia sa používa na úpravu digitálneho signálu ?",
+        options: ["AM", "FM", "PM", "PCM"],
+        answer: "PCM",
+      },
+      {
         question: "Ako sa šíri svetlo optickým vláknom ?",
         options: [
           "Prostredníctvom elektromagnetickej vlny",
@@ -835,8 +904,13 @@ export const tcozQuestions = [
         answer: "Schopnosť zozbierať svetlo z vonkajšieho prostredia",
       },
       {
+        question: "Aké rýchlosti prenosu dosahujeme pomocou optického vlákna ?",
+        options: ["Gbit/s", "Tbit/s", "Mbit/s", "kbit/s"],
+        answer: "Gbit/s",
+      },
+      {
         question:
-          "Ako môže byť realizované hlavné napájanie pre záložný zdroj?",
+          "Ako môže byť realizované hlavné napájanie pre záložný zdroj ?",
         options: [
           "Transformátorom ako striedavé napájanie",
           "Usmerňovačom ako jednosmerné napájanie",
@@ -846,7 +920,7 @@ export const tcozQuestions = [
         answer: "Oboje vyššie uvedené",
       },
       {
-        question: "Aký je hlavný účel separátorov v akumulátoroch?",
+        question: "Aký je hlavný účel separátorov v akumulátoroch ?",
         options: [
           "Zvyšovať kapacitu akumulátoru",
           "Mechanicky a elektricky oddeliť kladné a záporné elektródy",
@@ -856,19 +930,8 @@ export const tcozQuestions = [
         answer: "Mechanicky a elektricky oddeliť kladné a záporné elektródy",
       },
       {
-        question: "Aký je rozdiel medzi FTTC a FTTN",
-        options: [
-          "",
-          "Pri FTTC je prípojná skrinka je bližšie k priestorom uživateľa",
-          "",
-          "",
-        ],
-        answer:
-          "Pri FTTC je prípojná skrinka je bližšie k priestorom uživateľa",
-      },
-      {
         question:
-          "Aký je účel optického linkového ukončenia (OLT) v technológii FTTx?",
+          "Aký je účel optického linkového ukončenia (OLT) v technológii FTTx ?",
         options: [
           "Prevod optického signálu",
           "Ukončenie linky na strane účastníka",
@@ -876,6 +939,158 @@ export const tcozQuestions = [
           "Pasívne zdieľanie prenosovej kapacity optického vlákna",
         ],
         answer: "Prevod optického signálu",
+      },
+      {
+        question: "Na čo sa používa MB telefón ?",
+        options: [
+          "Na spojenie koncového bodu s dispečerom",
+          "Ako dvojbodové spojenie v neverejných sieťach ako sú napríklad železnice alebo kedysi ho používali vojaci",
+          "Ako pevná linka",
+        ],
+        answer:
+          "Ako dvojbodové spojenie v neverejných sieťach ako sú napríklad železnice alebo kedysi ho používali vojaci",
+      },
+      {
+        question: "Na čo sa používa UB telefón ?",
+        options: [
+          "Na spojenie koncového bodu s dispečerom",
+          "Ako dvojbodové spojenie v neverejných sieťach ako sú napríklad železnice alebo kedysi ho používali vojaci",
+          "Ako pevná linka",
+        ],
+        answer: "Na spojenie koncového bodu s dispečerom",
+      },
+      {
+        question: "Na čo sa používa AUT telefón ?",
+        options: [
+          "Na spojenie koncového bodu s dispečerom",
+          "Ako dvojbodové spojenie v neverejných sieťach ako sú napríklad železnice alebo kedysi ho používali vojaci",
+          "Ako pevná linka",
+        ],
+        answer: "Ako pevná linka",
+      },
+      {
+        question:
+          "Ktorá z nasledujúcich možností nie je funkciou dispečerských telefónnych zariadení v železničnej prevádzke ?",
+        options: [
+          "Dorozumievanie pracovníkov na väčšie vzdialenosti",
+          "Rýchle spojenie s vybranými účastníkmi",
+          "Poskytovanie internetového pripojenia",
+          "Zabezpečenie spoľahlivosti a nezávislosti od dodávky elektrickej energie",
+        ],
+        answer: "Poskytovanie internetového pripojenia",
+      },
+      {
+        question:
+          "Aký je účel telefónneho zapojovača v železničnej prevádzke ?",
+        options: [
+          "Umožňuje prepojenie jednotlivých účastníkov",
+          "Zjednodušuje a uľahčuje obsluhu pripojených spojov",
+          "Slúži na záznam hovorov",
+          "Zabezpečuje bezpečnosť pracovníkov",
+        ],
+        answer: "Zjednodušuje a uľahčuje obsluhu pripojených spojov",
+      },
+      {
+        question: "Aké je hovorové telefónne pásmo ?",
+        options: [
+          "10 - 12 kHz",
+          "300 - 3400 kHz",
+          "20 - 20000 Hz",
+          "300 - 3400 Hz",
+        ],
+        answer: "300 - 3400 Hz",
+      },
+      {
+        question: "Aký je rozdiel medzi veľkým a malým rozhlasom ?",
+        options: [
+          "Veľký rozhlas umožňuje aj spätnú komunikáciu cez tzv. tiché dorozumievanie",
+          "Veľký rozhlas obsahuje viac ako jednu vetvu",
+          "Pri veľkom rozhlase na jednu listovú jednotku je možné zaznamenať 40 informácií a pri malom 20",
+          "Malý rozhlas spracuje informáciu paritným kódom a veľký izokódom",
+        ],
+        answer:
+          "Veľký rozhlas umožňuje aj spätnú komunikáciu cez tzv. tiché dorozumievanie",
+      },
+      {
+        question: "Na obrázku je:",
+        options: ["Dvojdrôtový zosilnovač", "Štvordrôtový zosilnovač"],
+        image: "obr22",
+        answer: "Dvojdrôtový zosilnovač",
+      },
+      {
+        question: "Na obrázku je:",
+        options: ["Dvojdrôtový zosilnovač", "Štvordrôtový zosilnovač"],
+        image: "obr23",
+        answer: "Štvordrôtový zosilnovač",
+      },
+      {
+        question:
+          "Ktorá generácia spojovacích systémov pracuje s digitálnym signálom a používa polovodičové súčiastky ?",
+        options: [
+          "Prvá generácia",
+          "Druhá generácia",
+          "Tretia generácia",
+          "Štvrtá generácia",
+        ],
+        answer: "Štvrtá generácia",
+      },
+      {
+        question:
+          "Ktorá generácia spojovacích systémov používa krokové voliče ?",
+        options: [
+          "Prvá generácia",
+          "Druhá generácia",
+          "Tretia generácia",
+          "Štvrtá generácia",
+        ],
+        answer: "Prvá generácia",
+      },
+      {
+        question: "Možnosť realizácie T článku T(read):",
+        options: [
+          "Cyklický zápis, riadené čítanie",
+          "Riadený zápis, cyklické čítanie",
+        ],
+        answer: "Cyklický zápis, riadené čítanie",
+      },
+      {
+        question: "Možnosť realizácie T článku T(write):",
+        options: [
+          "Cyklický zápis, riadené čítanie",
+          "Riadený zápis, cyklické čítanie",
+        ],
+        answer: "Riadený zápis, cyklické čítanie",
+      },
+      {
+        question: "Aká možnosť realizácie T článku je na obrázku ?",
+        options: ["T read", "T write"],
+        image: "obr24",
+        answer: "T read",
+      },
+      {
+        question: "Aká možnosť realizácie T článku je na obrázku ?",
+        options: ["T read", "T write"],
+        image: "obr25",
+        answer: "T write",
+      },
+      {
+        question: "Ktorý z princípov nie je použitý v bunkovej sieti",
+        options: [
+          "Opakované využitie rádiových kanálov",
+          "Delenie buniek a sektorizácia buniek za účelom zväčšenia kapacity siete",
+          "Prepnutie hovoru počas prechodu hranicou bunky",
+          "Vysielače s vysokým výkonom v každej bunke",
+        ],
+        answer: "Vysielače s vysokým výkonom v každej bunke",
+      },
+      {
+        question: "Aký je hlavný prínos bunkovej siete ?",
+        options: [
+          "Zväčšenie plochy oblasti pokrytých vysielačom",
+          "Obsluha veľkého počtu účastníkov súčasne",
+          "Zvyšovanie výkonu jednotlivých vysielačov",
+        ],
+        answer: "Obsluha veľkého počtu účastníkov súčasne",
       },
     ],
   },

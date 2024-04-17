@@ -8,11 +8,15 @@ const text1 =
   "Ancient Greek athletes are known to have used special diets and stimulants to strengthen themselves. Strychnine, caffeine, cocaine, and alcohol were often used by cyclists an other endurance athletes in the 19 century. Thomas Hicks ran to victory in the marathon at the 1904 Olympic Games, in St. Louis, with the help of raw egg, injections of strychnine and doses of brandy administered to him during the race. In 1928 the IAAF (athletics) became the first International Sport Federation (IF) to ban doping, but no tests were performed. Meanwhile the problem was made worse by synthetic hormones, invented in the 1930s and in their growing use for doping purposes from the 1950s. The death of Danish cyclist Knud Enemark Jensen during competition at the Olympic Games in Rome 1960 (the autopsy revealed traces of amphetamine) increased the pressure on sports authorities to introduce drug testing with the purpose of stopping it. In 1966 FIFA (football) was among the first IFs to introduce doping tests in its World Championships. In the next year the International Olympic Committee (IOC) instituted its Medical Commission and set up its first list of prohibited substances. Drug tests were later introduced at the Olympic Games in Grenoble and at the Olympic Games in Mexico in 1968. In the year before, the urgency of anti-doping work had been highlighted by another tragic death, that of cyclist Tom Simpson during the Tour de France. Most IFs had introduced drug testing by the 1970s. However, the use of anabolic steroids was becoming widespread, especially in strength events, as there was no way of detecting them yet. A reliable testing method was finally introduced in 1974 and the IOC added anabolic steroids to its list of prohibited substances in 1976. This resulted in a marked increase in the number of doping-related disqualifications in the late 1970s, notably in strength-related sports such as throwing events and weightlifting. Anti-doping work was made more complicated in the 1970s and 1980s by suspicions of state sponsored doping practices in some countries, which were proven in the case of the former German Democratic Republic. The most famous doping case of the 1980s concerned Ben Johnson, the 100-metre champion who tested positive for stanozolol (an anabolic steroid) at the 1988 Olympic Games in Seoul. Johnson’s case focused the world’s attention on the problem of doping to an unprecedented degree.";
 export const anjQuestions = [
   {
+    subject: "B1",
+    questions: [],
+  },
+  {
     subject: "B2",
     questions: [
       {
         question: " ________ you come here tomorrow?",
-        options: ["dod", "did", "will"],
+        options: ["do", "did", "will"],
         answer: "will",
       },
       {

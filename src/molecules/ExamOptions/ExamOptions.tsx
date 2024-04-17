@@ -17,7 +17,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
   const { data } = props;
   const [numberOfQuestions, setNumberOfQuestions] = useState(20);
   const [maxQuestions, setMaxQuestions] = useState<number>(0);
-  const [selectedTime, setselectedTime] = useState(20);
+  const [selectedTime, setselectedTime] = useState(NaN);
   const checkboxArrays: database[] = data;
   const initialSelectedArrays = checkboxArrays.map(
     (checkboxArray) => checkboxArray.subject
@@ -93,42 +93,45 @@ const ExamOptions = (props: ExamOptionsProps) => {
                   <NumberInput
                     value={selectedTime}
                     change={setselectedTime}
-                    min={1}></NumberInput>
+                    min={0}></NumberInput>
                   minút
                 </div>
               </div>
             </div>
-            <div className="fc-exam-options-checkboxes">
-              {checkboxArrays.map((checkboxArray) => (
-                <>
-                  <div
-                    key={checkboxArray.subject}
-                    className="fc-exam-options-checkbox">
-                    <Checkbox
-                      isChecked={selectedArrays.includes(checkboxArray.subject)}
-                      onChange={() =>
-                        handleCheckboxChange(checkboxArray.subject)
-                      }
-                    />
-                    <span
-                      className="fc-exam-options-checkbox-label"
-                      onClick={() =>
-                        handleCheckboxChange(checkboxArray.subject)
-                      }>
-                      {checkboxArray.subject}
-                    </span>
-                  </div>
-                </>
-              ))}
-            </div>
+            {checkboxArrays.length > 1 ? (
+              <div className="fc-exam-options-checkboxes">
+                {checkboxArrays.map((checkboxArray) => (
+                  <>
+                    <div
+                      key={checkboxArray.subject}
+                      className="fc-exam-options-checkbox">
+                      <Checkbox
+                        isChecked={selectedArrays.includes(
+                          checkboxArray.subject
+                        )}
+                        onChange={() =>
+                          handleCheckboxChange(checkboxArray.subject)
+                        }
+                      />
+                      <span
+                        className="fc-exam-options-checkbox-label"
+                        onClick={() =>
+                          handleCheckboxChange(checkboxArray.subject)
+                        }>
+                        {checkboxArray.subject}
+                      </span>
+                    </div>
+                  </>
+                ))}
+              </div>
+            ) : null}
             <div className="fc-exam-options-start-test">
               <Button
                 title="Spustiť test"
                 onClick={handleStartExam}
                 disabled={
                   maxQuestions === 0 ||
-                  selectedTime <= 0 ||
-                  Number.isNaN(selectedTime) ||
+                  selectedTime < 0 ||
                   numberOfQuestions <= 0 ||
                   Number.isNaN(numberOfQuestions)
                 }></Button>

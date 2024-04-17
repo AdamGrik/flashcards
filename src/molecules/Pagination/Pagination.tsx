@@ -12,7 +12,7 @@ type PaginationProps = {
 
 const Pagination = (props: PaginationProps) => {
   const { selected, isFinalQuestion, onPageSelect, examData } = props;
-  const idOfButtons = (pageNumber: number, data: any) => {
+  const idOfButtons = (pageNumber: number, data: ExamQuestionProps) => {
     if (pageNumber === selected) return "pagination";
     else if (data.selected !== "") return "answered";
   };
@@ -48,13 +48,15 @@ const Pagination = (props: PaginationProps) => {
         )}
       </div>
       <div className="fc-pagination">
-        {examData.map((data, pageNumber) => (
-          <Button
-            title={(pageNumber + 1).toString()}
-            key={pageNumber}
-            id={idOfButtons((pageNumber = pageNumber), (data = data))}
-            onClick={() => onPageSelect(pageNumber)}></Button>
-        ))}
+        <div className="fc-pagination-buttons">
+          {examData.map((data, pageNumber) => (
+            <Button
+              title={(pageNumber + 1).toString()}
+              key={pageNumber}
+              id={idOfButtons((pageNumber = pageNumber), (data = data))}
+              onClick={() => onPageSelect(pageNumber)}></Button>
+          ))}
+        </div>
       </div>
     </>
   );

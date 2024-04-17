@@ -1,6 +1,6 @@
 export const sjlQuestions = [
   {
-    subject: "slj",
+    subject: "Slovenský jazyk",
     questions: [
       {
         question:
@@ -1594,5 +1594,9 @@ export const sjlQuestions = [
         answer: "informačný slohový postup",
       },
     ],
+  },
+  {
+    subject: "Literatúra",
+    questions: [],
   },
 ];
