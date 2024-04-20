@@ -39,8 +39,7 @@
     display: flex;
     font-size: x-large;
     color: $text-color;
-    margin-bottom: 4px;
-    padding: 6px;
+    padding: 8px;
     @media (hover: hover) {
       &:hover {
         cursor: pointer;

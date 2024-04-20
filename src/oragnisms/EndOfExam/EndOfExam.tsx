@@ -4,7 +4,7 @@ import { ExamQuestionProps } from "../Exam/Exam/Exam";
 import Button from "../../atoms/Button/Button";
 import { useNavigate } from "react-router-dom";
 import Grade from "../../atoms/Grade/Grade";
-import EndOfExamQuestion from "../../atoms/EndOfExamQuestion/EndOfExamQuestion";
+import EndOfExamQuestion from "../../molecules/EndOfExamQuestion/EndOfExamQuestion";
 
 type ExamProps = {
   questions: ExamQuestionProps[];

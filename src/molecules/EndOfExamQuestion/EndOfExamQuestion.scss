@@ -1,0 +1,17 @@
+@import "/src/variables.scss";
+
+.fc-end-of-exam-question {
+  padding: 28px;
+  border-radius: 10px;
+  margin: 8px;
+
+  &.fc-end-of-exam-question-incorrect {
+    border: 2px solid $fail-color;
+  }
+  &.fc-end-of-exam-question-correct {
+    border: 2px solid $pass-color;
+  }
+  .fc-end-of-exam-question-options {
+    margin-top: 6px;
+  }
+}

@@ -17,15 +17,15 @@
     }
   }
   &.fc-button-next {
-    background-color: #008200;
+    background-color: $green;
     color: white;
   }
   &.fc-button-back {
-    background-color: #1c39bb;
+    background-color: $blue;
     color: white;
   }
   &.fc-button-end {
-    background-color: #ce2029;
+    background-color: $red;
     color: white;
   }
   &:disabled {

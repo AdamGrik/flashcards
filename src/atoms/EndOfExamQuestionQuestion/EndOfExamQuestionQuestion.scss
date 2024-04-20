@@ -1,0 +1,18 @@
+@import "/src/variables.scss";
+
+.fc-end-of-exam-question-question {
+  font-weight: bold;
+  font-size: large;
+}
+.fc-question-img {
+  width: 500px;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .fc-question-img {
+    width: 250px;
+    height: 200px;
+  }
+}

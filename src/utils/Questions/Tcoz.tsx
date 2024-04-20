@@ -3,11 +3,6 @@ export const tcozQuestions = [
     subject: "Elektrotechnika",
     questions: [
       {
-        question: "Aká je značka elektrického odporu ?",
-        options: ["U", "I", "Q", "R"],
-        answer: "R",
-      },
-      {
         question: "Ako znie ohmov zákon ?",
         options: ["R = U * I", "W = F * t", "I = U / R", "R = I / U"],
         answer: "I = U / R",
@@ -38,11 +33,6 @@ export const tcozQuestions = [
           "Merný odpor je odpor vodiča jednotkovej dĺžky a jednotkového prierezu",
         ],
         answer: "V slučke sa algebrický súčet všetkých napätí rovná nule",
-      },
-      {
-        question: "Má teplota vplyv na odpor vodiča ?",
-        options: ["Áno", "Nie"],
-        answer: "Áno",
       },
       {
         question: "Čo je zložený obvod ?",
@@ -147,6 +137,78 @@ export const tcozQuestions = [
         options: ["NPN", "PNP"],
         image: "obr21",
         answer: "PNP",
+      },
+      {
+        question: "Čo je to elektrostatické pole ?",
+        options: [
+          "Je to elektrické pole, ktoré vytvoria pohyblivé náboje v nevodivom prostredí",
+          "Je to elektrické pole, ktoré vytvoria nepohyblivé náboje v nevodivom prostredí",
+          "Je to elektrické pole, ktoré vytvoria pohyblivé náboje vo vodivom prostredí",
+          "Je to elektrické pole, ktoré vytvoria nepohyblivé náboje vo vodivom prostredí",
+        ],
+        answer:
+          "Je to elektrické pole, ktoré vytvoria nepohyblivé náboje v nevodivom prostredí",
+      },
+      {
+        question: "Ako znie Coulombový zákon ?",
+        options: [
+          "F = k * (Q1 - Q2) / r",
+          "F = k * Q1 * Q2 * r^2",
+          "F = k / (Q1 * Q2 * r^2)",
+          "F = k * (Q1 * Q2) / r^2",
+        ],
+        answer: "F = k * (Q1 * Q2) / r^2",
+      },
+      {
+        question: "Ktorý spôsob polarizácie dielektrika neexistuje ?",
+        options: [
+          "Pohybová polarizácia",
+          "Atómová, molekulová polarizácia",
+          "Elektrónová polarizácia",
+          "Orientovaná polarizácia",
+        ],
+        answer: "Pohybová polarizácia",
+      },
+      {
+        question: "Diamagnetické látky sú také:",
+        options: [
+          "Ktoré po vložený do magnetického poľa ho mierne zoslabujú a po vybratí nemajú magnetické účinky",
+          "Ktoré po vložený do magnetického poľa ho mierne zosilnia a po vybratí krátko javia magnetické účinky",
+          "Ktoré po vložený do magnetického poľa ho prudko zosilnia a po vybratí zostávajú magnetom",
+        ],
+        answer:
+          "Ktoré po vložený do magnetického poľa ho mierne zoslabujú a po vybratí nemajú magnetické účinky",
+      },
+      {
+        question: "Paramagnetické látky sú také:",
+        options: [
+          "Ktoré po vložený do magnetického poľa ho mierne zoslabujú a po vybratí nemajú magnetické účinky",
+          "Ktoré po vložený do magnetického poľa ho mierne zosilnia a po vybratí krátko javia magnetické účinky",
+          "Ktoré po vložený do magnetického poľa ho prudko zosilnia a po vybratí zostávajú magnetom",
+        ],
+        answer:
+          "Ktoré po vložený do magnetického poľa ho mierne zosilnia a po vybratí krátko javia magnetické účinky",
+      },
+      {
+        question: "Feromagnetické látky sú také:",
+        options: [
+          "Ktoré po vložený do magnetického poľa ho mierne zoslabujú a po vybratí nemajú magnetické účinky",
+          "Ktoré po vložený do magnetického poľa ho mierne zosilnia a po vybratí krátko javia magnetické účinky",
+          "Ktoré po vložený do magnetického poľa ho prudko zosilnia a po vybratí zostávajú magnetom",
+        ],
+        answer:
+          "Ktoré po vložený do magnetického poľa ho prudko zosilnia a po vybratí zostávajú magnetom",
+      },
+      {
+        question: "Ktoré zapojenie zodpovedá fázorovému diagramu na obrázku ?",
+        options: [
+          "( R ― C) || L",
+          "(R || C) - L",
+          "(R || L) - C",
+          "( R ― L) || C",
+        ],
+        image: "obr26",
+        answer: "( R ― L) || C",
       },
     ],
   },

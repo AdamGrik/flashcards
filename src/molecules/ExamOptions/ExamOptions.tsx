@@ -44,7 +44,7 @@ const ExamOptions = (props: ExamOptionsProps) => {
   const handleCheckboxClick = () => {
     const newArray: ExamQuestionProps[] = [];
 
-    checkboxArrays.map((checkboxArray) => {
+    checkboxArrays.forEach((checkboxArray) => {
       if (selectedArrays.includes(checkboxArray.subject)) {
         newArray.push(...checkboxArray.questions);
       }
@@ -61,6 +61,9 @@ const ExamOptions = (props: ExamOptionsProps) => {
     setStartExam(true);
     if (maxQuestions < numberOfQuestions) {
       setNumberOfQuestions(maxQuestions);
+    }
+    if (selectedTime > 1000) {
+      setselectedTime(NaN);
     }
   };
 
