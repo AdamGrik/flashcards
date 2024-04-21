@@ -26,6 +26,17 @@
     background-repeat: no-repeat;
   }
 
+  .fc-button-card-navigation {
+    width: 100px;
+    margin-top: 10px;
+    background-color: $accent-color;
+    color: $white;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $blue;
+      }
+    }
+  }
   @media (max-width: 768px) {
     .fc-cards {
       display: block;
@@ -33,7 +44,11 @@
       margin-right: 5%;
     }
     .fc-school-photo {
-      display: none;
+      background-image: none;
+      height: 0;
+      .fc-button-card-navigation {
+        margin-bottom: 50px;
+      }
     }
     .gap {
       height: 40px;

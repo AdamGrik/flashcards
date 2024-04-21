@@ -34,17 +34,7 @@
       gap: 8px;
     }
   }
-  .fc-exam-options-checkbox {
-    margin-top: 6px;
-  }
-  .fc-exam-options-checkbox-label {
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: large;
-  }
-  .fc-exam-options-checkboxes {
-    margin-bottom: 10px;
-  }
+
   .fc-exam-options-start-test {
     display: flex;
     justify-content: center;
@@ -55,9 +45,6 @@
     }
     .fc-exam-options-inputs {
       display: block;
-    }
-    .fc-exam-options-checkbox-label {
-      font-size: medium;
     }
   }
 }

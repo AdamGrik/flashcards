@@ -18,7 +18,7 @@ const App = () => {
     <HashRouter>
       <Toolbar />
       <Routes>
-        <Route path="/" element={<MainPage data={SubjectsData}></MainPage>} />
+        <Route path="/" element={<MainPage data={SubjectsData} />} />
         <Route path="/mat" element={<ExamOptions data={matQuestions} />} />
         <Route path="/slj" element={<ExamOptions data={sjlQuestions} />} />
         <Route path="/tcoz" element={<ExamOptions data={tcozQuestions} />} />

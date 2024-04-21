@@ -21,16 +21,12 @@ const MainPage = (props: CardProps) => {
   const [endIndex, setEndIndex] = useState<number>(i);
 
   const handleNextButtonClick = () => {
-    if (startIndex < data.length - i) {
-      setStartIndex(startIndex + i);
-      setEndIndex(endIndex + i);
-    }
+    setStartIndex(startIndex + i);
+    setEndIndex(endIndex + i);
   };
   const handlePrevButtonClick = () => {
-    if (startIndex > 0) {
-      setStartIndex(startIndex - i);
-      setEndIndex(endIndex - i);
-    }
+    setStartIndex(startIndex - i);
+    setEndIndex(endIndex - i);
   };
 
   return (
@@ -45,15 +41,25 @@ const MainPage = (props: CardProps) => {
           />
         ))}
       </div>
-      <div className="fc-main-page-navigation-buttons">
-        {startIndex > 0 ? (
-          <Button title="<" onClick={handlePrevButtonClick}></Button>
-        ) : null}
-        {endIndex < data.length ? (
-          <Button title=">" onClick={handleNextButtonClick}></Button>
+
+      <div className="fc-school-photo">
+        {data.length > i ? (
+          <div className="fc-main-page-navigation-buttons">
+            <Button
+              title="<"
+              onClick={handlePrevButtonClick}
+              disabled={startIndex === 0}
+              id="card-navigation"
+            />
+            <Button
+              title=">"
+              onClick={handleNextButtonClick}
+              disabled={startIndex >= data.length - i}
+              id="card-navigation"
+            />
+          </div>
         ) : null}
       </div>
-      <div className="fc-school-photo"></div>
       <div className="gap"></div>
       <Footer />
     </div>
