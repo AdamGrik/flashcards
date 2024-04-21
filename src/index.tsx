@@ -11,7 +11,7 @@ import { SubjectsData } from "./utils/SubjectsData";
 import MainPage from "./molecules/MainPage/MainPage";
 import { tcozQuestions } from "./utils/Questions/Tcoz";
 import { etsQuestions } from "./utils/Questions/ETS";
-import ExamOptions from "./molecules/ExamOptions/ExamOptions";
+import ExamOptions from "./oragnisms/ExamOptions/ExamOptions";
 
 const App = () => {
   return (

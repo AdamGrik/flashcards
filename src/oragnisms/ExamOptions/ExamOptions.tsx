@@ -1,11 +1,11 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import Button from "../../atoms/Button/Button";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
-import Exam, { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
+import Exam, { ExamQuestionProps } from "../Exam/Exam/Exam";
 import "./ExamOptions.scss";
 import NumberInput from "../../atoms/NumberInput/NumberInput";
 import { shuffleArray } from "../../utils/common/shuffleArray";
-import ArraySelection from "../../atoms/ArraySelection/ArraySelection";
+import ArraySelection from "../../molecules/ArraySelection/ArraySelection";
 
 type ExamOptionsProps = {
   data: database[];

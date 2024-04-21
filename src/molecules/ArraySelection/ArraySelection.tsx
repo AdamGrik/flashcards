@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./ArraySelection.scss";
 import { ExamQuestionProps } from "../../oragnisms/Exam/Exam/Exam";
-import Checkbox from "../Checkbox/Checkbox";
-import { database } from "../../molecules/ExamOptions/ExamOptions";
+import Checkbox from "../../atoms/Checkbox/Checkbox";
+import { database } from "../../oragnisms/ExamOptions/ExamOptions";
 
 type arraySelectionProps = {
   data: database[];
@@ -58,11 +58,11 @@ const ArraySelection = (props: arraySelectionProps) => {
                   isChecked={selectedArrays.includes(checkboxArray.subject)}
                   onChange={() => handleCheckboxChange(checkboxArray.subject)}
                 />
-                <span
+                <div
                   className="fc-exam-options-checkbox-label"
                   onClick={() => handleCheckboxChange(checkboxArray.subject)}>
                   {checkboxArray.subject}
-                </span>
+                </div>
               </div>
             </>
           ))}

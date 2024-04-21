@@ -5,14 +5,14 @@
   font-size: large;
 }
 .fc-question-img {
-  width: 500px;
+  width: 100%;
   height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 @media (max-width: 768px) {
   .fc-question-img {
-    width: 250px;
     height: 200px;
   }
 }
