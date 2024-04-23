@@ -326,6 +326,129 @@ export const tcozQuestions = [
         image: "obr37",
         answer: "Logického členu NAND",
       },
+      {
+        question: "Čo je to transformátor ?",
+        options: [
+          "Elektronická netočivá súčiastka ",
+          "Elektronická točivá súčiastka",
+          "Elektrický netočivý stroj",
+          "Elektrický točivý stroj",
+        ],
+        answer: "Elektrický netočivý stroj",
+      },
+      {
+        question:
+          "Čo zabezpečuje transformátor okrem zmeny veľkosti striedavého napätia ?",
+        options: [
+          "Zmenu frekvencie",
+          "Galvanické oddelenie elektrických obvodov",
+          "Zmenu polarity",
+          "Prevedenie striedavého prúdu na jednosmerný",
+        ],
+        answer: "Galvanické oddelenie elektrických obvodov",
+      },
+      {
+        question: "Čo je autotransformátor ?",
+        options: [
+          "Transformátor s galvanickým oddelením",
+          "Transformátor bez odbočky",
+          "Transformátor v aute",
+          "Transformátor s jednou cievkou a odbočkou",
+        ],
+        answer: "Transformátor s jednou cievkou a odbočkou",
+      },
+      {
+        question: "Ktorý vzorec o transformátorovom pomere je správny ?",
+        options: [
+          "p = U1 / U2 = I1 / I2 = N2 / N1",
+          "p = U2 / U1 = I1 / I2 = N1 / N2",
+          "p = U1 / U2 = I2 / I1 = N1 / N2",
+          "p = U2 / U1 = I2 / I1 = N2 / N1",
+        ],
+        image: "obr46",
+        answer: "p = U1 / U2 = I2 / I1 = N1 / N2",
+      },
+      {
+        question: "Na obrázku je zosilňovač akej triedy ?",
+        options: [
+          "Zosilňovač triedy A",
+          "Zosilňovač triedy B",
+          "Zosilňovač triedy AB",
+          "Zosilňovač triedy C",
+        ],
+        image: "obr38",
+        answer: "Zosilňovač triedy A",
+      },
+      {
+        question: "Na obrázku je zosilňovač akej triedy ?",
+        options: [
+          "Zosilňovač triedy A",
+          "Zosilňovač triedy B",
+          "Zosilňovač triedy AB",
+          "Zosilňovač triedy C",
+        ],
+        image: "obr39",
+        answer: "Zosilňovač triedy B",
+      },
+      {
+        question: "Na obrázku je zosilňovač akej triedy ?",
+        options: [
+          "Zosilňovač triedy A",
+          "Zosilňovač triedy B",
+          "Zosilňovač triedy AB",
+          "Zosilňovač triedy C",
+        ],
+        image: "obr40",
+        answer: "Zosilňovač triedy C",
+      },
+      {
+        question: "Kedy je spätná väzba zosilňovača kladná ?",
+        options: [
+          "Ak zosilnenie zosilňovača so zavedenou spätnou väzbou je väčšie ako zosilnenie zosilňovača bez zavedenej spätnej väzby",
+          "Ak zosilnenie zosilňovača so zavedenou spätnou väzbou je menšie ako zosilnenie zosilňovača bez zavedenej spätnej väzby",
+        ],
+        answer:
+          "Ak zosilnenie zosilňovača so zavedenou spätnou väzbou je menšie ako zosilnenie zosilňovača bez zavedenej spätnej väzby",
+      },
+      {
+        question: "Kedy je spätná väzba zosilňovača záporná ?",
+        options: [
+          "Ak zosilnenie zosilňovača so zavedenou spätnou väzbou je väčšie ako zosilnenie zosilňovača bez zavedenej spätnej väzby",
+          "Ak zosilnenie zosilňovača so zavedenou spätnou väzbou je menšie ako zosilnenie zosilňovača bez zavedenej spätnej väzby",
+        ],
+        answer:
+          "Ak zosilnenie zosilňovača so zavedenou spätnou väzbou je väčšie ako zosilnenie zosilňovača bez zavedenej spätnej väzby",
+      },
+      {
+        question: "Na obrázku je obvod s:",
+        options: ["Napäťovou spätnou väzbou", "Prúdovou spätnou väzbou"],
+        image: "obr41",
+        answer: "Napäťovou spätnou väzbou",
+      },
+      {
+        question: "Na obrázku je obvod s:",
+        options: ["Napäťovou spätnou väzbou", "Prúdovou spätnou väzbou"],
+        image: "obr42",
+        answer: "Prúdovou spätnou väzbou",
+      },
+      {
+        question: "Aké zapojenie tranzistoru je na obrázku ?",
+        options: ["SE", "SB", "SC"],
+        image: "obr43",
+        answer: "SE",
+      },
+      {
+        question: "Aké zapojenie tranzistoru je na obrázku ?",
+        options: ["SE", "SB", "SC"],
+        image: "obr44",
+        answer: "SB",
+      },
+      {
+        question: "Aké zapojenie tranzistoru je na obrázku ?",
+        options: ["SE", "SB", "SC"],
+        image: "obr45",
+        answer: "SC",
+      },
     ],
   },
   {

@@ -25,7 +25,7 @@ const Question = (props: QuestionProps) => {
     }
   }, [data]);
 
-  const isFinalQuestion =
+  const isFinalQuestion: boolean =
     data && data.questionNumber === (data.totalQuestions ?? 0) - 1;
 
   const selectOption = (option: string) => {

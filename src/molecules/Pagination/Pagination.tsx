@@ -49,7 +49,7 @@ const Pagination = (props: PaginationProps) => {
       </div>
       <div className="fc-pagination">
         <div className="fc-pagination-buttons">
-          {examData.map((data, pageNumber) => (
+          {examData.map((data: ExamQuestionProps, pageNumber: number) => (
             <Button
               title={(pageNumber + 1).toString()}
               key={pageNumber}
