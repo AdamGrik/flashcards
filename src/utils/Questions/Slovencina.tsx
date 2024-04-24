@@ -1597,6 +1597,1183 @@ export const sjlQuestions = [
   },
   {
     subject: "Literatúra",
-    questions: [],
+    questions: [
+      {
+        question: "Ktorý literárny druh môže mať veršovanú podobu?",
+        options: [
+          "lyrika",
+          "lyrika aj dráma",
+          "epika a lyrika",
+          "všetky literárne druhy môžu mať veršovanú podobu",
+        ],
+        answer: "všetky literárne druhy môžu mať veršovanú podobu",
+      },
+      {
+        question:
+          "Pre ktorý z nasledujúcich literárnych druhov nie je typická sujetovosť?",
+        options: [
+          "lyrika",
+          "epika",
+          "dráma",
+          "sujetovosť je typická pre všetky literárne druhy",
+        ],
+        answer: "lyrika",
+      },
+      {
+        question: "Pre ktorý literárny druh je najviac typický gnómický čas?",
+        options: ["lyrika", "epika", "dráma", "epika aj dráma"],
+        answer: "lyrika",
+      },
+      {
+        question: "V ktorom literárnom druhu určujeme pásmo postáv?",
+        options: ["lyrika a epika", "epika a dráma", "dráma", "epika"],
+        answer: "epika a dráma",
+      },
+      {
+        question:
+          "Charakteristiky subjektívnosť a monologickosť sú typické predovšetkým pre",
+        options: ["lyriku", "epiku", "drámu", "ani jeden literárny druh"],
+        answer: "lyriku",
+      },
+      {
+        question: "Ktorá možnosť o literárnych druhoch je pravdivá?",
+        options: [
+          "V epike je buď rozprávač, alebo hrdina.",
+          "V lyrike nie je autor zastúpený.",
+          "V dráme absentuje hrdina.",
+          "V dráme absentuje rozprávač.",
+        ],
+        answer: "V dráme absentuje rozprávač.",
+      },
+      {
+        question: "Ktorý z literárnych druhov pomenúva aj literárny žáner?",
+        options: ["lyrika", "epika", "dráma", "všetky literárne druhy"],
+        answer: "dráma",
+      },
+      {
+        question: "Pre lyriku je typické:",
+        options: [
+          "monologickosť a hovorovosť",
+          "nesujetovosť a reflexia",
+          "prozaickosť a obraznosť",
+          "sujetovosť a dialogickosť",
+        ],
+        answer: "nesujetovosť a reflexia",
+      },
+      {
+        question: "V lyrike sa používa predovšetkým",
+        options: ["prítomný čas", "minulý čas", "budúci čas", "gnómický čas"],
+        answer: "gnómický čas",
+      },
+      {
+        question: "Označ nesprávnu odpoveď o lyrike ako o literárnom druhu.",
+        options: [
+          "Pre lyriku je typická viazaná reč.",
+          "Lyrika sa písala už v Starovekom Grécku.",
+          "Sú pre ňu typické opis a obraznosť.",
+          "Autor v lyrike nie je zastúpený.",
+        ],
+        answer: "Autor v lyrike nie je zastúpený.",
+      },
+      {
+        question: "Čo označuje pojem čistá lyrika?",
+        options: [
+          "Lyrika, v ktorej prevláda pravidelnosť slabík vo verši a vyskytuje sa v nej iba združený rým.",
+          "Lyrika, ktorá je zbavená pravidelnosti a rýmu a zameriava sa na autorovo prežívanie.",
+          "Lyrika, v ktorej je význam básne podradený jej forme.",
+          "Lyrika, v ktorej je význam básne nadradený jej forme.",
+        ],
+        answer:
+          "Lyrika, ktorá je zbavená pravidelnosti a rýmu a zameriava sa na autorovo prežívanie.",
+      },
+      {
+        question: "Medzi žánre lyriky patrí iba:",
+        options: ["legenda", "balada", "idyla", "báj"],
+        answer: "idyla",
+      },
+      {
+        question: "V epike prevažuje:",
+        options: [
+          "monologickosť a opis",
+          "prítomný čas a monologickosť",
+          "rozprávanie a sujetovosť",
+          "dialogickosť a nesujetovosť",
+        ],
+        answer: "rozprávanie a sujetovosť",
+      },
+      {
+        question: "Epika môže mať",
+        options: [
+          "iba prozaickú podobu.",
+          "veršovanú aj prozaickú podobu.",
+          "iba veršovanú podobu.",
+          "Ani jedna z uvedených odpovedí nie je správna.",
+        ],
+        answer: "veršovanú aj prozaickú podobu.",
+      },
+      {
+        question:
+          "Ktoré z nasledujúcich tvrdení o epických žánroch je ako jediné správne?",
+        options: [
+          "Mýtus je synonymum pre báj.",
+          "Báj je synonymum pre bájku.",
+          "Mýtus a báj nie sú synonymá.",
+          "Aspoň jeden zo spomenutých žánrov nepatrí do epiky.",
+        ],
+        answer: "Mýtus je synonymum pre báj.",
+      },
+      {
+        question: "Medzi epické žánre patrí:",
+        options: ["epigram", "anekdota", "komédia", "óda"],
+        answer: "anekdota",
+      },
+      {
+        question:
+          "Ktorá z nasledujúcich možnosti najlepšie charakterizuje drámu ako literárny druh?",
+        options: [
+          "dejovosť, akčnosť, minulý čas, rozprávanie",
+          "dialogickosť, akčnosť, prítomný čas, viazaná reč",
+          "dialogickosť, minulý čas, hovorovosť, viazaná reč",
+          "dejovosť, akčnosť, prítomný čas, hovorovosť",
+        ],
+        answer: "dejovosť, akčnosť, prítomný čas, hovorovosť",
+      },
+      {
+        question: "Aký druh rozprávača sa vyskytuje v dramatických žánroch?",
+        options: [
+          "nespoľahlivý rozprávač",
+          "vševediaci rozprávač",
+          "priamy rozprávač",
+          "rozprávač absentuje",
+        ],
+        answer: "rozprávač absentuje",
+      },
+      {
+        question:
+          "Ktorá z možnosti chronologicky správne zoraďuje fázy dramatického diela?",
+        options: [
+          "expozícia, kolízia, kríza, katastrofa, peripetia",
+          "expozícia, kríza, kolízia, peripetia, katastrofa",
+          "expozícia, kolízia, kríza, peripetia, katastrofa",
+          "expozícia, kríza, peripetia, kolízia, katastrofa",
+        ],
+        answer: "expozícia, kolízia, kríza, peripetia, katastrofa",
+      },
+      {
+        question:
+          "Ktoré z nasledujúcich tvrdení o dráme ako literárnom druhu je ako jediné pravdivé?",
+        options: [
+          "Dejstvo je časový úsek výstupu divadelnej hry",
+          "Rekvizity vytvárajú scénu divadelnej hry.",
+          "V dráme neabsentuje vnútorný monológ.",
+          "Dramatický text nemôže mať podobu prózy.",
+        ],
+        answer: "V dráme neabsentuje vnútorný monológ.",
+      },
+      {
+        question:
+          "Ktorá z nasledujúcich možností najlepšie charakterizuje literárny žáner epos?",
+        options: [
+          "Epos je lyrický útvar, v ktorom vystupujú bežní ľudia s hrdinskými vlastnosťami.",
+          "Epos je epický útvar, v ktorom vystupujú bohovia, polobohovia a človek s výnimočnými vlastnosťami.",
+          "Epos je lyrickoepický útvar, v ktorom vystupujú bohovia, polobohovia a človek s výnimočnými vlastnosťami.",
+          "Epos je lyrickoepický útvar, v ktorom vystupujú bežní ľudia s hrdinskými vlastnosťami.",
+        ],
+        answer:
+          "Epos je epický útvar, v ktorom vystupujú bohovia, polobohovia a človek s výnimočnými vlastnosťami.",
+      },
+      {
+        question: "Ktorý autor napísal dielo Metamorfózy (Premeny)?",
+        options: ["Herodotos", "Plautus", "Sofokles", "Ovídius"],
+        answer: "Ovídius",
+      },
+      {
+        question: "Vyber správne tvrdenie o diele Antigona:",
+        options: [
+          "Antigonu napísal grécky autor Sokrates. Bolo to pred našim letopočtom.",
+          "Antigonu napísal rímsky autor Sofokles. Bolo to po našom letopočte.",
+          "Antigonu napísal grécky autor Sofokles. Bolo to pred našim letopočtom.",
+          "Antigonu napísal rímsky autor Sokrates. Bolo to po našom letopočte.",
+        ],
+        answer:
+          "Antigonu napísal grécky autor Sofokles. Bolo to pred našim letopočtom.",
+      },
+      {
+        question: "Zvoľ správnu možnosť o antickom diele Antigona:",
+        options: [
+          "epika - tragédia",
+          "dráma - tragikomédia",
+          "epika- tragikomédia",
+          "dráma - tragédia",
+        ],
+        answer: "dráma - tragédia",
+      },
+      {
+        question: "Zvoľ správne tvrdenie ohľadom postavy z diela Antigona.",
+        options: [
+          "Teofil bol slepý veštec, ktorý radil kráľovi a jeho veštby sa veľakrát potvrdili.",
+          "Teiresias bol slepý veštec, ktorý radil kráľovi a jeho veštby sa veľakrát potvrdili.",
+          "Teofil bol hlavný veliteľ armády, ktorý radil kráľovi s obranou územia.",
+          "Teiresias bol hlavný veliteľ armády, ktorý radil kráľovi s obranou územia.",
+        ],
+        answer:
+          "Teiresias bol slepý veštec, ktorý radil kráľovi a jeho veštby sa veľakrát potvrdili.",
+      },
+      {
+        question:
+          "Ktoré z nasledujúcich postáv v diele Antigona zomreli samovraždou?",
+        options: [
+          "jej snúbenec, jej sestra, vtedajší kráľ",
+          "Antigona, jej sestra a vtedajší kráľ",
+          "Antigona, jej snúbenec a jeho matka",
+          "jej snúbenec, jej sestra, vtedajší kráľ",
+        ],
+        answer: "Antigona, jej snúbenec a jeho matka",
+      },
+      {
+        question: "Ktoré z nasledujúcich tvrdení nie je správne?",
+        options: [
+          "Jeden z Antigoniných bratov nebol na konci diela pochovaný.",
+          "Jeden z Antigoniných bratov bol ponechaný pred hradbami ako zradca.",
+          "Jeden z Antigoniných bratov bol pochovaný ako hrdina.",
+          "Antigona bola potrestaná za pochovanie jedného z bratov.",
+        ],
+        answer: "Jeden z Antigoniných bratov nebol na konci diela pochovaný.",
+      },
+      {
+        question: "Stredovekú literatúru môžeme rozdeliť na:",
+        options: [
+          "cirkevnú a ateistickú",
+          "svetskú a náboženskú",
+          "pohanskú a duchovnú",
+          "ateistickú a náboženskú",
+        ],
+        answer: "svetskú a náboženskú",
+      },
+      {
+        question:
+          "Ktoré z nasledujúcich tvrdení o stredovekej literatúre nie je pravdivé?",
+        options: [
+          "V literatúre sa vyskytujú idealizované postavy.",
+          "Najväčší vplyv na literatúru malo kresťanstvo.",
+          "Umenie v stredovekej literatúre zobrazuje pozemský žvot ako večný.",
+          "V literatúre sa vyskytujú stereotypné postavy.",
+        ],
+        answer:
+          "Umenie v stredovekej literatúre zobrazuje pozemský život ako večný.",
+      },
+      {
+        question:
+          "Ktoré z nasledujúcich tvrdení o humanizme a renesancii nie je pravdivé?",
+        options: [
+          "Renesancia sa snažila o zachovanie stredovekého spôsobu myslenia pomocou návratu k antickým ideálom.",
+          "Humanizmus sa sústreďoval na slobodu, dôstojnosť človeka a na rozvoj jeho osobnosti.",
+          "Oba smery, humanizmus aj renesancia čerpali myšlienky z antických štátov.",
+          "Humanizmus sa zameriaval proti feudalizmu a nesúhlasil s nadvládou cirkvi.",
+        ],
+        answer:
+          "Renesancia sa snažila o zachovanie stredovekého spôsobu myslenia pomocou návratu k antickým ideálom.",
+      },
+      {
+        question:
+          "Ktoré literárne dielo od anglického autora menom William Shakespeare má nesprávne priradený žáner?",
+        options: [
+          "Skrotenie zlej ženy - komédia",
+          "Othelo - historická hra",
+          "Macbeth - tragédia",
+          "Veselé panie z Windsoru - komédia",
+        ],
+        answer: "Othelo - historická hra",
+      },
+      {
+        question: "O diele Williama Shakespeara - Rómeo a Júlia platí, že:",
+        options: [
+          "Je to tragikomédia, pričom prvý zomrie Rómeo a až potom Júlia.",
+          "Je to tragikomédia, pričom prvá zomrie Júlia a až potom Rómeo.",
+          "Je to tragédia, pričom prvý zomrie Rómeo a až potom Júlia.",
+          "Je to komédia, pričom prvá zomrie Júlia a až potom Rómeo.",
+        ],
+        answer: "Je to tragédia, pričom prvý zomrie Rómeo a až potom Júlia.",
+      },
+      {
+        question:
+          "Ktorá z možností je typická pre humanizmus a renesanciu z pohľadu literatúry?",
+        options: [
+          "imitácia, individualizmus, kolektivizmus",
+          "individualizmus, racionalizmus, senzualizmus",
+          "synkretizmus, individualizmus, realizácia",
+          "synkretizmus, kolektivizmus, racionalizmus",
+        ],
+        answer: "individualizmus, racionalizmus, senzualizmus",
+      },
+      {
+        question: "Ktorý literárny útvar zodpovedá dielu Hamlet?",
+        options: ["komédia", "tragédia", "tragikomédia", "historická hra"],
+        answer: "tragédia",
+      },
+      {
+        question: "Koľko dejstiev má dielo Hamlet?",
+        options: ["4", "5", "6", "7"],
+        answer: "5",
+      },
+      {
+        question: "Divadlo v divadle v kontexte diela Hamlet znamená, že:",
+        options: [
+          "Hamlet hral na ostatných ľudí po celý čas diela divadlo, že bol bláznivý.",
+          "Na konci diela sa dozvedáme, že celý príbeh bolo jedno divadlo, ktoré bolo rozprávané z pohľadu diváka.",
+          "Na divadelnom predstavení na konci sa ukázalo, že ostatné postavy všetko na Hamleta celý čas iba hrali.",
+          "Hamlet pripravil počas finálneho divadelného predstavenia svoje vlastné divadlo, ktoré postavy nakoniec hrali.",
+        ],
+        answer:
+          "Hamlet pripravil počas finálneho divadelného predstavenia svoje vlastné divadlo, ktoré postavy nakoniec hrali.",
+      },
+      {
+        question: "O postave Ofélia je pravdivé, že bola:",
+        options: [
+          "Hamletova manželka",
+          "Hamletova sestra",
+          "Hamletova spolužiačka",
+          "dáma urodzeného pôvodu",
+        ],
+        answer: "dáma urodzeného pôvodu",
+      },
+      {
+        question: "V ktorom štáte sa má dej diela Hamlet odohrávať?",
+        options: ["Nórsko", "Švédsko", "Holandsko", "Dánsko"],
+        answer: "Dánsko",
+      },
+      {
+        question: "Postava Horatio znázorňuje počas deja:",
+        options: [
+          "zradu",
+          "silné priateľstvo",
+          "zradu, no neskôr silné priateľstvo",
+          "silné priateľstvo, no neskôr zradu",
+        ],
+        answer: "silné priateľstvo",
+      },
+      {
+        question:
+          "Ktoré z nasledujúcich konštatovaní o deji Hamleta, jeho priebehu a výsledku je pravdivé?",
+        options: [
+          "Gertrúda sa na konci stala symbolom vzornej starostlivej matky.",
+          "Utopenie Ofélie bolo nešťastnou náhodou.",
+          "Kráľa Hamleta zabila jeho manželka, lebo sa bála odhalenia nevery.",
+          "Kráľovná Gertrúda zomrela nepriamym pričinením kráľa Klaudia.",
+        ],
+        answer: "Kráľovná Gertrúda zomrela nepriamym pričinením kráľa Klaudia.",
+      },
+      {
+        question:
+          "Ktorá možnosť obsahuje postavy v diele Hamlet správne zoradené podľa toho, kedy zomreli? (od prvého po posledného)",
+        options: [
+          "Gertrúda, Ofélia, Hamlet, Laertes",
+          "Ofélia, Gertrúda, Laertes, Hamlet",
+          "Ofélia, Gertrúda, Hamlet, Laertes",
+          "Gertrúda, Ofélia, Laertes, Hamlet",
+        ],
+        answer: "Ofélia, Gertrúda, Laertes, Hamlet",
+      },
+      {
+        question:
+          "Ktorý literárny žáner z obdobia klasicizmu nepatril medzi takzvané vysoké žánre?",
+        options: ["komédia", "tragédia", "epos", "óda"],
+        answer: "komédia",
+      },
+      {
+        question:
+          "Odkiaľ pochádzal jeden z najznámejších predstaviteľov osvietenstva - Voltaire?",
+        options: ["Nemecko", "Francúzsko", "Taliansko", "Veľká Británia"],
+        answer: "Francúzsko",
+      },
+      {
+        question:
+          "Ktoré tvrdenie o uzákonení spisovnej slovenčiny je pravdivé?",
+        options: [
+          "Anton Bernolák uzákonil spisovnú slovenčinu v roku 1787 na základe východoslovenčiny.",
+          "Anton Bernolák uzákonil spisovnú slovenčinu v roku 1778 na základe západoslovenčiny.",
+          "Anton Bernolák uzákonil spisovnú slovenčinu v roku 1778 na základe východoslovenčiny.",
+          "Anton Bernolák uzákonil spisovnú slovenčinu v roku 1787 na základe západoslovenčiny.",
+        ],
+        answer:
+          "Anton Bernolák uzákonil spisovnú slovenčinu v roku 1787 na základe západoslovenčiny.",
+      },
+      {
+        question:
+          "Kto napísal prvý slovenský román - predstaviteľ slovenského osvietenstva?",
+        options: [
+          "Anton Bernolák",
+          "Ján Hollý",
+          "Jozef Ignác Bajza",
+          "Juraj Fándly",
+        ],
+        answer: "Jozef Ignác Bajza",
+      },
+      {
+        question:
+          "Ktorý z autorov nepatrí do slovenskej klasicistickej literatúry?",
+        options: [
+          "Pavol Jozef Šafárik",
+          "Ján Kollár",
+          "Samo Chalupka",
+          "Všetci uvedení autori patria do klasicistickej literatúry.",
+        ],
+        answer: "Samo Chalupka",
+      },
+      {
+        question: "Ktoré z tvrdení je správne opisuje klasicistické postavy?",
+        options: [
+          "V klasicizme sú postavy osamotené, odstrčené na okraj spoločnosti, pochádzajú z nižších vrstiev a pátrajú po zmysle života.",
+          "V klasicizme sa vytvárajú vysoko idealizované historické postavy.",
+          "V klasicizme sa vytvárajú nadčasové postavy - charaktery.",
+          "Klasicizmus zobrazuje náboženské a svetské postavy, ako napríklad mních, svätec a rytier.",
+        ],
+        answer: "V klasicizme sa vytvárajú nadčasové postavy - charaktery.",
+      },
+      {
+        question:
+          "Ktorý lyrický žáner podľa rozboru textu najlepšie vystihuje Předspěv zo Slávy dcéra?",
+        options: ["žalm", "óda", "hymnus", "elégia"],
+        answer: "elégia",
+      },
+      {
+        question:
+          "Ktorým veršovým systémom je napísaný Předspěv zo Slávy dcéra?",
+        options: [
+          "časomerný veršový systém",
+          "sylabický veršový systém",
+          "sylabotonický veršový systém",
+          "voľný verš",
+        ],
+        answer: "sylabický veršový systém",
+      },
+      {
+        question: "Aká je správna kompozícia spevov Slávy dcéra?",
+        options: [
+          "I. Sála, II. Labe, Rén, Vltava, III. Dunaj, IV. Léthé, V. Acheron",
+          "I. Labe, Rén, Vltava II. Sála,, III. Dunaj, IV. Léthé, V. Acheron",
+          "I. Sála, II. Labe, Rén, Vltava, III. Léthé , IV. Acheron, V. Dunaj",
+          "I. Dunaj, II. Labe, Rén, Vltava, III. Sála, IV. Acheron, V. Léthé",
+        ],
+        answer:
+          "I. Labe, Rén, Vltava II. Sála,, III. Dunaj, IV. Léthé, V. Acheron",
+      },
+      {
+        question: "Kto symbolizuje názov skladby Slávy dcéra?",
+        options: ["Marína", "Mária", "Mína", "Mája"],
+        answer: "Mína",
+      },
+      {
+        question: "Ktoré tvrdenie o Předspěve je najviac výstižné?",
+        options: [
+          "Spomína sa tam myšlienka presadzovania samostatnosti jednotlivých slovanských národov a ich utrpenie.",
+          "Spomína sa tam myšlienka slovanskej vzájomnosti a utrpenie Slovanov.",
+          "Spomína sa tam myšlienka slovanskej vzájomnosti a nadšenie z radosti Slovanov.",
+          "Spomína sa tam myšlienka presadzovania samostatnosti jednotlivých slovanských národov a nadšenie z ich radosti.",
+        ],
+        answer:
+          "Spomína sa tam myšlienka slovanskej vzájomnosti a utrpenie Slovanov.",
+      },
+      {
+        question:
+          "Koľko stôp obsahuje jeden dvojverš, ktorými je tvorený Předspěv zo Slávy dcéra?",
+        options: ["9 stôp", "10 stôp", "11 stôp", "12 stôp"],
+        answer: "11 stôp",
+      },
+      {
+        question:
+          "Ktoré tvrdenie najviac vystihuje literárny smer romantizmus?",
+        options: [
+          "Literárny smer, ktorý podriaďuje osobné šťastie človeka v spoločnosť, podmienený revolúciami proti feudalizmu.",
+          "Literárny smer, ktorý hlása právo každého jednotlivca na vlastné šťastie, podmienený revolúciami proti feudalizmu.",
+          "Literárny smer, ktorý hlása právo každého jednotlivca na vlastné šťastie, podmienený buržoáznymi revolúciami.",
+          "Literárny smer, ktorý podriaďuje osobné šťastie človeka v spoločnosť, podmienený buržoáznymi revolúciami.",
+        ],
+        answer:
+          "Literárny smer, ktorý hlása právo každého jednotlivca na vlastné šťastie, podmienený buržoáznymi revolúciami.",
+      },
+      {
+        question: "Historická romantická postava je častokrát:",
+        options: [
+          "subjektivizovaná, sú jej pripisované také vlastnosti, aké ma autor.",
+          "neidealizovaná, sú jej pripisované horšie vlastnosti ako v skutočnosti.",
+          "idealizovaná, sú jej pripisované lepšie vlastnosti ako v skutočnosti.",
+          "objektivizovaná, sú jej pripisované reálne vlastnosti bez skreslenia.",
+        ],
+        answer:
+          "idealizovaná, sú jej pripisované lepšie vlastnosti ako v skutočnosti.",
+      },
+      {
+        question:
+          "Ktoré storočie a roky najlepšie zodpovedajú literárnemu smeru - romantizmu vo svete?",
+        options: [
+          "koniec 19. storočia",
+          "prvá polovica 19 storočia a druhá polovica 19. storočia",
+          "koniec 18. storočia a prvá polovica 19. storočia",
+          "koniec 18. storočia",
+        ],
+        answer: "koniec 18. storočia a prvá polovica 19. storočia",
+      },
+      {
+        question: "Aký literárny žáner predstavuje Kapitánova dcéra?",
+        options: [
+          "ľúbostný román",
+          "ľúbostná novela",
+          "historický román",
+          "historická novela",
+        ],
+        answer: "historická novela",
+      },
+      {
+        question: "Ak spravíme rozbor diela Kapitánova dcéra, zistíme, že:",
+        options: [
+          "Dielo je písané prevažne formou zápiskov hlavnej postavy na slobode.",
+          "Dielo je písané prevažne formou ľúbostných listov jednej hlavnej postavy.",
+          "Dielo je písané prevažne formou ľúbostných listov, ktoré si vymieňajú dve hlavné postavy.",
+          "Dielo je písané prevažne formou zápiskov hlavnej postavy z väzenia.",
+        ],
+        answer:
+          "Dielo je písané prevažne formou zápiskov hlavnej postavy na slobode.",
+      },
+      {
+        question: "Do ktorého literárneho smeru patrí Kapitánova dcéra?",
+        options: [
+          "klasicizmus",
+          "romantizmus",
+          "realizmus",
+          "medzivojnová literatúra",
+        ],
+        answer: "romantizmus",
+      },
+      {
+        question:
+          "Aké je prvé meno hlavnej mužskej postavy v diele Kapitánova dcéra?",
+        options: [
+          "Andrej Griňov",
+          "Peter Griňov",
+          "Ondrej Griňov",
+          "Pavol Griňov",
+        ],
+        answer: "Peter Griňov",
+      },
+      {
+        question:
+          "Ktorá z možností zobrazuje správne ukončenie diela Kapitánova dcéra?",
+        options: [
+          "Hlavná postava Griňov pri úteku z väzenia zomrie.",
+          "Hlavná postava Griňov je oslobodená z väzenia, ale zomiera z vyčerpania.",
+          "Hlavná postava Griňov je oslobodená a prežije.",
+          "Hlavná postava Griňov síce prežije, ale až do konca svojho života je uväznená.",
+        ],
+        answer: "Hlavná postava Griňov je oslobodená a prežije.",
+      },
+      {
+        question:
+          "Ktorý literárny druh najviac prevládal v slovenskej romantickej literatúre?",
+        options: ["dráma", "epika", "lyrika", "všetky rovnako"],
+        answer: "lyrika",
+      },
+      {
+        question:
+          "Ktorý z uvedených slovenských autorov nepatril medzi štúrovcov a teda nepatril ani do slovenského romantizmu?",
+        options: [
+          "Ján Botto",
+          "Andrej Sládkovič",
+          "Ján Kollár",
+          "Samo Chalupka",
+        ],
+        answer: "Samo Chalupka",
+      },
+      {
+        question:
+          "Ľudovít Štúr začal vydávať prvé slovenské noviny - Slovenskje národňje novini. Ako sa volala príloha k novinám?",
+        options: [
+          "Orol skálni",
+          "Orol tatránski",
+          "Tatránski orol",
+          "Skálni orol",
+        ],
+        answer: "Orol tatránski",
+      },
+      {
+        question: "Ktoré tvrdenie o názve diela Marína je pravdivé?",
+        options: [
+          "Marína je fiktívnym symbolom krásy",
+          "Marína je fiktívnym symbolom lásky.",
+          "Marína je fiktívna osoba, ktorej autor prejavuje lásku.",
+          "Marína je reálna osoba, do ktorej bol autor zamilovaný.",
+        ],
+        answer: "Marína je fiktívna osoba, ktorej autor prejavuje lásku.",
+      },
+      {
+        question:
+          "Ktorý rým je použitý v prvých štyroch veršoch druhej strofy básne?",
+        options: [
+          "združený rým",
+          "striedavý rým",
+          "obkročný rým",
+          "postupný rým",
+        ],
+        answer: "striedavý rým",
+      },
+      {
+        question: "Aké ďalšie dielo napísal autor básne Marína?",
+        options: ["Slávy Dcéra", "Smrť Jánošíkova", "Detvan", "Mor ho!"],
+        answer: "Mor ho!",
+      },
+      {
+        question: "Ktorý národ/etnikum sa spomína v básnickej skladbe Mor ho!",
+        options: ["Rimania", "Rusi", "Tatári", "Maďari"],
+        answer: "Rimania",
+      },
+      {
+        question: "Aký typ hrdinu je možné určiť z obsahu diela Mor ho!",
+        options: [
+          "individuálny hrdina",
+          "kolektívny hrdina",
+          "anti-hrdina",
+          "Všetky možnosti sú správne.",
+        ],
+        answer: "kolektívny hrdina",
+      },
+      {
+        question: "Z pohľadu žánru je dielo Mor ho!",
+        options: [
+          "lyrická báseň",
+          "epická báseň",
+          "lyrickoepická báseň",
+          "epos",
+        ],
+        answer: "lyrickoepická báseň",
+      },
+      {
+        question: "Ktorý druh rýmu je využívaný v Mor ho!",
+        options: [
+          "združený rým",
+          "striedavý rým",
+          "obkročný rým",
+          "postupný rým",
+        ],
+        answer: "striedavý rým",
+      },
+      {
+        question:
+          "Z koľkých spevov sa skladá lyrickoepická báseň Smrť Jánošíkova?",
+        options: ["6", "7", "8", "9"],
+        answer: "9",
+      },
+      {
+        question:
+          "Čo sa stane na konci diela Smrť Jánošíkova s postavou Jánošíka?",
+        options: [
+          "Ľud sa pasívne prizerá na to, ako Jánošík umiera.",
+          "Ľud sa síce pasívne prizerá na jeho smrť, no Jánošíkovi sa podarí ožiť vďaka kráľovnej víl.",
+          "Ľud aktívne bojuje za Jánošíka, no aj napriek tomu Jánošík umiera.",
+          "Prizerajúci ľud nechce nechať Jánošíka zomrieť, no vďaka kráľovnej víl sa im to nepodarí.",
+        ],
+        answer: "Ľud sa pasívne prizerá na to, ako Jánošík umiera.",
+      },
+      {
+        question: "Čo symbolizuje smútok v básni Smrť Jánošíkova?",
+        options: [
+          "odstrčenosť autora na okraj spoločnosti",
+          "porevolučné sklamanie",
+          "smrť autorovej lásky",
+          "utrpenie Jánošíka",
+        ],
+        answer: "porevolučné sklamanie",
+      },
+      {
+        question:
+          "Ktorá dvojica pojmov najlepšie vystihuje báseň Smrť Jánošíkova?",
+        options: [
+          "elegickosť a reflexia",
+          "alegória a žalm",
+          "óda a žalm",
+          "Ani jedna z uvedených možnosti necharakterizuje báseň.",
+        ],
+        answer: "elegickosť a reflexia",
+      },
+      {
+        question:
+          "Ktoré z nasledujúcich tvrdení o obsahu básnickej skladby je pravdivé Smrť Jánošíkova?",
+        options: [
+          "Hlavná tragika je v smrti Jánošíka.",
+          "Kráľovná víl predstavuje heroizmus.",
+          "Jánošík je alegorická bytosť.",
+          "Všetky uvedené tvrdenia sú pravdivé.",
+        ],
+        answer: "Jánošík je alegorická bytosť.",
+      },
+      {
+        question: "Z ktorého smeru/filozofie čerpá realizmus ideove základy?",
+        options: ["negativitmus", "pozitivizmus", "vitalizmus", "symbolizmus"],
+        answer: "pozitivizmus",
+      },
+      {
+        question:
+          "Ktorý žáner je počas v realistickej literatúre najmenej zastúpený?",
+        options: ["román", "novela", "poviedka", "rozprávka"],
+        answer: "rozprávka",
+      },
+      {
+        question: "Ktoré tvrdenie o realizme v literatúre je najviac pravdivé?",
+        options: [
+          "Skutočnosti sú zobrazované čo najviac objektívne.",
+          "Skutočnosti sú zobrazované viac subjektívne ako objektívne.",
+          "V literatúre prevláda subjektivizmus nad objektivizmom.",
+          "Subjektivizmus aj objektivizmus sú v realistickej literatúre rozvnomerne zastúpené.",
+        ],
+        answer: "Skutočnosti sú zobrazované čo najviac objektívne.",
+      },
+      {
+        question:
+          "Ktoré tvrdenie o realizme v literatúre možno považovať za pravdivé?",
+        options: [
+          "Postava je typický hrdina v typickom prostredí.",
+          "Hlavný konflikt je medzi snom a skutočnosťou.",
+          "Literatúra je zameraná na historicé témy.",
+          "Poézia sa počas realizmu takmer vôbec nepísala, degradovala.",
+        ],
+        answer: "Postava je typický hrdina v typickom prostredí.",
+      },
+      {
+        question: "Ktoré z nasledujúcich diel nenapísal Dostojevskij?",
+        options: [
+          "Bratia Karamazovci",
+          "Vojna a mier",
+          "Idiot",
+          "Zločin a trest",
+        ],
+        answer: "Vojna a mier",
+      },
+      {
+        question:
+          "Ktorá možnosť je fakticky správna pre vlny slovenského realizmu?",
+        options: [
+          "1. vlna - 1900-1918, kritický realizmus; 2. vlna - 1918-1945, opisný realizmus",
+          "1. vlna - 1880-1900, kritický realizmus; 2. vlna - 1900-1918, opisný realizmus",
+          "1. vlna - 1900-1918, opisný realizmus; 2. vlna - 1918-1945, kritický realizmus",
+          "1. vlna - 1880-1900, opisný realizmus; 2. vlna - 1900-1918, kritický realizmus",
+        ],
+        answer:
+          "1. vlna - 1880-1900, opisný realizmus; 2. vlna - 1900-1918, kritický realizmus",
+      },
+      {
+        question: "Ktorí z autorov nepatrí do 1. vlny slovenského realizmu?",
+        options: ["Tajovský", "Hviezdoslav", "Kukučín", "Vajanský"],
+        answer: "Vajanský",
+      },
+      {
+        question: "Ktorí z autorov nepatrí do 2. vlny slovenského realizmu?",
+        options: ["Vansová", "Timrava", "Tajovský", "Vajanský"],
+        answer: "Vansová",
+      },
+      {
+        question:
+          "Ktorý literárny druh bol počas prvej vlny slovenského realizmu najmenej rozvinutý?",
+        options: ["lyrika", "epika", "dráma", "všetky literárne druhy rovnako"],
+        answer: "dráma",
+      },
+      {
+        question: "Ktoré dielo patrí do prvej vlny slovenského realizmu?",
+        options: ["Ťapákovci", "Krvavé sonety", "Maco Mlieč"],
+        answer: "Krvavé sonety",
+      },
+      {
+        question: "Ktoré dielo nepatrií do druhej vlny slovenského realizmu?",
+        options: [
+          "Mamka Pôstková",
+          "Maco Mlieč",
+          "Hájnikova žena",
+          "Statky-zmätky",
+        ],
+        answer: "Maco Mlieč",
+      },
+      {
+        question:
+          "Ktoré z nasledujúcich diel z obdobia realizmu nepatrií do drámy ako literárneho druhu?",
+        options: ["Rysavá jalovica", "Matka", "Ženský zákon", "Statky-zmätky"],
+        answer: "Rysavá jalovica",
+      },
+      {
+        question: "Z hľadiska literárneho žánru je Dom v stráni:",
+        options: [
+          "sociálna novela",
+          "historický román",
+          "sociálny román",
+          "historická novela",
+        ],
+        answer: "sociálny román",
+      },
+      {
+        question:
+          "Ktorá možnosť o spoločenských vrstvách z diela Dom v stráni je pravdivá?",
+        options: [
+          "Dôraz je kladený na neprekonateľné rozdiely medzi statkármi a veľkopodnikateľmi.",
+          "Dôraz je kladený na neprekonateľné rozdiely medzi težakmi a statkármi.",
+          "Dôraz je kladený na prekonanie rozdielov medzi težakmi a veľkopodnikateľmi.",
+          "Dôraz je kladený na prekonanie rozdielov medzi težakmi a statkármi.",
+        ],
+        answer:
+          "Dôraz je kladený na neprekonateľné rozdiely medzi težakmi a statkármi.",
+      },
+      {
+        question: "Postava Zandome v Dom v stráni predstavuje:",
+        options: [
+          "novú rodiacu sa spoločenskú vrstvu",
+          "spoločenskú vrstvu, pre ktorú nie je možné zmierenie spoločenských vrstiev",
+          "spoločenskú vrstvu, ktorá pomôže zmiereniu ostatných spoločenských vrstiev",
+          "stálu konzervatívnu spoločenskú vrstvu",
+        ],
+        answer: "novú rodiacu sa spoločenskú vrstvu",
+      },
+      {
+        question:
+          "Ktorá postava z diela Dom v stráni nepredstavuje najnižšiu spoločenskú vrstvu?",
+        options: ["Matija", "Katica", "Mate", "Niko"],
+        answer: "Niko",
+      },
+      {
+        question:
+          "Spoločenské rozdiely v diele Dom v stráni sa najviac ukazujú pri:",
+        options: [
+          "spoločenskom tanci",
+          "návšteve u veľkopodnikateľov",
+          "návšteve u težakov",
+          "návšteve u statkárov",
+        ],
+        answer: "návšteve u veľkopodnikateľov",
+      },
+      {
+        question: "Ktoré tvrdenie o konci diela Dom v stráni je pravdivé?",
+        options: [
+          "Katica sa rozvedie a vezme si iného muža.",
+          "Katica ostane sama.",
+          "Katica si vezme Nika.",
+          "Katica si vezme Paška.",
+        ],
+        answer: "Katica si vezme Paška.",
+      },
+      {
+        question:
+          "Ktorý literárny žáner predstavuje dielo Keď báčik z Chochoľova umrie?",
+        options: [
+          "novela so spoločenským motívom",
+          "humoristický román",
+          "humoristická poviedka",
+          "veselohra",
+        ],
+        answer: "humoristická poviedka",
+      },
+      {
+        question:
+          "Keď báčik z Chochoľova umrie z obdobia slovenského realizmu zobrazuje predovšetkým:",
+        options: [
+          "úpadok podnikateľskej vrstvy",
+          "zmierenie spoločenských vrstiev",
+          "upadajúcu vrstvu zemianstva",
+          "novú spoločenskú vrstvu sedliakov",
+        ],
+        answer: "upadajúcu vrstvu zemianstva",
+      },
+      {
+        question: "Postava Aduš z diela Keď báčik z Chochoľova umrie bol:",
+        options: [
+          "bohatý zeman",
+          "bohatý sedliak",
+          "chudobný sedliak",
+          "chudobný zeman",
+        ],
+        answer: "chudobný zeman",
+      },
+      {
+        question:
+          "Postavy v diele Keď báčik z Chochoľova umrie, Aduš a Ondrej :",
+        options: [
+          "tvorili protiklad",
+          "predstavovali súlad spoločenských vrstiev",
+          "predstavovali novú spoločenskú vrstvu",
+          "predstavovali rovnakú spoločenskú vrstvu",
+        ],
+        answer: "tvorili protiklad",
+      },
+      {
+        question:
+          "Ktorá charakteristika hlavných postáv z diela Keď báčik z Chochoľova umrie je pravdivá?",
+        options: [
+          "Ondrej - lenivý, chudobný; Aduš - lenivý no bohatý",
+          "Ondrej - šikovný, no lenivý; Aduš - činorodý",
+          "Ondrej - šikovný a činorodý; Aduš - lenivý a pyšný",
+          "Ondrej - pyšný a lenivý; Aduš - šikovný a bohatý",
+        ],
+        answer: "Ondrej - šikovný, no lenivý; Aduš - činorodý",
+      },
+      {
+        question:
+          "Ktoré tvrdenie o báčikovi z diela Keď báčik z Chochoľova umrie je pravdivé?",
+        options: [
+          "Na začiatku diela báčik zomiera a zanecháva jednej z hlavných postáv dedičstvo.",
+          "Na začiatku diela báčik z Chochoľova umrie, no nezanecháva hlavným postavám žiadne dedičstvo.",
+          "Na konci diela báčik umiera a zanechá jednej z hlavných postáv dedičstvo.",
+          "Na konci diela báčik umiera a nezanecháva dedičstvo ani jednej hlavnej postave.",
+        ],
+        answer:
+          "Na konci diela báčik umiera a zanechá jednej z hlavných postáv dedičstvo.",
+      },
+      {
+        question:
+          "Hlavným obchodným tovarom spomínaným v diele Keď báčik z Chochoľova umrie je:",
+        options: ["stromy", "obilie", "pôda", "slama"],
+        answer: "obilie",
+      },
+      {
+        question: "Ktorý literárny žáner predstavuje dielo Statky-zmätky?",
+        options: ["román", "novela", "poviedka", "dráma"],
+        answer: "dráma",
+      },
+      {
+        question: "Dielo Statky-zmätky patrí do:",
+        options: [
+          "1. vlny slovenského literárneho realizmu - opisný realizmus",
+          "1. vlny slovenského literárneho realizmu - kritický realizmus",
+          "2. vlny slovenského literárneho realizmu - opisný realizmus",
+          "2. vlny slovenského literárneho realizmu - kritický realizmus",
+        ],
+        answer: "2. vlny slovenského literárneho realizmu - kritický realizmus",
+      },
+      {
+        question: "Ktorá postavy patrila do rodiny Ľavkovcov?",
+        options: ["Tomáš", "Zuzka", "Žofa", "Ondrej"],
+        answer: "Žofa",
+      },
+      {
+        question:
+          "Ktorá charakteristika postavy z diela Statky-zmätky  nie je správna?",
+        options: [
+          "Žofa bola neúprimná.",
+          "Jano bol nešikovný a lenivý.",
+          "Ďurko mal úspech u žien.",
+          "Zuzka bola tichá a ústupčivá.",
+        ],
+        answer: "Jano bol nešikovný a lenivý.",
+      },
+      {
+        question: "Hlavný motív Statky-zmätky  diela  je:",
+        options: [
+          "nesúlad spoločenských vrstiev",
+          "boj mladomanželov o majetok",
+          "nevera v dedinskom prostredí",
+          "ani jedna možnosť nie je správna",
+        ],
+        answer: "boj mladomanželov o majetok",
+      },
+      {
+        question:
+          "Výsledný koniec u Ďurka a Zuzky v diele Statky-zmätky je taký, že:",
+        options: [
+          "manželia ostanú spolu, ale bez majetku",
+          "mladomanželia žijú oddelene s rozdeleným majetkom",
+          "mladomanželia ostanú oddelene a bez majetku",
+          "manželka ostane sama s dieťaťom a sľúbeným majetkom",
+        ],
+        answer: "mladomanželia ostanú oddelene a bez majetku",
+      },
+      {
+        question:
+          "Ktorý literárny žáner a typ realizmu predstavuje dielo Ťapákovci?",
+        options: [
+          "román - opisný realizmus",
+          "novela - opisný realizmus",
+          "román - kritický realizmus",
+          "novela - kritický realizmus",
+        ],
+        answer: "novela - kritický realizmus",
+      },
+      {
+        question: "Hlavnou témou diela Ťapákovci  je:",
+        options: [
+          "neprekonateľné rozdiely v spoločenských vrstvách",
+          "hádky pre majetok",
+          "zaostalý spôsob života",
+          "zmierenie rodiny",
+        ],
+        answer: "zaostalý spôsob života",
+      },
+      {
+        question: "Ktorá charakteristika je pravdivá pre Iľu (Ťapákovci)?",
+        options: ["tichá", "lenivá", "hlúpa", "sebavedomá"],
+        answer: "sebavedomá",
+      },
+      {
+        question: "Na konci diela Ťapkákovci:",
+        options: [
+          "sa uskutoční svadba.",
+          "prehovorí Iľa Anči do duše.",
+          "Paľo postaví dom.",
+          "všetky postavy nakoniec stagnujú.",
+        ],
+        answer: "Paľo postaví dom.",
+      },
+      {
+        question: "Z pohľadu literárneho žánru je dielo Maco Mlieč:",
+        options: [
+          "kriticko-realistická novela",
+          "kriticko-realistická poviedka",
+          "opisno-realistická poviedka",
+          "opisno-realistická novela",
+        ],
+        answer: "kriticko-realistická poviedka",
+      },
+      {
+        question:
+          "Ktorá možnosť najlepšie opisuje postavy Maca a gazdu (Maco Mlieč) a ich pracovný vzťah?",
+        options: [
+          "Gazda mu nechcel platiť, no Maco aj tak nemal kam inam ísť.",
+          "Gazda mu platil málo, no Maco sa o peniaze nestaral.",
+          "Gazda mu platil veľa, no Maco sa cítil dlžný, a tak sa vždy uskromnil.",
+          "Gazda mu nemal viac zaplatiť, no Maco sa vždy uskromnil.",
+        ],
+        answer: "Gazda mu platil málo, no Maco sa o peniaze nestaral.",
+      },
+      {
+        question: "Aký typ rozprávača bol použitý v diele Maco Mlieč?",
+        options: [
+          "oko kamery",
+          "priamy rozprávač",
+          "vševediaci rozprávač",
+          "nespoľahlivý rozprávač",
+        ],
+        answer: "priamy rozprávač",
+      },
+      {
+        question: "Na konci príbehu Maco Mlieč:",
+        options: [
+          "vrátil gazda Macovi to, čo mu dlhoval a ešte viac.",
+          "sa Maco spýtal gazdu, či mu nie je niečo dlžný.",
+          "sa gazda spýtal Maca, čo mu je dlžný.",
+          "si Maco nárokoval len to, na čo mal morálne právo.",
+        ],
+        answer: "sa Maco spýtal gazdu, či mu nie je niečo dlžný.",
+      },
+      {
+        question:
+          "Ktorá možnosť správne ohraničuje obdobie literárnej moderny?",
+        options: [
+          "Obdobie literárnej moderny sa začalo až na začiatku 20. storočia",
+          "Pre obdobie literárnej moderny je typický prelom 19. a 20. storočia.",
+          "Obdobie literárnej moderny sa skončilo spolu s 19. storočím.",
+          "Obdobie literárnej moderny sa začalo 1. svetovou vojnou.",
+        ],
+        answer:
+          "Pre obdobie literárnej moderny je typický prelom 19. a 20. storočia.",
+      },
+      {
+        question: "Ktoré umelecké smery možno zaradiť do literárnej moderny?",
+        options: [
+          "symbolizmus, naturizmus a impresionizmus",
+          "impresionizmus, dekadencia a symbolizmus",
+          "vitalizmus, dekadencia a impresionizmus",
+          "naturizmus, vitalizmus a dekadencia",
+        ],
+        answer: "impresionizmus, dekadencia a symbolizmus",
+      },
+      {
+        question: "Ktorý motív nie je typický pre literárnu modernu?",
+        options: [
+          "motív mesta",
+          "motív samoty",
+          "motív domova",
+          "motív dediny",
+        ],
+        answer: "motív domova",
+      },
+      {
+        question: "Názov zbierky Nox et solitudo v preklade znamená:",
+        options: ["ticho a tma", "noc a tma", "ticho a samota", "noc a samota"],
+        answer: "noc a samota",
+      },
+      {
+        question:
+          "Ktorý umelecký smer literárnej moderny reprezentuje básnická zbierka Nox et solitudo?",
+        options: [
+          "expresionizmus a impresionizmus",
+          "symbolizmus a impresionizmus",
+          "vitalizmus a symbolizmus",
+          "nadrealizmus a symbolizmus",
+        ],
+        answer: "symbolizmus a impresionizmus",
+      },
+      {
+        question:
+          "Ktoré motívy sú v básnickej zbierke Nox et solitudo zastúpené?",
+        options: [
+          "smútok, láska, osamelosť",
+          "krása, láska, smútok, radosť zo života",
+          "radosť zo života, krása, nešťastná láska, národná téma",
+          "osamelosť, prírodné motívy, dedinská tematika, šťastná láska",
+        ],
+        answer: "smútok, láska, osamelosť",
+      },
+      {
+        question: "Ktorý autor napísal dielo Jozef Mak?",
+        options: [
+          "Martin Kukučín",
+          "Jozef Cíger-Hronský",
+          "Jozef Gregor-Tajovský",
+          "Božena Slančíkova-Timrava",
+        ],
+        answer: "Jozef Cíger-Hronský",
+      },
+      {
+        question: "Aký literárny žáner predstavuje dielo Jozef Mak?",
+        options: ["román", "novela", "poviedka", "rozprávka"],
+        answer: "román",
+      },
+      {
+        question:
+          "Do ktorého literárneho smeru môžeme zaradiť dielo Jozef Mak?",
+        options: [
+          "opisný realizmus",
+          "kritický realizmus",
+          "sociálno-psychologický realizmus",
+          "nadrealizmus",
+        ],
+        answer: "sociálno-psychologický realizmus",
+      },
+      {
+        question:
+          "Ktoré postavy v diele Jozef Mak predstavujú medzi sebou najväčší kontrast?",
+        options: [
+          "Maruša a Jano, Jozef a Jula",
+          "Jano a Jozef, Maruša a Jula",
+          "Maruša a Jozef, Jano a Jula",
+          "Maruša a všetky ostatné postavy",
+        ],
+        answer: "Maruša a Jozef, Jano a Jula",
+      },
+      {
+        question:
+          "Ktoré z nasledujúcich tvrdení o obsahu diela Jozef Mak je ako jediné pravdivé?",
+        options: [
+          "Maruša pod vplyvom alkoholu takmer utopila Julu.",
+          "Zatiaľ čo bol Jozef na vojne, brat Jano mu prebral Marušu a za oplátku mu postavil dom.",
+          "Jozef skončil na konci diela sám s dvomi deťmi.",
+          "Jozef Mak mal nemanželské dieťa s Marušou.",
+        ],
+        answer: "Jozef skončil na konci diela sám s dvomi deťmi.",
+      },
+      {
+        question:
+          "Čo predstavuje priezvisko hlavnej postavy v diele Jozef Mak?",
+        options: [
+          "Osobnostné vlastnosti.",
+          "Nevyspytateľný osud.",
+          "Vnútornú silu.",
+          "Nie je ničím výnimočný.",
+        ],
+        answer: "Nie je ničím výnimočný.",
+      },
+    ],
   },
 ];

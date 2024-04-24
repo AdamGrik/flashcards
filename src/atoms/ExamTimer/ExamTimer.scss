@@ -4,4 +4,7 @@
   display: flex;
   justify-content: center;
   margin-top: 6px;
+  @media (max-width: 768px) {
+    font-size: large;
+  }
 }
