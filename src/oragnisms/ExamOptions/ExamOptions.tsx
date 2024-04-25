@@ -51,27 +51,31 @@ const ExamOptions = (props: ExamOptionsProps) => {
             <div className="fc-exam-options-label">Nastavenie testu</div>
             <div className="fc-exam-options-inputs">
               <div className="fc-exam-options-input-questions">
-                <div>Počet otázok:</div>
-                <div>
+                <div className="fc-exam-options-input-questions-label">
+                  Počet otázok:
+                </div>
+                <div className="fc-exam-options-input-questions-input">
                   <NumberInput
                     value={numberOfQuestions}
                     change={setNumberOfQuestions}
                     min={1}
                     max={maxQuestions}
                   />
+                </div>
+                <div className="fc-exam-options-input-questions-max">
                   /{maxQuestions}
                 </div>
               </div>
               <div className="fc-exam-options-input-time">
-                <div>Čas:</div>
-                <div>
+                <div className="fc-exam-options-input-time-label">Čas:</div>
+                <div className="fc-exam-options-input-time-input">
                   <NumberInput
                     value={selectedTime}
                     change={setselectedTime}
                     min={0}
                   />
-                  minút
                 </div>
+                <div className="fc-exam-options-input-time-max">minút</div>
               </div>
             </div>
             <ArraySelection
