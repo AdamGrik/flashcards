@@ -240,6 +240,110 @@ export const matQuestions = [
 				options: ["36,98", "59,87", "40,13", "63,02"],
 				answer: "40,13",
 			},
+			{
+				question:
+					"V triede je 20 žiakov. Výška jednotlivých dievčat triedy je 148 cm, 152 cm, 150 cm, 151 cm a 159 cm. Priemerná výška všetkých chlapcov tejto triedy je 172 cm. Určte priemernú výšku všetkých žiakov triedy.",
+				options: ["155 cm", "162 cm", "165 cm", "167 cm"],
+				answer: "167 cm",
+			},
+			{
+				question:
+					"Určte počet všetkých dvojciferných čísel, ktorých druhá mocnina sa končí číslicou 6.",
+				options: ["18", "20", "15", "9"],
+				answer: "18",
+			},
+			{
+				question:
+					"Na začiatku pokusu je vo vzorke 100 baktérií. Po uplynutí 24 hodín sa počet baktérií vo vzorke vždy zdvojnásobí. Pre jednoduchosť predpokladáme, že do konca pokusu ani jedna baktéria nezahynie. Určte, po koľkých dňoch bude vo vzorke 25 600 baktérií.",
+				options: ["10", "7", "12", "8"],
+				answer: "8",
+			},
+			{
+				question:
+					"Predmet na reklamné účely bol vyrobený tak, že z každého vrcholu kocky s hranou dlhou 9 cm sa odrezala malá kocka s hranou dlhou 3 cm (pozrite obrázok). Na záver sa povrch vyrobeného predmetu pozlátil. V dielni bolo vyrobených 25 rovnakých predmetov. Určte, koľko gramov zlata sa spotrebovalo na pozlátenie všetkých vyrobených predmetov, ak 1 g zlata vystačí na pozlátenie plochy s veľkosťou 50 cm2.",
+				options: ["273", "250", "243", "257"],
+				image: "obr50",
+				answer: "243",
+			},
+			{
+				question:
+					"Určte hodnoty reálnych čísel a, b v predpise funkcie f : y = ax + b tak, aby graf funkcie f a súradnicové osi x a y určovali rovnoramenný pravouhlý trojuholník (pozrite obrázok) s obsahom 8. Do odpoveďového hárka zapíšte súčet a + b.",
+				options: ["3", "4", "5", "6"],
+				image: "obr51",
+				answer: "3",
+			},
+			{
+				question:
+					"Vzdialenosť miest A a C na rovnej ceste je 200 m. Medzi miestami A a C sa nad cestou vznáša balón B. Z miesta A je možné pozorovať balón B pod výškovým uhlom 10°, z miesta C pod výškovým uhlom 20° (pozrite obrázok). Určte zaokrúhlene na celé metre, o koľko je vzdušná vzdialenosť balóna B od miesta C menšia ako od miesta A.",
+				options: ["63", "71", "60", "67"],
+				image: "obr52",
+				answer: "67",
+			},
+			{
+				question:
+					"Obsah medzikružia tvorený dvoma kružnicami so spoločným stredom je 100 cm2. Polomer vonkajšej kružnice sa rovná dvojnásobku polomeru vnútornej kružnice. Určte v centimetroch veľkosť polomeru vonkajšej kružnice",
+				options: ["6,51", "7,23", "8,12", "6,77"],
+				image: "obr53",
+				answer: "6,51",
+			},
+			{
+				question:
+					"Roztržitá úradníčka posiela tri rôzne listy. Náhodne vloží listy do troch obálok s napísanými adresami. Aká je pravdepodobnosť, že ani jeden list nebude odoslaný na správnu adresu?",
+				options: ["0,25", "0,33", "0,5", "0,66"],
+				answer: "0,33",
+			},
+			{
+				question:
+					"Nasledujúci histogram znázorňuje, koľko z 86 žiakov dosiahlo daný počet bodov z písomnej práce. Určte medián získaných bodov.",
+				options: ["11", "12", "13", "14"],
+				image: "obr54",
+				answer: "11",
+			},
+			{
+				question:
+					"Peter zabudol štvorčíselný kód svojho zámku na školskej skrinke. Našťastie si o ňom pamätá zopár informácií. Vie, že prvé dvojčíslie je deliteľné 15 a druhé 7. Peter je však veľký smoliar, a preto musel vyskúšať všetky možnosti (vrátane možnosti 0000). Na koľký pokus Peter otvoril zámok?",
+				options: ["205", "68", "105", "32"],
+				answer: "105",
+			},
+			{
+				question:
+					"Pravdepodobnosť vyklíčenia každej kôstky avokáda je 0,9. Zasadili sme 3 kôstky. Aká je pravdepodobnosť, že vyklíčia práve dve z nich?",
+				options: ["0,24", "0,36", "0,27", "0,18"],
+				answer: "0,24",
+			},
+			{
+				question:
+					"Gotický štvorlístok je ornament, v ktorom sú do väčšej kružnice vpísané štyri rovnaké dotýkajúce sa menšie kružnice, ako vidíte na obrázku. Polomer veľkej kružnice je jeden meter. Vypočítajte v metroch polomer menšej kružnice.",
+				options: ["0,41", "0,23", "0,74", "0,5"],
+				answer: "0,41",
+			},
+			{
+				question:
+					"Koľko sedemciferných čísel sa dá napísať číslicami 5, 7, 8, 8, 0, 0, 0 ?",
+				options: ["120", "240", "420", "2520"],
+				answer: "240",
+			},
+			{
+				question:
+					"Na obrázku je rovnobežník ABCD, body S, X, Y, Z, W sú postupne stredy úsečiek AC, AS, SC, XS a SY. Koľko percent obsahu rovnobežníka ABCD tvorí vyfarbená časť?",
+				options: ["10,5", "25", "30,25", "33,33"],
+				image: "obr55",
+				answer: "25",
+			},
+			{
+				question:
+					"Daný je kužeľ s polomerom podstavy 10cm a výškou 12cm. V akej výške nad podstavou ho máme rozdeliť rezom rovnobežným s podstavou, aby objemy oboch vzniknutých telies boli rovnaké? Výsledok uveďte v centimetroch.",
+
+				options: ["3,14", "2,54", "2,48", "3,5"],
+				image: "obr56",
+				answer: "2,48",
+			},
+			{
+				question:
+					"Vypočítajte súčet všetkých párnych celých čísel deliteľných 13, ktoré sú väčšie ako 400 a zároveň menšie ako 600.",
+				options: ["3549", "3952", "4056", "8008"],
+				answer: "4056",
+			},
 		],
 	},
 ];
