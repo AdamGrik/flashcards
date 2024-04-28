@@ -1867,17 +1867,6 @@ export const sjlQuestions = [
           "Renesancia sa snažila o zachovanie stredovekého spôsobu myslenia pomocou návratu k antickým ideálom.",
       },
       {
-        question:
-          "Ktoré literárne dielo od anglického autora menom William Shakespeare má nesprávne priradený žáner?",
-        options: [
-          "Skrotenie zlej ženy - komédia",
-          "Othelo - historická hra",
-          "Macbeth - tragédia",
-          "Veselé panie z Windsoru - komédia",
-        ],
-        answer: "Othelo - historická hra",
-      },
-      {
         question: "O diele Williama Shakespeara - Rómeo a Júlia platí, že:",
         options: [
           "Je to tragikomédia, pričom prvý zomrie Rómeo a až potom Júlia.",
@@ -2369,7 +2358,7 @@ export const sjlQuestions = [
         answer: "Krvavé sonety",
       },
       {
-        question: "Ktoré dielo nepatrií do druhej vlny slovenského realizmu?",
+        question: "Ktoré dielo nepatrí do druhej vlny slovenského realizmu?",
         options: [
           "Mamka Pôstková",
           "Maco Mlieč",
@@ -2380,7 +2369,7 @@ export const sjlQuestions = [
       },
       {
         question:
-          "Ktoré z nasledujúcich diel z obdobia realizmu nepatrií do drámy ako literárneho druhu?",
+          "Ktoré z nasledujúcich diel z obdobia realizmu nepatrí do drámy ako literárneho druhu?",
         options: ["Rysavá jalovica", "Matka", "Ženský zákon", "Statky-zmätky"],
         answer: "Rysavá jalovica",
       },
