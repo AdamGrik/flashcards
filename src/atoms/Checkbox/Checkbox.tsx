@@ -14,7 +14,11 @@ const Checkbox = (props: CheckboxProps) => {
   return (
     <>
       <span className="checkbox-wrapper" onClick={handleChange}>
-        <input type="checkbox" checked={isChecked} id="cbx"></input>
+        <input
+          type="checkbox"
+          checked={isChecked}
+          id="cbx"
+          onChange={handleChange}></input>
         <label className="toggle">
           <span className="ball"></span>
         </label>

@@ -49,8 +49,8 @@ const ArraySelection = (props: arraySelectionProps) => {
     <>
       {checkboxArrays.length > 1 ? (
         <div className="fc-exam-options-checkboxes">
-          {checkboxArrays.map((checkboxArray) => (
-            <>
+          {checkboxArrays.map((checkboxArray, i) => (
+            <div key={i}>
               <div
                 key={checkboxArray.subject}
                 className="fc-exam-options-checkbox">
@@ -64,7 +64,7 @@ const ArraySelection = (props: arraySelectionProps) => {
                   {checkboxArray.subject}
                 </div>
               </div>
-            </>
+            </div>
           ))}
         </div>
       ) : null}

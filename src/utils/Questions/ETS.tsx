@@ -3,6 +3,28 @@ export const etsQuestions = [
     subject: "Ochranné opatrenia pred úrazom elektrickým prúdom",
     questions: [
       {
+        question: "Živá časť je:",
+        options: [
+          "Pri bežnej prevádzke sa na nej nenachádza žiadne napätie. Pri poruche sa na však na nej  môže vyskytnúť napätie ",
+          "Pri bežnej prevádzke sa na nej nenachádza žiadne napätie. Pri poruche sa na však na nej nemôže vyskytnúť napätie",
+          "Pri normálnej prevádzke nie je pod napätím vrátane neutrálneho vodiča (N)",
+          "Pri normálnej prevádzke pod napätím vrátane neutrálneho vodiča (N)",
+        ],
+        answer:
+          "Pri normálnej prevádzke pod napätím vrátane neutrálneho vodiča (N)",
+      },
+      {
+        question: "Neživá časť je:",
+        options: [
+          "Pri bežnej prevádzke sa na nej nenachádza žiadne napätie. Pri poruche sa na však na nej  môže vyskytnúť napätie",
+          "Pri bežnej prevádzke sa na nej nenachádza žiadne napätie. Pri poruche sa na však na nej nemôže vyskytnúť napätie",
+          "Pri normálnej prevádzke nie je pod napätím vrátane neutrálneho vodiča (N)",
+          "Pri normálnej prevádzke pod napätím vrátane neutrálneho vodiča (N)",
+        ],
+        answer:
+          "Pri bežnej prevádzke sa na nej nenachádza žiadne napätie. Pri poruche sa na však na nej  môže vyskytnúť napätie",
+      },
+      {
         question: "Na obrázku je",
         options: ["Jednopólový dotyk", "Dvojpólový dotyk."],
         image: "obr4201",
@@ -33,7 +55,8 @@ export const etsQuestions = [
           "Živé časti nemusia byť úplne pokryté izoláciou",
           "Živé časti musia byť úplne pokryté izoláciou, ktorú je možno odstrániť len jej zničením",
         ],
-        answer: "Živé časti musia byť aspoň čiastočne pokryté izoláciou",
+        answer:
+          "Živé časti musia byť úplne pokryté izoláciou, ktorú je možno odstrániť len jej zničením",
       },
       {
         question: "Účelom izolácie je hlavne",
@@ -108,7 +131,7 @@ export const etsQuestions = [
           "malým napätím PELV",
         ],
         image: "obr4207",
-        answer: "malým napätím SELV",
+        answer: "malým napätím PELV",
       },
       {
         question: "Na obrázku je",
@@ -139,19 +162,9 @@ export const etsQuestions = [
           "impedancia poruchovej slučky zahrňujúca zdroj a spotrebič",
           "impedancia napájacej slučky zahrňujúca zdroj a spotrebič",
         ],
+        image: "obr4209",
         answer:
           "impedancia poruchovej slučky zahrňujúca zdroj, pracovný vodič k miestu poruchy a ochranný vodič medzi miestom poruchy a zdrojom",
-      },
-      {
-        question: "Na obrázku je",
-        options: [
-          "Podstata ochrany samočinným odpojením napájania v sieti TN-C",
-          "Podstata ochrany samočinným odpojením napájania v sieti IT",
-          "Podstata ochrany samočinným odpojením napájania v sieti TN-S",
-          "Podstata ochrany samočinným odpojením napájania v sieti TT",
-        ],
-        image: "obr4209",
-        answer: "Podstata ochrany samočinným odpojením napájania v sieti TN-S",
       },
       {
         question: "Na obrázku je",
@@ -168,11 +181,22 @@ export const etsQuestions = [
         question: "Na obrázku je",
         options: [
           "Podstata ochrany samočinným odpojením napájania v sieti TN-C",
-          "Podstata ochrany neuzemneným pospájaním",
+          "Podstata ochrany samočinným odpojením napájania v sieti IT",
           "Podstata ochrany samočinným odpojením napájania v sieti TN-S",
           "Podstata ochrany samočinným odpojením napájania v sieti TT",
         ],
         image: "obr4211",
+        answer: "Podstata ochrany samočinným odpojením napájania v sieti IT",
+      },
+      {
+        question: "Na obrázku je",
+        options: [
+          "Podstata ochrany samočinným odpojením napájania v sieti TN-C",
+          "Podstata ochrany neuzemneným pospájaním",
+          "Podstata ochrany samočinným odpojením napájania v sieti TN-S",
+          "Podstata ochrany samočinným odpojením napájania v sieti TT",
+        ],
+        image: "obr4212",
         answer: "Podstata ochrany neuzemneným pospájaním",
       },
       {
@@ -183,7 +207,7 @@ export const etsQuestions = [
           "Podstata ochrany elektrickým oddelením",
           "Podstata ochrany samočinným odpojením napájania v sieti TT",
         ],
-        image: "obr4212",
+        image: "obr4213",
         answer: "Podstata ochrany elektrickým oddelením",
       },
       {
@@ -238,7 +262,6 @@ export const etsQuestions = [
           "Školiteľ a školená osoba",
           "Školený pracovník",
           "Vedúci školiacej organizácie",
-          "Áno, ale s dohľadom",
         ],
         answer: "Školiteľ a školená osoba",
       },
@@ -316,6 +339,46 @@ export const etsQuestions = [
   {
     subject: "Prvá pomoc",
     questions: [
+      {
+        question: "Nebezpečenstvo úrazu elektrickým prúdom nastáva keď:",
+        options: [
+          "Človek sa stane súčasťou vodivého uzavretého elektrického obvodu, pri ktorom sa jeho telom vedie elektrina.",
+          "Človek sa nestane súčasťou vodivého uzavretého elektrického obvodu, pri ktorom sa jeho telom vedie elektrina.",
+          "Človek sa stane súčasťou nevodivého uzavretého elektrického obvodu, pri ktorom sa jeho telom vedie elektrina.",
+          "Človek sa stane súčasťou vodivého uzavretého elektrického obvodu, pri ktorom sa jeho telom nevedie elektrina.",
+        ],
+        answer:
+          "Človek sa stane súčasťou vodivého uzavretého elektrického obvodu, pri ktorom sa jeho telom vedie elektrina.",
+      },
+      {
+        question: "Porovnajte nebezpečnosť jednotlivých druhov el. prúdov:",
+        options: [
+          "Striedavý prúd je všeobecne bezpečnejší ako jednosmerný.",
+          "Striedavý prúd je všeobecne nebezpečnejší ako jednosmerný.",
+          "Striedavý prúd je rovnako nebezpečný ako jednosmerný.",
+        ],
+        answer: "Striedavý prúd je všeobecne nebezpečnejší ako jednosmerný.",
+      },
+      {
+        question: "Čím sa hlavne prejavuje jednosmerný prúd:",
+        options: [
+          "Jednosmerný prúd sa prejavuje hlavne popáleninami tkaniva.",
+          "Jednosmerný prúd sa prejavuje elektrotermickými účinkami.",
+          "Jednosmerný prúd sa prejavuje hlavne kŕčmi svalstva.",
+          "Jednosmerný prúd sa prejavuje hlavne poškodením srdcového svalu.",
+        ],
+        answer: "Jednosmerný prúd sa prejavuje elektrotermickými účinkami.",
+      },
+      {
+        question: "Čím sa hlavne prejavuje striedavý prúd:",
+        options: [
+          "Striedavý prúd sa prejavuje hlavne popáleninami tkaniva.",
+          "Striedavý prúd sa prejavuje elektrotermickými účinkami.",
+          "Striedavý prúd sa prejavuje hlavne kŕčmi svalstva.",
+          "Striedavý prúd sa prejavuje hlavne poškodením srdcového svalu.",
+        ],
+        answer: "Striedavý prúd sa prejavuje hlavne kŕčmi svalstva.",
+      },
       {
         question: "Najväčší odpor elektrickému prúdu kladie:",
         options: [
@@ -584,7 +647,8 @@ export const etsQuestions = [
           "Keď sa postihnutému obnoví činnosť srdca a začne pravidelne dýchať",
           "Pred začatím nepriamej masáže srdca",
         ],
-        answer: "Pred začiatkom umelého dýchania",
+        answer:
+          "Keď sa postihnutému obnoví činnosť srdca a začne pravidelne dýchať",
       },
       {
         question:
@@ -817,7 +881,7 @@ export const etsQuestions = [
       {
         question: "Urči zapojenie vývodov zásuvky v sieti TN-C v poradí 1,2,3:",
         options: ["L1,N,N", "L1,PEN,N", "L1,PEN,PEN", "L1,N,PEN"],
-        answer: "L1,PEN,N",
+        answer: "L1,PEN,PEN",
         image: "obr4414",
       },
       {
@@ -1054,7 +1118,7 @@ export const etsQuestions = [
       {
         question: "Aký typ zberacieho zariadenia je na obrázku?",
         options: ["hrebeňové", "tyčové", "mrežové", "univerzálne"],
-        answer: "univerzálne",
+        answer: "hrebeňové",
         image: "obr4305",
       },
       {
@@ -1271,7 +1335,7 @@ export const etsQuestions = [
           "Fyzická osoba s elektrotechnickým vzdelaním, ktorá môže obsluhovať technické zariadenie elektrické alebo vykonávať na ňom prácu v súlade s bezpečnostnotechnickými požiadavkami, ak bola v rozsahu vykonávanej činnosti preukázateľne oboznámená o činnosti na tomto technickom zariadení elektrickom a o postupe pri zabezpečovaní prvej pomoci pri úraze elektrickým prúdom.",
         ],
         answer:
-          "Fyzická osoba s elektrotechnickým vzdelaním, ktorá môže obsluhovať technické zariadenie elektrické alebo vykonávať na ňom prácu v súlade s bezpečnostnotechnickými požiadavkami, ak bola v rozsahu vykonávanej činnosti preukázateľne oboznámená o činnosti na tomto technickom zariadení elektrickom a o postupe pri zabezpečovaní prvej pomoci pri úraze elektrickým prúdom.",
+          "Fyzická osoba bez elektrotechnického vzdelania, ktorá môže obsluhovať technické zariadenie elektrické alebo vykonávať na ňom prácu v súlade s bezpečnostnotechnickými požiadavkami, ak bola v rozsahu vykonávanej činnosti preukázateľne oboznámená o činnosti na tomto technickom zariadení elektrickom a o postupe pri zabezpečovaní prvej pomoci pri úraze elektrickým prúdom.",
       },
       {
         question: "§ 21 - Elektrotechnik je:",
@@ -1294,6 +1358,17 @@ export const etsQuestions = [
         ],
         answer:
           "Fyzická osoba, ktorá spĺňa požiadavky odbornej spôsobilosti elektrotechnika a ktorá má odbornú prax uvedenú v prílohe č. 11 Vyhlášky 508/2009 Z.z..",
+      },
+      {
+        question: "§ 22 - Samostatný elektrotechnik môže:",
+        options: [
+          "riadiť činnosť troch poučených osôb a riadiť činnosť najviac troch elektrotechnikov.",
+          "riadiť činnosť troch poučených osôb a riadiť činnosť najviac dvoch elektrotechnikov.",
+          "riadiť činnosť dvoch poučených osôb a riadiť činnosť najviac dvoch elektrotechnikov.",
+          "riadiť činnosť poučených osôb bez obmedzenia ich počtu a riadiť činnosť najviac dvoch elektrotechnikov.",
+        ],
+        answer:
+          "riadiť činnosť poučených osôb bez obmedzenia ich počtu a riadiť činnosť najviac dvoch elektrotechnikov.",
       },
       {
         question:
@@ -1435,7 +1510,7 @@ export const etsQuestions = [
           "Modrý + na koncoch žltozelený",
           "Červený + na koncoch žltozelený",
         ],
-        answer: "Hnedý + na koncoch svetlomodrý",
+        answer: "Žltozelený + na koncoch svetlomodrý",
       },
       {
         question: "Označenie svoriek elektrických spotrebičov:",
@@ -1550,6 +1625,17 @@ export const etsQuestions = [
           "Záleží to na rozhodnutí IBP",
         ],
         answer: "Áno - musí evidovať údaje ako o registrovanom úraze",
+      },
+      {
+        question:
+          "Kto v organizácií zodpovedá za bezpečnosť a ochranu zdravia pri práci (BOzP)?",
+        options: [
+          "Vedúci na všetkých stupňoch riadenia",
+          "Riaditeľ organizácie",
+          "Pracovníci",
+          "Revízny technik v spolupráci s pracovníkmi technickej inšpekcie",
+        ],
+        answer: "Vedúci na všetkých stupňoch riadenia",
       },
       {
         question:

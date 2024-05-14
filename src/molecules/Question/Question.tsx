@@ -55,6 +55,7 @@ const Question = (props: QuestionProps) => {
               type="radio"
               value={option}
               checked={selectedOption === option}
+              onChange={() => selectOption(option)}
             />
             <span className="fc-question-options-abcd">
               {String.fromCharCode(97 + index)}.)

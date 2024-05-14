@@ -45,15 +45,15 @@ const Exam = (props: ExamProps) => {
       }
       return question;
     });
-
     setQuestionsData(newQuestionsData);
+    setCurrentQuestion(nextQuestion);
+  };
 
-    if (nextQuestion <= totalQuestions - 1) {
-      setCurrentQuestion(nextQuestion);
-    } else {
+  useEffect(() => {
+    if (currentQuestion === totalQuestions) {
       finishExam();
     }
-  };
+  }, [currentQuestion]);
 
   return (
     <>

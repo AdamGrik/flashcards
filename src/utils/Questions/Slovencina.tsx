@@ -2742,6 +2742,16 @@ export const sjlQuestions = [
         ],
         answer: "Nie je ničím výnimočný.",
       },
+      {
+        question: "Kto je autorom diela Drak sa vracia?",
+        options: [
+          "Milo Urban",
+          "Dobroslav Chrobák",
+          "Peter Jilemnický",
+          "Ladislav Mňačko",
+        ],
+        answer: "Dobroslav Chrobák",
+      },
     ],
   },
 ];

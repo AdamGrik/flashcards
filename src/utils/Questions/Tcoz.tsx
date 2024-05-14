@@ -935,7 +935,7 @@ export const tcozQuestions = [
           "Pri half-duplex nie je možný obojsmerný prenos súčasne",
           "Pri full-duplex nastáva väčšie skreslenie",
         ],
-        answer: "Pri half-duplex nie je možné obojsmerný prenos súčasne",
+        answer: "Pri half-duplex nie je možný obojsmerný prenos súčasne",
       },
       {
         question: "Analógový signál je",
