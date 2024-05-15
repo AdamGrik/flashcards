@@ -225,7 +225,7 @@ export const etsQuestions = [
         question: "Na obrázku sú",
         options: ["Pracovné pomôcky", "Ochranné pomôcky"],
         image: "obr4214",
-        answer: "Pracovné pomôcky",
+        answer: "Ochranné pomôcky",
       },
       {
         question: "Na obrázku sú",
@@ -301,7 +301,7 @@ export const etsQuestions = [
           "Náradie",
           "Nemajú špeciálne označenie",
         ],
-        answer: "Pracovné pomôcky",
+        answer: "Ochranné pomôcky",
       },
       {
         question:

@@ -10,34 +10,36 @@
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
   padding: 8px 16px;
   border-bottom: 1px solid $border-color;
-  justify-content: space-between;
+  user-select: none;
 
   .fc-toolbar-left {
     color: $background-color;
     display: flex;
     font-size: xxx-large;
-
     &:hover {
       cursor: pointer;
     }
-  }
-  .fc-toolbar-logo {
-    height: 60px;
-    width: 75px;
-    background-image: url("../../images/logo.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 20px;
+    .fc-toolbar-logo {
+      height: 60px;
+      width: 75px;
+      background-image: url("../../images/logo.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 20px;
+    }
   }
 
   @media (max-width: 768px) {
+    justify-content: center;
     .fc-toolbar-left {
       font-size: x-large;
-    }
-    .fc-toolbar-logo {
-      height: 30px;
-      width: 40px;
-      margin-right: 10px;
+      justify-content: center;
+
+      .fc-toolbar-logo {
+        height: 30px;
+        width: 40px;
+        margin-right: 10px;
+      }
     }
   }
 }
